@@ -1,0 +1,585 @@
+2018-02-05 09:48:36 pid:17977 Workerman[server.php] start in DEBUG mode
+2018-02-05 09:49:16 pid:17988 Workerman[server.php] start in DEBUG mode
+2018-02-05 09:55:23 pid:18007 Workerman[server.php] start in DEBUG mode
+2018-02-05 09:57:12 pid:18017 Workerman[server.php] start in DEBUG mode
+2018-02-05 09:58:16 pid:18049 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:00:57 pid:18066 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:15:03 pid:18066 Workerman[server.php] stopping ...
+2018-02-05 10:15:03 pid:18066 Workerman[server.php] has been stopped
+2018-02-05 10:15:06 pid:18109 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:16:49 pid:18109 Workerman[server.php] stopping ...
+2018-02-05 10:16:49 pid:18109 Workerman[server.php] has been stopped
+2018-02-05 10:16:50 pid:18118 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:24:31 pid:18118 Workerman[server.php] stopping ...
+2018-02-05 10:24:31 pid:18118 Workerman[server.php] has been stopped
+2018-02-05 10:27:00 pid:18157 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:28:33 pid:18157 Workerman[server.php] stopping ...
+2018-02-05 10:28:33 pid:18157 Workerman[server.php] has been stopped
+2018-02-05 10:28:34 pid:18165 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:29:16 pid:18165 Workerman[server.php] stopping ...
+2018-02-05 10:29:16 pid:18165 Workerman[server.php] has been stopped
+2018-02-05 10:29:17 pid:18172 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:30:25 pid:18172 Workerman[server.php] stopping ...
+2018-02-05 10:30:25 pid:18172 Workerman[server.php] has been stopped
+2018-02-05 10:30:26 pid:18199 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:30:56 pid:18199 Workerman[server.php] stopping ...
+2018-02-05 10:30:56 pid:18199 Workerman[server.php] has been stopped
+2018-02-05 10:30:58 pid:18209 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:31:32 pid:18209 Workerman[server.php] stopping ...
+2018-02-05 10:31:32 pid:18209 Workerman[server.php] has been stopped
+2018-02-05 10:31:33 pid:18229 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:32:12 pid:18229 Workerman[server.php] stopping ...
+2018-02-05 10:32:12 pid:18229 Workerman[server.php] has been stopped
+2018-02-05 10:32:14 pid:18237 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:41:04 pid:18237 Workerman[server.php] stopping ...
+2018-02-05 10:41:04 pid:18237 Workerman[server.php] has been stopped
+2018-02-05 10:41:06 pid:18258 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:41:10 pid:18261 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:19
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(19): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 19, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 10:41:10 pid:18261 Worker process terminated
+2018-02-05 10:41:10 pid:18258 worker[建东直播聊天室:18261] exit with status 64000
+2018-02-05 10:41:13 pid:18260 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:19
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(19): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 19, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 10:41:13 pid:18260 Worker process terminated
+2018-02-05 10:41:13 pid:18258 worker[建东直播聊天室:18260] exit with status 64000
+2018-02-05 10:41:17 pid:18264 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:19
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(19): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 19, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #80)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#13 [internal function]: think\worker\Server->__construct()
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#17 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#18 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#19 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#20 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#21 {main}
+2018-02-05 10:41:17 pid:18264 Worker process terminated
+2018-02-05 10:41:17 pid:18258 worker[建东直播聊天室:18264] exit with status 64000
+2018-02-05 10:52:02 pid:18258 Workerman[server.php] stopping ...
+2018-02-05 10:52:02 pid:18258 Workerman[server.php] has been stopped
+2018-02-05 10:52:03 pid:18325 Workerman[server.php] start in DEBUG mode
+2018-02-05 10:53:06 pid:18328 think\exception\HttpResponseException in /var/www/html/jiandong/thinkphp/helper.php:539
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(18): halt(Object(Workerman\Connection\TcpConnection))
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 10:53:06 pid:18328 Worker process terminated
+2018-02-05 10:53:06 pid:18325 worker[建东直播聊天室:18328] exit with status 64000
+2018-02-05 10:53:07 pid:18330 think\exception\HttpResponseException in /var/www/html/jiandong/thinkphp/helper.php:539
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(18): halt(Object(Workerman\Connection\TcpConnection))
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 10:53:07 pid:18330 Worker process terminated
+2018-02-05 10:53:07 pid:18325 worker[建东直播聊天室:18330] exit with status 64000
+2018-02-05 10:53:26 pid:18336 think\exception\HttpResponseException in /var/www/html/jiandong/thinkphp/helper.php:539
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(18): halt(Object(Workerman\Connection\TcpConnection))
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"SEND_O...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#13 [internal function]: think\worker\Server->__construct()
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#17 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#18 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#19 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#20 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#21 {main}
+2018-02-05 10:53:26 pid:18336 Worker process terminated
+2018-02-05 10:53:26 pid:18325 worker[建东直播聊天室:18336] exit with status 64000
+2018-02-05 10:54:28 pid:18329 think\exception\HttpResponseException in /var/www/html/jiandong/thinkphp/helper.php:539
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(18): halt(Object(Workerman\Connection\TcpConnection))
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 'sss')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 'sss')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 10:54:28 pid:18329 Worker process terminated
+2018-02-05 10:54:28 pid:18325 worker[建东直播聊天室:18329] exit with status 64000
+2018-02-05 10:54:59 pid:18327 think\exception\HttpResponseException in /var/www/html/jiandong/thinkphp/helper.php:539
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(18): halt(Object(Workerman\Connection\TcpConnection))
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '@heart')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '@heart')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 10:54:59 pid:18327 Worker process terminated
+2018-02-05 10:54:59 pid:18325 worker[建东直播聊天室:18327] exit with status 64000
+2018-02-05 10:55:28 pid:18325 Workerman[server.php] stopping ...
+2018-02-05 10:55:28 pid:18325 Workerman[server.php] has been stopped
+2018-02-05 10:56:14 pid:18343 Workerman[server.php] start in DEBUG mode
+2018-02-05 11:00:45 pid:18343 Workerman[server.php] stopping ...
+2018-02-05 11:00:45 pid:18343 Workerman[server.php] has been stopped
+2018-02-05 11:00:47 pid:18357 Workerman[server.php] start in DEBUG mode
+2018-02-05 11:00:50 pid:18359 think\exception\ErrorException: Undefined variable: connect in /var/www/html/jiandong/application/socket/controller/Worker.php:27
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(27): think\Error::appError(8, 'Undefined varia...', '/var/www/html/j...', 27, Array)
+#1 [internal function]: app\socket\controller\Worker->onConnect(Object(Workerman\Connection\TcpConnection))
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2162): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\Worker->acceptConnection(Resource id #71)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 11:00:50 pid:18359 Worker process terminated
+2018-02-05 11:00:50 pid:18357 worker[建东直播聊天室:18359] exit with status 64000
+2018-02-05 11:01:16 pid:18363 think\exception\ErrorException: Undefined variable: connect in /var/www/html/jiandong/application/socket/controller/Worker.php:27
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(27): think\Error::appError(8, 'Undefined varia...', '/var/www/html/j...', 27, Array)
+#1 [internal function]: app\socket\controller\Worker->onConnect(Object(Workerman\Connection\TcpConnection))
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2162): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\Worker->acceptConnection(Resource id #71)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#13 [internal function]: think\worker\Server->__construct()
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#17 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#18 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#19 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#20 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#21 {main}
+2018-02-05 11:01:16 pid:18363 Worker process terminated
+2018-02-05 11:01:16 pid:18357 worker[建东直播聊天室:18363] exit with status 64000
+2018-02-05 11:01:58 pid:18357 Workerman[server.php] stopping ...
+2018-02-05 11:01:58 pid:18357 Workerman[server.php] has been stopped
+2018-02-05 11:01:59 pid:18379 Workerman[server.php] start in DEBUG mode
+2018-02-05 11:04:12 pid:18379 Workerman[server.php] stopping ...
+2018-02-05 11:04:12 pid:18379 Workerman[server.php] has been stopped
+2018-02-05 11:04:14 pid:18389 Workerman[server.php] start in DEBUG mode
+2018-02-05 11:07:14 pid:18389 Workerman[server.php] stopping ...
+2018-02-05 11:07:14 pid:18389 Workerman[server.php] has been stopped
+2018-02-05 11:07:19 pid:18398 Workerman[server.php] start in DEBUG mode
+2018-02-05 11:23:12 pid:18398 Workerman[server.php] stopping ...
+2018-02-05 11:23:12 pid:18398 Workerman[server.php] has been stopped
+2018-02-05 11:23:15 pid:18426 Workerman[server.php] start in DAEMON mode
+2018-02-05 11:25:52 pid:18443 Workerman[server.php] start in DAEMON mode
+2018-02-05 11:25:52 pid:18443 Workerman[server.php] already running
+2018-02-05 11:48:25 pid:18461 Workerman[server.php] stop 
+2018-02-05 11:48:25 pid:18461 Workerman[server.php] is stoping ...
+2018-02-05 11:48:25 pid:18429 Workerman[server.php] stopping ...
+2018-02-05 11:48:25 pid:18429 Workerman[server.php] has been stopped
+2018-02-05 11:48:25 pid:18461 Workerman[server.php] stop success
+2018-02-05 11:48:28 pid:18463 Workerman[server.php] start in DAEMON mode
+2018-02-05 11:54:47 pid:18490 Workerman[server.php] start in DAEMON mode
+2018-02-05 11:54:47 pid:18490 Workerman[server.php] already running
+2018-02-05 11:55:32 pid:18494 Workerman[server.php] stop 
+2018-02-05 11:55:32 pid:18494 Workerman[server.php] is stoping ...
+2018-02-05 11:55:32 pid:18466 Workerman[server.php] stopping ...
+2018-02-05 11:55:32 pid:18466 Workerman[server.php] has been stopped
+2018-02-05 11:55:32 pid:18494 Workerman[server.php] stop success
+2018-02-05 11:55:33 pid:18496 Workerman[server.php] start in DAEMON mode
+2018-02-05 11:59:28 pid:18506 Workerman[server.php] stop 
+2018-02-05 11:59:28 pid:18506 Workerman[server.php] is stoping ...
+2018-02-05 11:59:28 pid:18499 Workerman[server.php] stopping ...
+2018-02-05 11:59:28 pid:18499 Workerman[server.php] has been stopped
+2018-02-05 11:59:28 pid:18506 Workerman[server.php] stop success
+2018-02-05 11:59:30 pid:18508 Workerman[server.php] start in DAEMON mode
+2018-02-05 12:04:22 pid:18536 Workerman[server.php] stop 
+2018-02-05 12:04:22 pid:18536 Workerman[server.php] is stoping ...
+2018-02-05 12:04:22 pid:18511 Workerman[server.php] stopping ...
+2018-02-05 12:04:22 pid:18511 Workerman[server.php] has been stopped
+2018-02-05 12:04:22 pid:18536 Workerman[server.php] stop success
+2018-02-05 12:04:24 pid:18538 Workerman[server.php] start in DAEMON mode
+2018-02-05 12:05:36 pid:18549 Workerman[server.php] stop 
+2018-02-05 12:05:36 pid:18549 Workerman[server.php] is stoping ...
+2018-02-05 12:05:36 pid:18541 Workerman[server.php] stopping ...
+2018-02-05 12:05:36 pid:18541 Workerman[server.php] has been stopped
+2018-02-05 12:05:36 pid:18549 Workerman[server.php] stop success
+2018-02-05 12:05:38 pid:18551 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:18:22 pid:18723 Workerman[server.php] stop 
+2018-02-05 14:18:22 pid:18723 Workerman[server.php] is stoping ...
+2018-02-05 14:18:22 pid:18554 Workerman[server.php] stopping ...
+2018-02-05 14:18:22 pid:18554 Workerman[server.php] has been stopped
+2018-02-05 14:18:22 pid:18723 Workerman[server.php] stop success
+2018-02-05 14:18:24 pid:18725 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:22:09 pid:18749 Workerman[server.php] stop 
+2018-02-05 14:22:09 pid:18749 Workerman[server.php] is stoping ...
+2018-02-05 14:22:09 pid:18728 Workerman[server.php] stopping ...
+2018-02-05 14:22:09 pid:18728 Workerman[server.php] has been stopped
+2018-02-05 14:22:09 pid:18749 Workerman[server.php] stop success
+2018-02-05 14:22:11 pid:18751 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:23:19 pid:18761 Workerman[server.php] stop 
+2018-02-05 14:23:19 pid:18761 Workerman[server.php] is stoping ...
+2018-02-05 14:23:19 pid:18754 Workerman[server.php] stopping ...
+2018-02-05 14:23:19 pid:18754 Workerman[server.php] has been stopped
+2018-02-05 14:23:19 pid:18761 Workerman[server.php] stop success
+2018-02-05 14:23:22 pid:18763 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:24:45 pid:18773 Workerman[server.php] stop 
+2018-02-05 14:24:45 pid:18773 Workerman[server.php] is stoping ...
+2018-02-05 14:24:45 pid:18766 Workerman[server.php] stopping ...
+2018-02-05 14:24:45 pid:18766 Workerman[server.php] has been stopped
+2018-02-05 14:24:45 pid:18773 Workerman[server.php] stop success
+2018-02-05 14:24:47 pid:18775 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:24:50 pid:18779 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:28
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(28): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 28, Array)
+#1 [internal function]: app\socket\controller\Worker->onConnect(Object(Workerman\Connection\TcpConnection))
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2162): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\Worker->acceptConnection(Resource id #71)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 14:24:50 pid:18779 Worker process terminated
+2018-02-05 14:24:50 pid:18778 worker[建东直播聊天室:18779] exit with status 64000
+2018-02-05 14:25:01 pid:18783 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:28
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(28): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 28, Array)
+#1 [internal function]: app\socket\controller\Worker->onConnect(Object(Workerman\Connection\TcpConnection))
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2162): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\Worker->acceptConnection(Resource id #71)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#13 [internal function]: think\worker\Server->__construct()
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#17 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#18 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#19 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#20 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#21 {main}
+2018-02-05 14:25:01 pid:18783 Worker process terminated
+2018-02-05 14:25:01 pid:18778 worker[建东直播聊天室:18783] exit with status 64000
+2018-02-05 14:26:01 pid:18788 Workerman[server.php] stop 
+2018-02-05 14:26:01 pid:18788 Workerman[server.php] is stoping ...
+2018-02-05 14:26:01 pid:18778 Workerman[server.php] stopping ...
+2018-02-05 14:26:01 pid:18778 Workerman[server.php] has been stopped
+2018-02-05 14:26:01 pid:18788 Workerman[server.php] stop success
+2018-02-05 14:26:02 pid:18790 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:26:04 pid:18796 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:20
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(20): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 20, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 'tom')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 'tom')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 14:26:04 pid:18796 Worker process terminated
+2018-02-05 14:26:04 pid:18793 worker[建东直播聊天室:18796] exit with status 64000
+2018-02-05 14:26:11 pid:18795 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$instance in /var/www/html/jiandong/application/socket/controller/Worker.php:20
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(20): think\Error::appError(8, 'Undefined prope...', '/var/www/html/j...', 20, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 'tom')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 'tom')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 14:26:11 pid:18795 Worker process terminated
+2018-02-05 14:26:11 pid:18793 worker[建东直播聊天室:18795] exit with status 64000
+2018-02-05 14:31:59 pid:18812 Workerman[server.php] stop 
+2018-02-05 14:31:59 pid:18812 Workerman[server.php] is stoping ...
+2018-02-05 14:31:59 pid:18793 Workerman[server.php] stopping ...
+2018-02-05 14:31:59 pid:18793 Workerman[server.php] has been stopped
+2018-02-05 14:31:59 pid:18812 Workerman[server.php] stop success
+2018-02-05 14:32:02 pid:18814 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:32:42 pid:18820 Workerman[server.php] stop 
+2018-02-05 14:32:42 pid:18820 Workerman[server.php] is stoping ...
+2018-02-05 14:32:42 pid:18817 Workerman[server.php] stopping ...
+2018-02-05 14:32:42 pid:18817 Workerman[server.php] has been stopped
+2018-02-05 14:32:42 pid:18820 Workerman[server.php] stop success
+2018-02-05 14:32:43 pid:18822 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:37:21 pid:18869 Workerman[server.php] stop 
+2018-02-05 14:37:21 pid:18869 Workerman[server.php] is stoping ...
+2018-02-05 14:37:21 pid:18825 Workerman[server.php] stopping ...
+2018-02-05 14:37:21 pid:18825 Workerman[server.php] has been stopped
+2018-02-05 14:37:21 pid:18869 Workerman[server.php] stop success
+2018-02-05 14:37:23 pid:18871 Workerman[server.php] start in DAEMON mode
+2018-02-05 14:50:50 pid:18892 Workerman[server.php] stop 
+2018-02-05 14:50:50 pid:18892 Workerman[server.php] is stoping ...
+2018-02-05 14:50:50 pid:18874 Workerman[server.php] stopping ...
+2018-02-05 14:50:50 pid:18874 Workerman[server.php] has been stopped
+2018-02-05 14:50:50 pid:18892 Workerman[server.php] stop success
+2018-02-05 14:59:27 pid:18924 Workerman[server.php] start in DAEMON mode
+2018-02-05 16:21:39 pid:19204 Workerman[server.php] stop 
+2018-02-05 16:21:39 pid:19204 Workerman[server.php] is stoping ...
+2018-02-05 16:21:39 pid:18927 Workerman[server.php] stopping ...
+2018-02-05 16:21:39 pid:18927 Workerman[server.php] has been stopped
+2018-02-05 16:21:39 pid:19204 Workerman[server.php] stop success
+2018-02-05 22:36:54 pid:19854 Workerman[server.php] start in DAEMON mode
+2018-02-05 22:38:03 pid:19862 Workerman[server.php] stop 
+2018-02-05 22:38:03 pid:19862 Workerman[server.php] is stoping ...
+2018-02-05 22:38:03 pid:19857 Workerman[server.php] stopping ...
+2018-02-05 22:38:03 pid:19857 Workerman[server.php] has been stopped
+2018-02-05 22:38:03 pid:19862 Workerman[server.php] stop success
+2018-02-05 22:40:04 pid:19878 Workerman[server.php] start in DAEMON mode
+2018-02-05 23:02:56 pid:19960 Workerman[server.php] start in DAEMON mode
+2018-02-05 23:02:56 pid:19960 Workerman[server.php] already running
+2018-02-05 23:03:04 pid:19962 Workerman[server.php] stop 
+2018-02-05 23:03:04 pid:19962 Workerman[server.php] is stoping ...
+2018-02-05 23:03:04 pid:19881 Workerman[server.php] stopping ...
+2018-02-05 23:03:04 pid:19881 Workerman[server.php] has been stopped
+2018-02-05 23:03:04 pid:19962 Workerman[server.php] stop success
+2018-02-05 23:03:08 pid:19964 Workerman[server.php] start in DAEMON mode
+2018-02-05 23:03:17 pid:19970 think\exception\ErrorException: Trying to get property of non-object in /var/www/html/jiandong/application/socket/controller/Worker.php:39
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(39): think\Error::appError(8, 'Trying to get p...', '/var/www/html/j...', 39, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 'tom')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 'tom')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#17 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#18 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#19 {main}
+2018-02-05 23:03:17 pid:19970 Worker process terminated
+2018-02-05 23:03:17 pid:19967 worker[建东直播聊天室:19970] exit with status 64000
+2018-02-05 23:03:38 pid:19972 think\exception\ErrorException: Trying to get property of non-object in /var/www/html/jiandong/application/socket/controller/Worker.php:39
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(39): think\Error::appError(8, 'Trying to get p...', '/var/www/html/j...', 39, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 'dgdfd')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 'dgdfd')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#13 [internal function]: think\worker\Server->__construct()
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#17 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#18 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#19 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#20 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#21 {main}
+2018-02-05 23:03:38 pid:19972 Worker process terminated
+2018-02-05 23:03:38 pid:19967 worker[建东直播聊天室:19972] exit with status 64000
+2018-02-05 23:26:02 pid:19973 think\exception\ErrorException: Trying to get property of non-object in /var/www/html/jiandong/application/socket/controller/Worker.php:39
+Stack trace:
+#0 /var/www/html/jiandong/application/socket/controller/Worker.php(39): think\Error::appError(8, 'Trying to get p...', '/var/www/html/j...', 39, Array)
+#1 [internal function]: app\socket\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 'tom')
+#2 /var/www/html/jiandong/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 'tom')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #84)
+#4 /var/www/html/jiandong/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#5 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#10 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/html/jiandong/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#12 /var/www/html/jiandong/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#13 [internal function]: think\worker\Server->__construct()
+#14 /var/www/html/jiandong/thinkphp/library/think/App.php(216): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/jiandong/thinkphp/library/think/Loader.php(400): think\App::invokeClass('app\\socket\\cont...')
+#16 /var/www/html/jiandong/thinkphp/library/think/App.php(388): think\Loader::controller('worker', 'controller', false, 'Error')
+#17 /var/www/html/jiandong/thinkphp/library/think/App.php(296): think\App::module(Array, Array, true)
+#18 /var/www/html/jiandong/thinkphp/library/think/App.php(124): think\App::exec(Array, Array)
+#19 /var/www/html/jiandong/thinkphp/start.php(18): think\App::run()
+#20 /var/www/html/jiandong/server.php(11): require('/var/www/html/j...')
+#21 {main}
+2018-02-05 23:26:02 pid:19973 Worker process terminated
+2018-02-05 23:26:02 pid:19967 worker[建东直播聊天室:19973] exit with status 64000

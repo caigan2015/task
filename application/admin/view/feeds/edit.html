@@ -1,0 +1,89 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">类型：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box" style="width: 150px">
+                    <select name="type" class="select">
+                        <option value="1">投诉</option>
+                        <option value="2">建议</option>
+                        <option value="3">其它</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">用户：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo ? $vo.user.username:''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">标题：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.title ?? ''}
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">手机号码：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.phone ?? ''}
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">内容：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea class="textarea" placeholder="" disabled>{$vo.content ?? ''}</textarea>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">备注：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea class="textarea" placeholder="" name="remark">{$vo.remark ?? ''}</textarea>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">IP地址：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.ip ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">来源：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box" style="width: 150px">
+                    <select name="source" class="select">
+                        <option value="1">公众号</option>
+                        <option value="2">APP</option>
+                        <option value="3">PC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script>
+    $(function () {
+        $("[name='type']").find("[value='{$vo.type ?? ''}']").attr("selected", true).prop('disabled',true);
+        $("[name='type']").prop('disabled',true);
+        $("[name='source']").find("[value='{$vo.source ?? ''}']").attr("selected", true).prop('disabled',true);
+        $("[name='source']").prop('disabled',true);
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+    })
+</script>
+{/block}

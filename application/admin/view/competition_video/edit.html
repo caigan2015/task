@@ -1,0 +1,141 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+        <input type="hidden" name="competition_id" value="{$vo.competition_id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>标题：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="" name="title" value="{$vo.title ?? ''}"  datatype="*" nullmsg="请填写标题">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">简介：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea class="textarea" placeholder="" name="summary" onKeyUp="textarealength(this, 500)">{$vo.summary ?? ''}</textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/500</p>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>封面图片：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text"  name="main_img_url" value="{$vo?$vo->getData('main_img_url'):''}" id="upload" placeholder="请点击后面的上传按钮" style="width: 70%">
+                <input type="hidden" name="image_id" id="image_id"  value="{$vo.image_id ?? 0}">
+                <input type="hidden" name="from" id="from" value="{$vo.from ?? 1}">
+                <button type="button" class="btn btn-primary radius" onclick="layer_open('文件上传','{:\\think\\Url::build(\'Upload/index\', [\'id\' => \'upload\',\'image_id\' => \'image_id\',\'from\' => \'from\'])}/?XDEBUG_SESSION_START=12669')">上传</button>
+                <a onclick="$(this).attr('href', $('#upload').val())" type="button" class="btn btn-success radius" data-lightbox="preview">预览</a>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>类型：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box" style="width:150px">
+                    <select name="type" class="select" id="video-type">
+                        {volist name=":config('app.video_type')" id="vs"}
+                        <option value="{$key}">{$vs}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl off-live">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>影音资源：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="{$vo?$vo->getData('play_url'):''}" id="name" name="play_url" placeholder="请点击后面的添加按钮" style="width: 70%">
+                <input type="hidden" name="video_id" id="video-id"  value="{$vo.video_id ?? ''}" >
+                <button type="button" class="btn btn-primary radius" onclick="$('#fileupload').click()" >上传</button>
+                <input id="fileupload" type="file" name="file" style="display: none;" data-url="{:\\think\\Url::build('upload/alioss')}">
+                <a onclick="layer_open('播放',$('#name').val())" type="button" class="btn btn-success radius" data-lightbox="preview">播放</a>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl off-live">
+            <label class="form-label col-xs-3 col-sm-3"></label>
+            <div class="col-xs-3 col-sm-6">说明：如果上传失败，请点击这里下载打开<a href="{:\\think\\Url::build('downloadAlioss')}" STYLE="COLOR:darkblue">ossbrowser客户端</a>操作。</div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>发布时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text Wdate" placeholder="发布时间" name="publish_time" value="{$vo.publish_time ?? ''}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" {/literal}   datatype="/\w{3,6}/i" nullmsg="请填写发布时间" errormsg="时间格式错误"  style="width:150px">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}
+{block name="style"}
+<link rel="stylesheet" href="__LIB__/lightbox2/css/lightbox.min.css">
+{/block}
+{block name="script"}
+<script src="__LIB__/lightbox2/js/lightbox.min.js"></script>
+<script src="__LIB__/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="__LIB__/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+<script src="__LIB__/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script type="text/javascript" src="__LIB__/My97DatePicker/WdatePicker.js"></script>
+<script>
+    var c_id = $("[name='competition_id']").val();
+    if(window.parent.frames.length > 0 && !c_id){
+        var competition_id = parent.document.getElementById('competition_id').value;
+        if(competition_id){
+            $("[name='competition_id']").val(competition_id);
+        }
+    }
+    $(function () {
+        var obj = document.getElementById('video-type');
+        $(obj).find("[value='{$vo.type ?? ''}']").attr("selected", true);
+//        _onchange(obj);
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+
+        $("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+    });
+
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        dropZone: $('#drag'),
+        start: function () {
+            layer_msg = layer.msg('正在上传中…', {time: 100000000});
+        },
+        progressall: function (e, data) {
+            $('.layui-layer-msg .layui-layer-content').html('已上传' + (data.loaded / data.total * 100).toFixed(2) + '%');
+        },
+        done: function (e, data) {
+            console.log(data);
+            if(data.result.code!=0){
+                layer.alert(data.result.msg?data.result.msg:'系统繁忙……');
+                return;
+            }
+//            console.log(e);
+            layer.close(layer_msg);
+            $('#video-id').val(data.result.data.file_id);
+            $('#name').val(data.result.data.name);
+        }
+    });
+
+</script>
+{/block}

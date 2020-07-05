@@ -1,0 +1,11 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.order_no|high_light=$Request.param.keywords}</td>
+<td>{$vo.total_price}</td>
+<td>{$vo.user.username|high_light=$Request.param.username}</td>
+<td>{$vo.phone|high_light=$Request.param.keywords}</td>
+<td>{$vo.name|high_light=$Request.param.keywords}</td>
+<td>{$vo.pay_amount}</td>
+<td>{$vo.pay_way}</td>
+<td>{$vo.pay_time}</td>
+<td>{$vo.status_text}</td>
+<td>{$vo.create_time}</td>

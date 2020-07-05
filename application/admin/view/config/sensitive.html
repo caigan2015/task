@@ -1,0 +1,41 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>敏感词：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea style="height: 500px;" class="textarea" placeholder="" name="allergicWord" onKeyUp="textarealength(this, 5000)">{$allergicWord ?? ''}</textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/50000</p>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"></label>
+            <div class="col-xs-3 col-sm-6" style="color: #FF2F2F">注意：一词一行，请回车换行</div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="reset" class="btn btn-default radius ml-20">&nbsp;&nbsp;重置&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script>
+    $(function () {
+        $("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+    })
+</script>
+{/block}

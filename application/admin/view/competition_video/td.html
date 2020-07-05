@@ -1,0 +1,8 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.title|high_light=$Request.param.search}</td>
+<td>{$vo.competition?$vo.competition.title:'非赛事'}</td>
+<td>{$vo.type_text}</td>
+<td><img src="{$vo.main_img_url}" alt="" style="width: 50px;height: 50px"></td>
+<td>{if condition="$vo.video_id eq 0"}{$vo.play_url}{else/}<a href="javascript:void (0)" onclick="layer_open('正在播放{$vo.title}','{$vo.file.name}')">{$vo.file.name}</a>{/if}<!--<video src="{$vo.file.name}" style="width:50px;height: 50px" controls></video>--></td>
+<td>{$vo.file.size} KB</td>
+<td>{$vo.publish_time}</td>

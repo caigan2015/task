@@ -1,0 +1,24 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+        <div class="select-box" style="width:120px">
+            <select name="status" class="select">
+                <option value="" selected>全部状态</option>
+                {if condition="$Request.param.status eq '0'"}
+                    <option value="0" selected="selected">禁用</option>
+                    {else/}
+                    <option value="0">禁用</option>
+                {/if}
+                {if condition="$Request.param.status eq '1'"}
+                    <option value="1" selected="selected">正常</option>
+                    {else/}
+                    <option value="1">正常</option>
+                {/if}
+            </select>
+        </div>
+        注册时间：
+        <input type="text" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  name="stime" value="{$Request.param.stime}" id="datemin" class="input-text Wdate"  style="width:120px">
+        -
+        <input type="text" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  name="etime" value="{$Request.param.etime}" id="datemax" class="input-text Wdate"  style="width:120px">
+        <input type="text" class="input-text" style="width:250px" placeholder="账号或手机号码查询" value="{$Request.param.keywords}" id="" name="keywords">
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+
+</form>

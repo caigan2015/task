@@ -1,0 +1,21 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <input type="text" class="input-text" style="width:250px" placeholder="赛事标题" name="search" value="{$Request.param.search}" >
+    <div class="select-box" style="width:250px">
+        <select name="type" class="select">
+            <option value="">选择类型</option>
+            <option value="1">版权私有</option>
+            <option value="2">公共资源</option>
+        </select>
+    </div>
+    <input type="text" class="input-text Wdate" style="width:120px" placeholder="比赛时间" name="stime" value="{$Request.param.stime}" id="datemin" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >
+    -
+    <input type="text" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  name="etime" value="{$Request.param.etime}" id="datemax" class="input-text Wdate"  style="width:120px">
+    <div class="select-box" style="width:250px">
+        <select name="is_hot" class="select">
+            <option value="">热点赛事</option>
+            <option value="1">是</option>
+            <option value="0">否</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

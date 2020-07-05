@@ -1,0 +1,125 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>名称：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="名称" name="title" value="{$vo.title ?? ''}"  datatype="*" nullmsg="名称不能为空">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">描述：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea class="textarea" placeholder="" name="description" onKeyUp="textarealength(this, 100)">{$vo.description ?? ''}</textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>客户端：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                    <select name="type" class="select" datatype="*" nullmsg="客户端不能为空">
+                        <option value="1">移动端</option>
+                        <option value="2">PC端</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">位置：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div class="select-box">
+                <select name="position" class="select" datatype="*" nullmsg="位置不能为空">
+                    <option value="">请选择</option>
+                    {volist name=":config('app.banners_position')" id="pv"}
+                    <option value="{$key}"> {$pv} </option>
+                    {/volist}
+                </select>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>图片路径：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text"  name="img_url" value="{$vo?$vo->getData('img_url'):''}" id="upload" placeholder="请点击后面的上传按钮" datatype="*" nullmsg="请填写图片url"  style="width: 70%">
+                <input type="hidden" name="image_id" id="image_id"  value="{$vo.image_id ?? 0}">
+                <input type="hidden" name="from" id="from" value="{$vo.from ?? 1}">
+                <button type="button" class="btn btn-primary radius" onclick="layer_open('文件上传','{:\\think\\Url::build(\'Upload/index\', [\'id\' => \'upload\',\'image_id\' => \'image_id\',\'from\' => \'from\'])}')">上传</button>
+                <a onclick="$(this).attr('href', $('#upload').val())" type="button" class="btn btn-success radius" data-lightbox="preview">预览</a>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">跳转链接：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" placeholder="跳转链接" name="jump_url" value="{$vo.jump_url ?? ''}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">显示：</label>
+            <div class="formControls col-xs-6 col-sm-6 skin-minimal">
+                <div class="radio-box">
+                    <input type="radio" name="display" id="display-1" value="1">
+                    <label for="display-1">显示</label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="display" id="display-0" value="0">
+                    <label for="display-0">隐藏</label>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">排序：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="number" class="input-text" placeholder="排序" name="sort" value="{$vo.sort ?? '0'}" >
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}
+
+{block name="style"}
+<link rel="stylesheet" href="__LIB__/lightbox2/css/lightbox.min.css">
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script src="__LIB__/lightbox2/js/lightbox.min.js"></script>
+<script>
+    $(function () {
+        $("[name='display'][value='{$vo.display ?? '1'}']").prop("checked", true);
+        $("[name='type']").find("[value='{$vo.type ?? ''}']").attr("selected", true);
+        $("[name='position']").find("[value='{$vo.position ?? ''}']").attr("selected", true);
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+        $("#form").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret){
+                ajax_progress(ret);
+            }
+        });
+    })
+</script>
+{/block}

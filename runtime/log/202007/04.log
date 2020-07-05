@@ -1,0 +1,3647 @@
+---------------------------------------------------------------
+[ 2020-07-04T14:02:04+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.611134s][吞吐率：1.64req/s] [内存消耗：6,872.58kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.091343s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:12:02+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.102331s][吞吐率：9.77req/s] [内存消耗：6,872.68kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.017359s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:12:08+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.061906s][吞吐率：16.15req/s] [内存消耗：6,872.68kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005766s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:12:27+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.058973s][吞吐率：16.96req/s] [内存消耗：6,872.68kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004650s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:12:36+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.067331s][吞吐率：14.85req/s] [内存消耗：6,872.68kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004681s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:14:30+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.071335s][吞吐率：14.02req/s] [内存消耗：6,872.49kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005692s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:15:13+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.057219s][吞吐率：17.48req/s] [内存消耗：6,845.09kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004710s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T14:16:30+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.061691s][吞吐率：16.21req/s] [内存消耗：6,872.68kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004813s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2054]SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:37:30+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：4.585590s][吞吐率：0.22req/s] [内存消耗：6,859.72kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.135400s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �R����??�Z��??��?�C�ٖ@?�ځB
+[G:\www\task\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2020-07-04T14:55:13+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.221877s][吞吐率：4.51req/s] [内存消耗：6,927.95kb] [文件加载：84]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.016046s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002094s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.058967s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1168 Unable to open underlying table which is differently defined or of non-MyISAM type or doesn't exist[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T15:04:43+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.301285s][吞吐率：3.32req/s] [内存消耗：6,941.02kb] [文件加载：79]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008952s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.206384s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007700s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.004175s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593846283) [ RunTime:0.180236s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:04:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/pub/login.html
+[ info ] www.task.jp/admin/pub/login.html [运行时间：0.196856s][吞吐率：5.08req/s] [内存消耗：7,112.49kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007335s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ G:\www\task\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.080992s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001368s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002092s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1593846283) [ RunTime:0.066632s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:04:44+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html
+[ info ] www.task.jp/captcha.html [运行时间：0.074439s][吞吐率：13.43req/s] [内存消耗：1,675.41kb] [文件加载：50]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ G:\www\task\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T15:04:53+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/pub/checklogin.html
+[ info ] www.task.jp/admin/pub/checklogin.html [运行时间：0.665456s][吞吐率：1.50req/s] [内存消耗：7,035.26kb] [文件加载：82]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'origin' => 'http://www.task.jp',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'scij',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004343s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ G:\www\task\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.064101s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005066s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.006931s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.071657s ]
+[ sql ] [ SQL ] UPDATE `t_admin_user`  SET `last_login_time`=1593846293,`login_count`=login_count+1,`last_login_ip`='127.0.0.1'  WHERE  `id` = 1 [ RunTime:0.123230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.011112s ]
+[ sql ] [ SQL ] INSERT INTO `t_login_log` (`uid` , `login_ip` , `login_location` , `login_browser` , `login_os`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Chrome(83.0.4103.116)' , 'Windows 10') [ RunTime:0.130510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.004534s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"scij\";}' , 1593846293) [ RunTime:0.057763s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:04:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.task.jp/admin/index/index.html [运行时间：0.186828s][吞吐率：5.35req/s] [内存消耗：7,310.95kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008828s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.046643s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001251s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.001913s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.001974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.023968s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002438s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593846293) [ RunTime:0.043317s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:04:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.125600s][吞吐率：7.96req/s] [内存消耗：7,200.80kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009428s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.048376s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001459s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.002108s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593846294) [ RunTime:0.046296s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:05:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_group/index.html
+[ info ] www.task.jp/admin/admin_group/index.html [运行时间：0.238479s][吞吐率：4.19req/s] [内存消耗：7,753.91kb] [文件加载：87]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005608s ]
+[ info ] [ RUN ] app\admin\controller\AdminGroup->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_group\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.046216s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002009s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.002195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin_group` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.048872s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_group` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002899s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_group/index.html' , 'admin' , 'AdminGroup' , 'index' , 'GET' , 'a:0:{}' , 1593846308) [ RunTime:0.042177s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:31:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.task.jp/admin/index/index.html [运行时间：0.173019s][吞吐率：5.78req/s] [内存消耗：7,052.95kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.027958s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.038372s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002911s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.002877s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.002823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.003111s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.001714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002475s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593847916) [ RunTime:0.034782s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.169294s][吞吐率：5.91req/s] [内存消耗：6,985.68kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.013128s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.034520s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003944s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.004452s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002244s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593847916) [ RunTime:0.031408s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:32:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.task.jp/admin/index/index.html [运行时间：0.102855s][吞吐率：9.72req/s] [内存消耗：7,052.95kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007824s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.035976s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003191s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.002242s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.001805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.001462s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.001511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593847921) [ RunTime:0.033650s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:32:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.107103s][吞吐率：9.34req/s] [内存消耗：6,985.68kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.012270s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.020129s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001897s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.001927s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001794s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593847921) [ RunTime:0.017736s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:32:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.task.jp/admin/index/index.html [运行时间：0.179250s][吞吐率：5.58req/s] [内存消耗：7,052.95kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.019517s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.067771s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002692s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.003458s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.003363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.001915s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.001532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.003872s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593847975) [ RunTime:0.063067s ]
+---------------------------------------------------------------
+[ 2020-07-04T15:32:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.109283s][吞吐率：9.15req/s] [内存消耗：6,985.68kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007629s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.024247s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002296s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.005088s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.003218s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593847975) [ RunTime:0.020291s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:56:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.task.jp/admin/index/index.html [运行时间：0.172381s][吞吐率：5.80req/s] [内存消耗：7,052.95kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.025654s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.027131s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003563s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.005704s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.002898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.002117s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.002460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002125s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593856617) [ RunTime:0.024013s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:56:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.149792s][吞吐率：6.68req/s] [内存消耗：6,985.68kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009204s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.041049s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002375s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.004616s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.003248s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593856617) [ RunTime:0.036687s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:58:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_group/index.html
+[ info ] www.task.jp/admin/admin_group/index.html [运行时间：0.149916s][吞吐率：6.67req/s] [内存消耗：7,393.52kb] [文件加载：84]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005732s ]
+[ info ] [ RUN ] app\admin\controller\AdminGroup->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_group\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.076024s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002140s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.004889s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin_group` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001758s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_group` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001565s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_group/index.html' , 'admin' , 'AdminGroup' , 'index' , 'GET' , 'a:0:{}' , 1593856732) [ RunTime:0.073878s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_node/index.html
+[ info ] www.task.jp/admin/admin_node/index.html [运行时间：0.187031s][吞吐率：5.35req/s] [内存消耗：7,459.30kb] [文件加载：82]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_node',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006593s ]
+[ info ] [ RUN ] app\admin\controller\AdminNode->index[ G:\www\task\application\admin\controller\AdminNode.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_node\index.html [ array (
+  0 => 'modules',
+  1 => 'node',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.068172s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001878s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_node` WHERE  (  pid=0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002472s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_node/index.html' , 'admin' , 'AdminNode' , 'index' , 'GET' , 'a:0:{}' , 1593856747) [ RunTime:0.064991s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_node/index
+[ info ] www.task.jp/admin/admin_node/index [运行时间：0.114589s][吞吐率：8.73req/s] [内存消耗：6,985.09kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_node',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/admin_node/index.html',
+  'origin' => 'http://www.task.jp',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '22',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'group',
+  'module_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008176s ]
+[ info ] [ RUN ] app\admin\controller\AdminNode->index[ G:\www\task\application\admin\controller\AdminNode.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.035157s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001895s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.001627s ]
+[ sql ] [ SQL ] SELECT `group_id` FROM `t_admin_node` WHERE  (  isdelete=0 AND level=2 AND pid='1' ) [ RunTime:0.001734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon`,`sort`,`status` FROM `t_admin_group` `admin_group` WHERE  `isdelete` = 0  AND `id` IN (1,0,2,4,3,5,6,7) ORDER BY sort asc [ RunTime:0.010546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001451s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_node/index' , 'admin' , 'AdminNode' , 'index' , 'POST' , 'a:2:{s:4:\"type\";s:5:\"group\";s:9:\"module_id\";s:1:\"1\";}' , 1593856748) [ RunTime:0.033004s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_node/index
+[ info ] www.task.jp/admin/admin_node/index [运行时间：0.111681s][吞吐率：8.95req/s] [内存消耗：7,048.34kb] [文件加载：79]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_node',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/admin_node/index.html',
+  'origin' => 'http://www.task.jp',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '32',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'node',
+  'module_id' => '1',
+  'group_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005697s ]
+[ info ] [ RUN ] app\admin\controller\AdminNode->index[ G:\www\task\application\admin\controller\AdminNode.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.030074s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001888s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.001537s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_node` WHERE  (  isdelete=0 AND level=2 AND pid='1' AND group_id='1' ) UNION SELECT * FROM `t_admin_node` WHERE  (  isdelete=0 AND level>2 ) [ RunTime:0.028426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001481s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_node/index' , 'admin' , 'AdminNode' , 'index' , 'POST' , 'a:3:{s:4:\"type\";s:4:\"node\";s:9:\"module_id\";s:1:\"1\";s:8:\"group_id\";s:1:\"1\";}' , 1593856748) [ RunTime:0.028045s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_role/index.html
+[ info ] www.task.jp/admin/admin_role/index.html [运行时间：0.170564s][吞吐率：5.86req/s] [内存消耗：7,744.80kb] [文件加载：87]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_role',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007994s ]
+[ info ] [ RUN ] app\admin\controller\AdminRole->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_role\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.047096s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001822s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_role` [ RunTime:0.002118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin_role` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.002152s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_role` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002200s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_role/index.html' , 'admin' , 'AdminRole' , 'index' , 'GET' , 'a:0:{}' , 1593856749) [ RunTime:0.044139s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/node_map/index.html
+[ info ] www.task.jp/admin/node_map/index.html [运行时间：0.118641s][吞吐率：8.43req/s] [内存消耗：7,737.97kb] [文件加载：87]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'node_map',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007877s ]
+[ info ] [ RUN ] app\admin\controller\NodeMap->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\node_map\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.029840s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001892s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_node_map` [ RunTime:0.007461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_node_map` LIMIT 1 [ RunTime:0.018907s ]
+[ sql ] [ SQL ] SELECT * FROM `t_node_map` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001533s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/node_map/index.html' , 'admin' , 'NodeMap' , 'index' , 'GET' , 'a:0:{}' , 1593856751) [ RunTime:0.027673s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/web_log/index.html
+[ info ] www.task.jp/admin/web_log/index.html [运行时间：0.104994s][吞吐率：9.52req/s] [内存消耗：7,781.25kb] [文件加载：86]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'web_log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005651s ]
+[ info ] [ RUN ] app\admin\controller\WebLog->index[ G:\www\task\application\admin\controller\WebLog.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\web_log\index.html [ array (
+  0 => 'list',
+  1 => 'page',
+  2 => 'count',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.025026s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001986s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001711s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_web_log_all` `w` LEFT JOIN `t_admin_user` `u` ON `u`.`id`=`w`.`uid` LEFT JOIN `t_node_map` `m` ON `m`.`method`=w.method AND m.module=w.module AND m.controller=w.controller AND m.action=w.action LEFT JOIN `t_node_map` `md` ON `md`.`method`="ALL" AND md.module=w.module AND md.controller=w.controller AND md.action=w.action LIMIT 1 [ RunTime:0.011917s ]
+[ sql ] [ SQL ] SELECT `w`.`id`,`w`.`data`,`w`.`create_at`,`w`.`module`,`w`.`controller`,`w`.`action`,`w`.`method`,`u`.`realname`,`m`.`comment`,md.comment as default_comment FROM `t_web_log_all` `w` LEFT JOIN `t_admin_user` `u` ON `u`.`id`=`w`.`uid` LEFT JOIN `t_node_map` `m` ON `m`.`method`=w.method AND m.module=w.module AND m.controller=w.controller AND m.action=w.action LEFT JOIN `t_node_map` `md` ON `md`.`method`="ALL" AND md.module=w.module AND md.controller=w.controller AND md.action=w.action ORDER BY w.id desc LIMIT 0,20 [ RunTime:0.007989s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/web_log/index.html' , 'admin' , 'WebLog' , 'index' , 'GET' , 'a:0:{}' , 1593856752) [ RunTime:0.024726s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/node_map/index.html
+[ info ] www.task.jp/admin/node_map/index.html [运行时间：0.088028s][吞吐率：11.36req/s] [内存消耗：7,379.58kb] [文件加载：84]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'node_map',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006200s ]
+[ info ] [ RUN ] app\admin\controller\NodeMap->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\node_map\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.031482s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001899s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_node_map` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_node_map` LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `t_node_map` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001477s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/node_map/index.html' , 'admin' , 'NodeMap' , 'index' , 'GET' , 'a:0:{}' , 1593856753) [ RunTime:0.029447s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ info ] www.task.jp/admin/admin_user/index.html [运行时间：0.281878s][吞吐率：3.55req/s] [内存消耗：7,743.66kb] [文件加载：87]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006475s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.044047s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004216s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.004918s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin_user` WHERE  `isdelete` = 0  AND `id` > 1 LIMIT 1 [ RunTime:0.002277s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `isdelete` = 0  AND `id` > 1 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001493s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1593856755) [ RunTime:0.041862s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:23+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_node/index.html
+[ info ] www.task.jp/admin/admin_node/index.html [运行时间：0.192065s][吞吐率：5.21req/s] [内存消耗：7,036.06kb] [文件加载：79]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_node',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007237s ]
+[ info ] [ RUN ] app\admin\controller\AdminNode->index[ G:\www\task\application\admin\controller\AdminNode.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_node\index.html [ array (
+  0 => 'modules',
+  1 => 'node',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.116103s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002575s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.001862s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_node` WHERE  (  pid=0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.001669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002909s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_node/index.html' , 'admin' , 'AdminNode' , 'index' , 'GET' , 'a:0:{}' , 1593856763) [ RunTime:0.112249s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:24+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_node/index
+[ info ] www.task.jp/admin/admin_node/index [运行时间：0.232677s][吞吐率：4.30req/s] [内存消耗：6,985.09kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_node',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/admin_node/index.html',
+  'origin' => 'http://www.task.jp',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '22',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'group',
+  'module_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007238s ]
+[ info ] [ RUN ] app\admin\controller\AdminNode->index[ G:\www\task\application\admin\controller\AdminNode.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.161079s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001721s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT `group_id` FROM `t_admin_node` WHERE  (  isdelete=0 AND level=2 AND pid='1' ) [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.001887s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon`,`sort`,`status` FROM `t_admin_group` `admin_group` WHERE  `isdelete` = 0  AND `id` IN (1,0,2,4,3,5,6,7) ORDER BY sort asc [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001533s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_node/index' , 'admin' , 'AdminNode' , 'index' , 'POST' , 'a:2:{s:4:\"type\";s:5:\"group\";s:9:\"module_id\";s:1:\"1\";}' , 1593856764) [ RunTime:0.158772s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:24+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_node/index
+[ info ] www.task.jp/admin/admin_node/index [运行时间：0.138303s][吞吐率：7.23req/s] [内存消耗：7,048.34kb] [文件加载：79]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_node',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/admin_node/index.html',
+  'origin' => 'http://www.task.jp',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '32',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'node',
+  'module_id' => '1',
+  'group_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006342s ]
+[ info ] [ RUN ] app\admin\controller\AdminNode->index[ G:\www\task\application\admin\controller\AdminNode.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.050951s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002072s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.002116s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_node` WHERE  (  isdelete=0 AND level=2 AND pid='1' AND group_id='1' ) UNION SELECT * FROM `t_admin_node` WHERE  (  isdelete=0 AND level>2 ) [ RunTime:0.006867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002195s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_node/index' , 'admin' , 'AdminNode' , 'index' , 'POST' , 'a:3:{s:4:\"type\";s:4:\"node\";s:9:\"module_id\";s:1:\"1\";s:8:\"group_id\";s:1:\"1\";}' , 1593856764) [ RunTime:0.047833s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:59:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_group/index.html
+[ info ] www.task.jp/admin/admin_group/index.html [运行时间：0.110907s][吞吐率：9.02req/s] [内存消耗：7,393.52kb] [文件加载：84]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009655s ]
+[ info ] [ RUN ] app\admin\controller\AdminGroup->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\admin_group\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.037975s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001873s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.001517s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin_group` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_group` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001373s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/admin_group/index.html' , 'admin' , 'AdminGroup' , 'index' , 'GET' , 'a:0:{}' , 1593856767) [ RunTime:0.036086s ]
+---------------------------------------------------------------
+[ 2020-07-04T18:06:40+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.037615s][吞吐率：26.59req/s] [内存消耗：1,610.70kb] [文件加载：49]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:10:15+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ info ] www.task.jp/admin [运行时间：0.266575s][吞吐率：3.75req/s] [内存消耗：7,052.09kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008159s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.183560s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002177s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.002954s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.002477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.002338s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.001523s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593857415) [ RunTime:0.181273s ]
+---------------------------------------------------------------
+[ 2020-07-04T18:10:15+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.116179s][吞吐率：8.61req/s] [内存消耗：6,985.61kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009164s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.021718s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004223s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.002521s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.003520s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593857415) [ RunTime:0.017325s ]
+---------------------------------------------------------------
+[ 2020-07-04T18:12:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/banners/index.html
+[ info ] www.task.jp/admin/banners/index.html [运行时间：0.187742s][吞吐率：5.33req/s] [内存消耗：7,735.24kb] [文件加载：87]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'banners',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007556s ]
+[ info ] [ RUN ] app\admin\controller\Banners->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\banners\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.054703s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011705s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_banners` [ RunTime:0.002557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_banners` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.003396s ]
+[ sql ] [ SQL ] SELECT * FROM `t_banners` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002427s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/banners/index.html' , 'admin' , 'Banners' , 'index' , 'GET' , 'a:0:{}' , 1593857531) [ RunTime:0.051227s ]
+---------------------------------------------------------------
+[ 2020-07-04T18:12:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/member/index.html
+[ info ] www.task.jp/admin/member/index.html [运行时间：0.521151s][吞吐率：1.92req/s] [内存消耗：7,306.45kb] [文件加载：85]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006173s ]
+[ info ] [ RUN ] app\admin\controller\Member->index[ G:\www\task\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004406s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.t_member' doesn't exist[G:\www\task\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2020-07-04T18:19:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login
+[ info ] www.task.jp/index/login [运行时间：0.061009s][吞吐率：16.39req/s] [内存消耗：1,663.73kb] [文件加载：52]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:20:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/login
+[ info ] www.task.jp/index/index/login [运行时间：0.077654s][吞吐率：12.88req/s] [内存消耗：1,874.02kb] [文件加载：55]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:32:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index
+[ info ] www.task.jp/index [运行时间：0.038565s][吞吐率：25.93req/s] [内存消耗：1,885.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:32:25+08:00 ] 127.0.0.1 127.0.0.1 GET /task/info
+[ info ] www.task.jp/task/info [运行时间：0.032275s][吞吐率：30.98req/s] [内存消耗：1,885.43kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'taskInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->taskInfo[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:32:33+08:00 ] 127.0.0.1 127.0.0.1 GET /user/login
+[ info ] www.task.jp/user/login [运行时间：0.053738s][吞吐率：18.61req/s] [内存消耗：1,885.41kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:32:41+08:00 ] 127.0.0.1 127.0.0.1 GET /user/profile
+[ info ] www.task.jp/user/profile [运行时间：0.032500s][吞吐率：30.77req/s] [内存消耗：1,885.44kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'profile',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->profile[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:32:50+08:00 ] 127.0.0.1 127.0.0.1 GET /user/offer/create
+[ info ] www.task.jp/user/offer/create [运行时间：0.030956s][吞吐率：32.30req/s] [内存消耗：1,885.51kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'createMyOffer',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->createMyOffer[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:01+08:00 ] 127.0.0.1 127.0.0.1 GET /user/offer/list
+[ info ] www.task.jp/user/offer/list [运行时间：0.030999s][吞吐率：32.26req/s] [内存消耗：1,885.50kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'myOfferList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->myOfferList[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:07+08:00 ] 127.0.0.1 127.0.0.1 GET /user/offer/info
+[ info ] www.task.jp/user/offer/info [运行时间：0.031518s][吞吐率：31.73req/s] [内存消耗：1,885.50kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'myOfferInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->myOfferInfo[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:15+08:00 ] 127.0.0.1 127.0.0.1 GET /user/offer/list
+[ info ] www.task.jp/user/offer/list [运行时间：0.046821s][吞吐率：21.36req/s] [内存消耗：1,885.50kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'myOfferList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->myOfferList[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:21+08:00 ] 127.0.0.1 127.0.0.1 GET /user/offer/order
+[ info ] www.task.jp/user/offer/order [运行时间：0.042160s][吞吐率：23.72req/s] [内存消耗：1,672.21kb] [文件加载：51]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'offer',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:32+08:00 ] 127.0.0.1 127.0.0.1 GET /taskk/order
+[ info ] www.task.jp/taskk/order [运行时间：0.029848s][吞吐率：33.50req/s] [内存消耗：1,672.01kb] [文件加载：51]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'taskk',
+    1 => 'order',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:37+08:00 ] 127.0.0.1 127.0.0.1 GET /task/order
+[ info ] www.task.jp/task/order [运行时间：0.035745s][吞吐率：27.98req/s] [内存消耗：1,927.64kb] [文件加载：59]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'order',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:52+08:00 ] 127.0.0.1 127.0.0.1 GET /task/order
+[ info ] www.task.jp/task/order [运行时间：0.046304s][吞吐率：21.60req/s] [内存消耗：1,927.97kb] [文件加载：59]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'order',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:33:56+08:00 ] 127.0.0.1 127.0.0.1 GET /task/order
+[ info ] www.task.jp/task/order [运行时间：0.046902s][吞吐率：21.32req/s] [内存消耗：1,885.76kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'taskOrder',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->taskOrder[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T18:39:22+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.091101s][吞吐率：10.98req/s] [内存消耗：1,919.13kb] [文件加载：59]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:G:\www\task\public/../application/index\view\index\index.html[G:\www\task\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2020-07-04T18:43:52+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.044088s][吞吐率：22.68req/s] [内存消耗：2,002.81kb] [文件加载：59]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ VIEW ] G:\www\task\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T19:23:11+08:00 ] 127.0.0.1 127.0.0.1 GET /user/login
+[ info ] www.task.jp/user/login [运行时间：0.041416s][吞吐率：24.15req/s] [内存消耗：1,887.16kb] [文件加载：56]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T19:24:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ info ] www.task.jp/admin [运行时间：0.134700s][吞吐率：7.42req/s] [内存消耗：7,064.93kb] [文件加载：80]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009995s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ G:\www\task\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.029829s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006435s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_node` [ RunTime:0.011303s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `t_admin_node` WHERE  (  status=1 AND group_id > 0 AND isdelete=0 ) ORDER BY sort asc [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_group` [ RunTime:0.001786s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `t_admin_group` WHERE  `id` IN (1,7,6,2,5,3,4)  AND `status` = 1  AND `isdelete` = 0 ORDER BY sort asc,id asc [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.003226s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1593861894) [ RunTime:0.025589s ]
+---------------------------------------------------------------
+[ 2020-07-04T19:24:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ info ] www.task.jp/admin/index/welcome.html [运行时间：0.136325s][吞吐率：7.34req/s] [内存消耗：6,998.45kb] [文件加载：78]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.011734s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ G:\www\task\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.032512s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003118s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.004974s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002857s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002963s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1593861895) [ RunTime:0.028411s ]
+---------------------------------------------------------------
+[ 2020-07-04T19:25:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/pub/logout.html
+[ info ] www.task.jp/admin/pub/logout.html [运行时间：0.152637s][吞吐率：6.55req/s] [内存消耗：7,113.32kb] [文件加载：81]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009833s ]
+[ info ] [ RUN ] app\admin\controller\Pub->logout[ G:\www\task\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] G:\www\task\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.063652s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002354s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.003173s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/pub/logout.html' , 'admin' , 'Pub' , 'logout' , 'GET' , 'a:0:{}' , 1593861902) [ RunTime:0.043267s ]
+---------------------------------------------------------------
+[ 2020-07-04T19:25:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/pub/login.html
+[ info ] www.task.jp/admin/pub/login.html [运行时间：0.138792s][吞吐率：7.21req/s] [内存消耗：6,935.96kb] [文件加载：77]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/logout.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010430s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ G:\www\task\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] G:\www\task\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.073397s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001917s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_web_log_all` [ RunTime:0.002538s ]
+[ sql ] [ SQL ] INSERT INTO `t_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Chrome(83.0.4103.116)' , 'http://www.task.jp/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1593861905) [ RunTime:0.058837s ]
+---------------------------------------------------------------
+[ 2020-07-04T19:25:06+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html
+[ info ] www.task.jp/captcha.html [运行时间：0.110807s][吞吐率：9.02req/s] [内存消耗：1,688.70kb] [文件加载：50]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.task.jp/admin/pub/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ G:\www\task\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T23:27:21+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/user/logout
+[ info ] www.task.jp/api/v1/user/logout [运行时间：0.308506s][吞吐率：3.24req/s] [内存消耗：2,066.06kb] [文件加载：72]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.User',
+    2 => 'logout',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\User->logout[ G:\www\task\application\api\controller\v1\User.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [200][G:\www\task\application\api\service\Token.php:204]
+---------------------------------------------------------------
+[ 2020-07-04T23:29:38+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.122668s][吞吐率：8.15req/s] [内存消耗：1,979.41kb] [文件加载：69]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'postman-token' => '30a0990c-7fcc-82bd-73cc-7f686fbf9630',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [200][G:\www\task\application\api\validate\BaseValidate.php:41]
+---------------------------------------------------------------
+[ 2020-07-04T23:30:37+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.148633s][吞吐率：6.73req/s] [内存消耗：1,980.59kb] [文件加载：69]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryUcupVxPXwTAeQ7v1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '766959c6-f179-0f9d-d5cf-9010276df67b',
+  'content-length' => '237',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@',
+  0 => '',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [200][G:\www\task\application\api\validate\BaseValidate.php:41]
+---------------------------------------------------------------
+[ 2020-07-04T23:30:44+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.039428s][吞吐率：25.36req/s] [内存消耗：1,980.59kb] [文件加载：69]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryh7IxzVwmBMA3yZwE',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '41406574-2660-90ec-ad87-3df0335799b9',
+  'content-length' => '243',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  0 => '',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [200][G:\www\task\application\api\validate\BaseValidate.php:41]
+---------------------------------------------------------------
+[ 2020-07-04T23:31:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.036595s][吞吐率：27.33req/s] [内存消耗：1,980.61kb] [文件加载：69]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryKiK6VY6QlehrqV6g',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '85d7ca46-8d9c-a6bf-2d93-6e9e080f5250',
+  'content-length' => '256',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [200][G:\www\task\application\api\validate\BaseValidate.php:41]
+---------------------------------------------------------------
+[ 2020-07-04T23:31:31+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.349154s][吞吐率：2.86req/s] [内存消耗：3,172.16kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarywKCNy2qkllSKxhQo',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'db620518-104c-1655-8e70-9d1e9d0b9987',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052704s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.024605s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.052611s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1593876691' for column 'register_time' at row 1[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:32:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.047317s][吞吐率：21.13req/s] [内存消耗：1,980.65kb] [文件加载：69]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryRj2KMS0Z5rvdEq7r',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '05112b31-96ca-85f9-3598-5a5b9eb25adb',
+  'content-length' => '356',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '12345',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [200][G:\www\task\application\api\validate\BaseValidate.php:41]
+---------------------------------------------------------------
+[ 2020-07-04T23:32:39+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.144607s][吞吐率：6.92req/s] [内存消耗：3,172.16kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryF1hK1l1EfksYLAuF',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '76e2184a-b532-a214-4fe3-b3db008058e5',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002049s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.083845s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.001301s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1593876759' for column 'register_time' at row 1[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:35:42+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.104547s][吞吐率：9.57req/s] [内存消耗：3,170.72kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryu5an1SCM1WdXFbwj',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '569f2799-5f19-3101-080a-b8e4b1499bb0',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003534s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003285s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.036997s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1593876942' for column 'update_time' at row 1[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:39:27+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.250475s][吞吐率：3.99req/s] [内存消耗：3,022.41kb] [文件加载：74]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary8YAkSUugIuCr1o2S',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '1256ffbd-d1d0-5e9e-23c5-acb224b02ee5',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002017s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.100860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.002311s ]
+---------------------------------------------------------------
+[ 2020-07-04T23:41:14+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.166383s][吞吐率：6.01req/s] [内存消耗：3,171.48kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7gglPc8hxgvGuSmp',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '22419ac5-0ced-57c8-3885-b7f474e7e450',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002264s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.086519s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.000882s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1593877274' for column 'register_time' at row 1[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:43:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：3,171.48kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryebtWblCQK1rAmP0b',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '5c42a466-a11f-7ade-dc35-5687aa49826a',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001976s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002663s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.000619s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1593877409' for column 'register_time' at row 1[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:45:23+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.074628s][吞吐率：13.40req/s] [内存消耗：3,171.80kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOPi9MG2XiTca9r1f',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '69463409-2c5d-50dc-023f-a10362f74945',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002302s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.005717s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.001014s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:49:06+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.077224s][吞吐率：12.95req/s] [内存消耗：3,171.81kb] [文件加载：83]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryL9LDDOrmPQMiTuUN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'a63b8ab4-f5b8-b3eb-556b-182e9e27b0bc',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001713s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.001915s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.000450s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'login_time' doesn't have a default value[G:\www\task\thinkphp\library\think\db\Connection.php:451]
+---------------------------------------------------------------
+[ 2020-07-04T23:54:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：105.608066s][吞吐率：0.01req/s] [内存消耗：3,904.24kb] [文件加载：85]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrP3V9WpQnXYk9gqW',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'b22d4ca7-448b-04cb-0b62-4b660bbc1d5b',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002030s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003067s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.000928s ]
+[ sql ] [ SQL ] INSERT INTO `t_user` (`e_mail` , `username` , `password` , `login_time` , `register_time` , `update_time`) VALUES ('366585748@qq.com' , 'caicaizi' , 'e10adc3949ba59abbe56e057f20f883e' , '2020-07-04 23:52:15' , '2020-07-04 23:52:15' , '2020-07-04 23:52:15') [ RunTime:0.062427s ]
+---------------------------------------------------------------
+[ 2020-07-04T23:54:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.091854s][吞吐率：10.89req/s] [内存消耗：1,685.52kb] [文件加载：51]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '50x',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrP3V9WpQnXYk9gqW',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'b22d4ca7-448b-04cb-0b62-4b660bbc1d5b',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T23:54:01+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.110869s][吞吐率：9.02req/s] [内存消耗：3,190.14kb] [文件加载：82]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylxyGzzXdO7IYxRIu',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '74240f84-c507-0d8f-8f7f-8fac1d2eb2a5',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003056s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.025181s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.000952s ]
+[ error ] [200][G:\www\task\application\api\service\Identify.php:228]
+---------------------------------------------------------------
+[ 2020-07-04T23:54:01+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.task.jp/ [运行时间：0.086187s][吞吐率：11.60req/s] [内存消耗：1,879.38kb] [文件加载：58]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ugelcfleanqhhl21als86n6v4h',
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\www\task\application\index\controller\Index.php ]
+[ info ] [ VIEW ] G:\www\task\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T23:54:27+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/user/register
+[ info ] www.task.jp/api/v1/user/register [运行时间：0.060522s][吞吐率：16.52req/s] [内存消耗：3,190.14kb] [文件加载：82]
+[ info ] [ LANG ] G:\www\task\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Identify',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-JP,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,zh-CN;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'chrome-extension://bodcagpbgdejbgpmjfhcamgjoebaddpl',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7BKA9Ox4zry1GAKg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'postman-token' => '58891d85-96d4-ed26-efa3-f871b963d463',
+  'content-length' => '357',
+  'connection' => 'keep-alive',
+  'host' => 'www.task.jp',
+)
+[ info ] [ PARAM ] array (
+  'e_mail' => '366585748@qq.com',
+  'username' => 'caicaizi',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Identify->register[ G:\www\task\application\api\controller\v1\Identify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002216s ] mysql:host=localhost;dbname=task;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002638s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `e_mail` = '366585748@qq.com' LIMIT 1 [ RunTime:0.000653s ]
+[ error ] [200][G:\www\task\application\api\service\Identify.php:228]

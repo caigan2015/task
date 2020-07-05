@@ -1,0 +1,137 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <div class="form form-horizontal">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">个人近照：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <img src="{$vo.photo ?? ''}" alt="" style="width: 80px;height: 80px"/>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">中文名：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.cn_name ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">性别：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.sex}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">出生日期：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.birthday ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">出生地点：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.birth_addr ?? ''}
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">身高：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.stature ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">体重：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.weight ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">籍贯：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.native ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">民族：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.native_place ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">联系电话：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.mobile ?? ''}
+            </div>
+        </div>
+<!--        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">头像：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" name="photo" value="{$vo?$vo->getData('photo') : ''}" id="upload" placeholder="请点击后面的上传按钮" style="width: 70%">
+                <button type="button" class="btn btn-primary radius" onclick="layer_open('文件上传','{:\\think\\Url::build(\'Upload/index\', [\'id\' => \'upload\'])}')">上传</button>
+                <a onclick="$(this).attr('href', $('#upload').val())" type="button" class="btn btn-success radius" data-lightbox="preview">预览</a>
+            </div>
+        </div>-->
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">个人简介：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.individual ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">服役俱乐部：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.team ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">球衣号码：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.number ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">位置：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.position ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">学校：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.school ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">成长经历：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.experience ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">技术特点：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.feature ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">荣誉：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.honor ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">评价：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.comment ?? ''}
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>会员有效日期：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.expire_time ?? ''}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

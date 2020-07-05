@@ -1,0 +1,24 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <input type="text" class="input-text" style="width:250px" placeholder="订单号/标题/预留手机号码" name="keywords" value="{$Request.param.keywords}" >
+    <input type="text" class="input-text" style="width:250px" placeholder="用户账户" name="username" value="{$Request.param.username}" >
+    <div class="select-box" style="width:150px">
+        <select name="pay_way" class="select">
+            <option value=""> 支付方式 </option>
+            {volist name=":config('order.pay_way')" id="vw"}
+            <option value="{$key}">{$vw}</option>
+            {/volist}
+        </select>
+    </div>
+    <div class="select-box" style="width:150px">
+        <select name="status" class="select">
+            <option value=""> 订单状态 </option>
+            {volist name=":config('order.pay_status')" id="vs"}
+            <option value="{$key}">{$vs}</option>
+            {/volist}
+        </select>
+    </div>
+    <input type="text" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  name="stime" value="{$Request.param.stime}" id="datemin" class="input-text Wdate"  style="width:120px">
+    -
+    <input type="text" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal}  name="etime" value="{$Request.param.etime}" id="datemax" class="input-text Wdate"  style="width:120px">
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

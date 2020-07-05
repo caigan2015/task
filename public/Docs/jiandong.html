@@ -1,0 +1,1835 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>jiandong</title></head><body><article class="markdown-body"><h1 id="h5"><a name="user-content-h5" href="#h5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>タスク公众号H5应用接口文档</h1>
+<div class="toc">
+<ul>
+<li><a href="#h5">タスク公众号H5应用接口文档</a><ul>
+<li><a href="#_1">接口调用规则</a></li>
+<li><a href="#1">1、用户登录获取令牌</a></li>
+<li><a href="#2">2、获取用户信息</a></li>
+<li><a href="#3">3、用户修改个人信息</a></li>
+<li><a href="#4">4、获取手机验证码</a></li>
+<li><a href="#5">5、关联(绑定)手机号</a></li>
+<li><a href="#6">6、获取球员信息</a></li>
+<li><a href="#7">7、获取球员赛事列表(手风琴)</a></li>
+<li><a href="#8">8、加入会员业务介绍</a></li>
+<li><a href="#9">9、提交订单</a></li>
+<li><a href="#10">10、订单取消</a></li>
+<li><a href="#11">11、订单详情</a></li>
+<li><a href="#12">12、关闭订单</a></li>
+<li><a href="#13">13、获取当前用户所有订单</a></li>
+<li><a href="#14">14、订单支付</a></li>
+<li><a href="#15">15、支付回调</a></li>
+<li><a href="#16">16、提交意见反馈</a></li>
+<li><a href="#17">17、赛事详情</a></li>
+<li><a href="#18">18、即将开始的赛事列表（分页）</a></li>
+<li><a href="#19-1">19-1、提交赛事报名</a></li>
+<li><a href="#19-2">19-2、取消赛事报名</a></li>
+<li><a href="#20">20、赛事历史播放列表（分页）</a></li>
+<li><a href="#21">21、获取广告位</a></li>
+<li><a href="#22">22、获取轮播图</a></li>
+<li><a href="#23">23、获取赛事直播列表（分页）</a></li>
+<li><a href="#24">24、进入播放后的回调操作（增加浏览量）</a></li>
+<li><a href="#25">25、获取在线直播人数</a></li>
+<li><a href="#26">26、直播聊天室</a></li>
+<li><a href="#27">27、视频详情</a></li>
+<li><a href="#28">28、直播详情</a></li>
+<li><a href="#29">29、获取会员参与过的所有球队列表</a></li>
+<li><a href="#30id">30、根据球队ID获取球队参与过的赛事列表</a></li>
+<li><a href="#31js">31、获取微信js接口调用前的配置信息</a></li>
+<li><a href="#32">32、搜索播放资源列表（直播与回放）</a></li>
+<li><a href="#33">33、获取页面配置项值</a></li>
+<li><a href="#34">34、聊天记录</a></li>
+<li><a href="#http">HTTP状态码</a></li>
+<li><a href="#_2">错误码</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul>
+<li>文档访问地址</li>
+</ul>
+<pre><code class="json">http://120.146.79.180/Docs/jiandong.html
+</code></pre>
+
+<ul>
+<li>接口访问地址</li>
+</ul>
+<pre><code class="json">http://120.146.79.180
+</code></pre>
+
+<h2 id="_1"><strong>接口调用规则</strong></h2>
+<p><strong>请求头部(header)</strong><br />
+<code>除获取令牌接口外，所有接口必须在请求头部携带TOKEN</code><br />
+<pre><code class="json">#参数名：token    值：633e83d9303e40cbff6ea81d468379dd
+</code></pre><br />
+<strong>请求主体(body)</strong><br />
+<pre><code class="json"># 请求格式  json
+# 请求例子
+# {
+#        &quot;param1&quot;: &quot;value1&quot;,
+#        &quot;param2&quot;: &quot;value2&quot;,
+#        &quot;param3&quot;: &quot;value3&quot;,
+#        ……
+# }
+#
+#
+# 返回格式 JSON
+# 返回字段
+#     * 请参考相应命令字说明
+# 返回例子1:查询结果
+#    {
+#        &quot;字段 1&quot;: &quot;值 1&quot;,
+#        &quot;字段 2&quot;: &quot;值 2&quot;,
+#        &quot;字段 3&quot;: &quot;值 3&quot;,
+#       ……
+#    }
+#
+#返回例子2:操作结果
+#    {
+#      &quot;msg&quot;: &quot;success&quot;,
+#      &quot;error_code&quot;: 0,                     //参考错误码表
+#      &quot;request_url&quot;: &quot;/api/v1/user/save&quot;    //接口访问路径
+#    }
+#
+
+</code></pre></p>
+<h2 id="1"><strong>1、用户登录获取令牌</strong></h2>
+<p><code>/api/v1/token/user</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">code                        #网页授权码 （必要）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">token                        #令牌
+</code></pre>
+
+<h2 id="2"><strong>2、获取用户信息</strong></h2>
+<p><code>/api/v1/user/info</code><br />
+- 请求方法：GET<br />
+- 请求参数：无</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">username                    #用户名
+mobile                      #手机号码
+sex                         #性别
+country                     #所在国家
+province                    #所在省份
+city                        #所在城市
+head_img                    #头像
+is_member                   #是否会员
+register_time               #注册时间
+last_login_time             #上次登录时间
+member_status               #会员状态 0：非会员；1：正常会员；2：因其它原因被管理员禁用的会员；3：过期会员
+member_expire_time          #会员有效期
+</code></pre>
+
+<h2 id="3"><strong>3、用户修改个人信息</strong></h2>
+<p><code>api/v1/user/save</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">username                    #用户名（非必要，字符长度4~25）
+sex                         #性别（非必要）1：男；2：女；0：保密
+head_img                    #头像（非必要）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示    
+request_url                  #接口名
+</code></pre>
+
+<h2 id="4"><strong>4、获取手机验证码</strong></h2>
+<p><code>api/v1/identify/code</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">phone                       #手机号码
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示    
+request_url                  #接口名                  
+</code></pre>
+
+<h2 id="5"><strong>5、关联(绑定)手机号</strong></h2>
+<p><code>api/v1/user/bind</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">phone                       #手机号（必要）
+code                        #验证码（必要）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示    
+request_url                  #接口名                  
+</code></pre>
+
+<h2 id="6"><strong>6、获取球员信息</strong></h2>
+<p><code>api/v1/member/info</code><br />
+- 请求方法：GET<br />
+- 请求参数：无</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">cn_name                         #中文名
+birthday                        #出生日期
+birth_addr                      #出生地点
+mobile                          #手机号码
+age                             #年龄
+sex                             #性别
+stature                         #身高
+weight                          #体重
+native_place                    #籍贯
+nation                          #民族
+photo                           #个人近照
+individual                      #个人简介
+team                            #所属球队
+number                          #球衣号码
+position                        #位置
+school                          #学校
+experience                      #成长经历
+feature                         #技术特点 
+honor                           #人个荣誉
+comment                         #评价
+</code></pre>
+
+<h2 id="7"><strong>7、获取球员赛事列表(手风琴)</strong></h2>
+<p><code>api/v1/competition/by_member</code><br />
+- 请求方法：GET<br />
+- 请求参数</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">name                            #球队名称
+logo                            #球队LOGO
+competitions{
+    id                          #赛事id
+    title                       #赛事标题
+    main_img_url                #赛事封面照
+    play_time                   #赛事时间
+}
+</code></pre>
+
+<h2 id="8"><strong>8、加入会员业务介绍</strong></h2>
+<p><code>api/v1/business/joinus</code><br />
+- 请求方法：GET<br />
+- 请求参数</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">id                              #业务ID
+s_id                            #业务分类ID
+title                           #业务标题
+cost                            #原价
+price                           #现价
+content                         #内容
+remark                          #备注
+num                             #编号
+valid_time                      #有效期（年）
+amount                          #库存数
+specs                           #规格
+people                          #享有人数
+audit_time                      #审核时间（暂无关）
+istui                           #是否热销业务
+</code></pre>
+
+<h2 id="9"><strong>9、提交订单</strong></h2>
+<p><code>api/v1/order/commit</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">business_id                     #业务ID（必要）
+name                            #订单标题（非必要）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">id                              #订单ID
+order_no                        #订单号
+total_price                     #应付金额
+name                            #订单标题
+create_time                     #订单提交时间
+</code></pre>
+
+<h2 id="10"><strong>10、订单取消</strong></h2>
+<p><code>api/v1/order/cancel</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">id                     #订单ID（必要）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示    
+request_url                  #接口名               
+</code></pre>
+
+<h2 id="11"><strong>11、订单详情</strong></h2>
+<p><code>api/v1/order/:id</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/order/1 代表获取id为1的订单详情</p>
+<p><pre><code class="json">id                     #订单ID（必要，加在uri中）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">id                              #订单ID
+order_no                        #订单号
+count                           #业务数量
+price                           #业务单价
+business_id                     #业务ID
+name                            #订单标题
+pay_amount                      #订单支付金额
+pay_time                        #支付时间
+pay_way                         #支付方式
+remark                          #备注
+status                          #订单状态
+coupon                          #优惠券
+phone                           #预留手机号码
+discounts                       #优惠金额
+snap_items                      #业务快照
+create_time                     #提交订单时间
+</code></pre>
+
+<h2 id="12"><strong>12、关闭订单</strong></h2>
+<p><code>api/v1/order/close</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<p><pre><code class="json">id                     #订单ID（必要）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示    
+request_url                  #接口名               
+</code></pre>
+
+<h2 id="13"><strong>13、获取当前用户所有订单</strong></h2>
+<p><code>api/v1/order/by_user</code><br />
+- 请求方法：GET<br />
+- 请求参数：无</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">id                              #订单ID
+order_no                        #订单号
+count                           #业务数量
+price                           #业务单价
+business_id                     #业务ID
+name                            #订单标题
+pay_amount                      #订单支付金额
+pay_time                        #支付时间
+pay_way                         #支付方式
+remark                          #备注
+status                          #订单状态
+coupon                          #优惠券
+phone                           #预留手机号码
+discounts                       #优惠金额
+create_time                     #提交订单时间
+</code></pre>
+
+<h2 id="14"><strong>14、订单支付</strong></h2>
+<p><code>api/v1/pay/pre_order</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<pre><code class="json">id                     #订单ID（必要）
+</code></pre>
+
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">timestamp                         #时间戳
+nonceStr                          #随机字符串
+package                           #订单详情扩展字符串
+signType                          #签名方式
+paySign                           #签名
+</code></pre>
+
+<h2 id="15"><strong>15、支付回调</strong></h2>
+<p><code>api/v1/pay/notify</code><br />
+- 请求方法：POST<br />
+- 请求参数：由微信发起</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">true
+</code></pre>
+
+<h2 id="16"><strong>16、提交意见反馈</strong></h2>
+<p><code>api/v1/feeds</code><br />
+- 请求方法：POST<br />
+- 请求参数</p>
+<pre><code class="json">type                              #类型：1建议，2投诉，3其它(非必要，默认建议)
+phone                             #手机号码(非必要)
+title                             #标题(非必要)
+content                           #内容(必要)
+</code></pre>
+
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示
+request_url                  #接口名
+</code></pre>
+
+<h2 id="17"><strong>17、赛事详情</strong></h2>
+<p><code>api/v1/competition/:id</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/competition/1 代表获取id为1的赛事详情</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">id                                  #赛事ID
+title                               #赛事标题
+summary                             #赛事简介
+description                         #赛事数据详情
+score                               #赛事结果
+main_img_url                        #封面照
+play_time                           #比赛时间
+notes                               #备注
+is_hot                              #是否热门赛事
+</code></pre>
+
+<h2 id="18"><strong>18、即将开始的赛事列表（分页）</strong></h2>
+<p><code>api/v1/competition/begins</code><br />
+- 请求方法：GET<br />
+- 请求参数：无</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">current_page                            #当前页码数
+total                                   #总数
+data
+    id                                  #赛事ID
+    title                               #赛事标题
+    summary                             #简介
+    main_img_url                        #封面照
+    play_time                           #比赛时间
+    apply_status                        #报名状态
+</code></pre>
+
+<h2 id="19-1"><strong>19-1、提交赛事报名</strong></h2>
+<p><code>api/v1/competition/apply/commit</code><br />
+- 请求方法：POST<br />
+- 请求参数：</p>
+<pre><code class="json">id                              #赛事ID
+</code></pre>
+
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示
+request_url                  #接口名
+</code></pre>
+
+<h2 id="19-2"><strong>19-2、取消赛事报名</strong></h2>
+<p><code>api/v1/competition/apply/cancel</code><br />
+- 请求方法：POST<br />
+- 请求参数：</p>
+<pre><code class="json">id                              #赛事ID
+</code></pre>
+
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示
+request_url                  #接口名
+</code></pre>
+
+<h2 id="20"><strong>20、赛事历史播放列表（分页）</strong></h2>
+<p><code>api/v1/competition/video</code><br />
+- 请求方法：POST<br />
+- 请求参数：<br />
+- GET请求：uri+&rsquo;?page=1&amp;size=30&rsquo;<br />
+<pre><code class="json">page                                        #当前页码 默认1
+size                                        #每页显示条数 默认30
+</code></pre><br />
+- POST请求<br />
+<pre><code class="json">search                                      #搜索关键字 (非必要)
+competition_id                              #赛事ID (非必要)
+type                                        #播放类型 1回放;2集锦 (非必要)
+</code></pre></p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">current_page                            #当前页码数
+total                                   #总数
+data
+    id                                        #视频ID
+    title                                     #视频标题
+    summary                                   #简介
+    main_img_url                              #封面照
+    competition_id                            #赛事ID
+    browse_num                                #观看次数
+    type                                      #视频类型
+    publish_time                              #发布时间
+    file
+        cate                                  #文件类型
+        name                                  #资源路径
+        original                              #文件名
+        size                                  #文件大小
+</code></pre>
+
+<h2 id="21"><strong>21、获取广告位</strong></h2>
+<p><code>api/v1/banner/:id</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/order/1 代表获取id为1的广告位内容</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">id                                              #广告位ID
+title                                           #标题
+description                                     #描述
+position                                        #广告位置
+img_url                                         #图片路径
+jump_url                                        #链接
+img
+    cate                                        #文件类型
+    name                                        #图片路径
+    original                                    #原文件名
+    size                                        #图片大小
+</code></pre>
+
+<h2 id="22"><strong>22、获取轮播图</strong></h2>
+<p><code>api/v1/banner/by_position</code><br />
+- 请求方法：POST<br />
+- 请求参数：</p>
+<pre><code class="json">id                              #广告位位置 1,球员中心,2,赛事中心,3,资讯中心,
+</code></pre>
+
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">id                                              #广告位ID
+title                                           #标题
+description                                     #描述
+position                                        #广告位置
+img_url                                         #图片路径
+jump_url                                        #链接
+img
+    cate                                        #文件类型
+    name                                        #图片路径
+    original                                    #原文件名
+    size                                        #图片大小
+</code></pre>
+
+<h2 id="23"><strong>23、获取赛事直播列表（分页）</strong></h2>
+<p><code>api/v1/competition/live</code><br />
+- 请求方法：POST<br />
+- 请求参数：<br />
+- GET请求：uri+&rsquo;?page=1&amp;size=30&rsquo;<br />
+<pre><code class="json">page                                        #当前页码 默认1
+size                                        #每页显示条数 默认30
+</code></pre><br />
+- POST请求<br />
+<pre><code class="json">search                                      #搜索关键字 (非必要)
+competition_id                              #赛事ID (非必要)
+</code></pre></p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">current_page                                  #当前页码数
+total                                         #总数
+data
+    id                                        #视频ID
+    title                                     #视频标题
+    summary                                   #简介
+    main_img_url                              #封面照
+    competition_id                            #赛事ID
+    browse_num                                #观看次数
+    play_rtmp                                 #RTMP格式播放地址
+    play_flv                                  #FLV格式播放地址
+    play_m3u8                                 #M3U8格式播放地址
+    plug_flow                                 #推流地址
+    type                                      #类型 3  直播
+    live_status                               #当前直播状态
+    online_num                                #当前直播在线人数
+</code></pre>
+
+<h2 id="24"><strong>24、进入播放后的回调操作（增加浏览量）</strong></h2>
+<p><code>api/v1/competition/play_notify</code><br />
+- 请求方法：POST<br />
+- 请求参数：</p>
+<pre><code class="json">id                              #播放源ID
+type                            #播放源：1：录像；2：直播
+</code></pre>
+
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">error_code                   #状态 参考错误码表
+msg                          #提示
+request_url                  #接口名
+</code></pre>
+
+<h2 id="25"><strong>25、获取在线直播人数</strong></h2>
+<p><code>api/v1/competition/online</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/competition/online/1 代表获取id为1的直播源ID</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">TotalUserNumber                   #总人数
+OnlineUserInfo
+    LiveStreamOnlineUserNumInfo(数组)
+      Time                        #时间(UTC格式)
+      StreamUrl                   #推流资源路径
+      UserNumber                  #在线人数
+RequestId                         #访问ID
+</code></pre>
+
+<h2 id="26"><strong>26、直播聊天室</strong></h2>
+<p>URL:<code>ws://120.79.146.180:19833</code><br />
+- 收发消息体(json格式)：<br />
+1(群发)、&rsquo;{&ldquo;type&rdquo;:&rdquo;SEND_ALL&rdquo;,&rdquo;room_id&rdquo;:&rdquo;1&rdquo;,&rdquo;uuid&rdquo;:&rdquo;MC4wLjAuMF8xOTgzMl82&rdquo;,&rdquo;content&rdquo;:&rdquo;扑街&rdquo;,&rdquo;user&rdquo;:{&ldquo;username&rdquo;:&rdquo;caicaizi&rdquo;,&rdquo;head_img&rdquo;:&rdquo;<a href="http://www.michellelee.top/tmp/upload/20180105/dsfadfafadfa.jpg&quot;},&quot;msg_time&quot;:235433453,&quot;myself&quot;:true,&quot;token&quot;:token">http://www.michellelee.top/tmp/upload/20180105/dsfadfafadfa.jpg&rdquo;},&rdquo;msg_time&rdquo;:235433453,&rdquo;myself&rdquo;:true,&rdquo;token&rdquo;:token</a>}&rsquo;;<br />
+2(私聊)、&rsquo;{&ldquo;type&rdquo;:&rdquo;SEND_ONE&rdquo;,&rdquo;room_id&rdquo;:&rdquo;1&rdquo;,&rdquo;uuid&rdquo;:&rdquo;MC4wLjAuMF8xOTgzMl82&rdquo;,&rdquo;send_to_one&rdquo;:&rdquo;MC4wLjAuMF8xOTgzMl82&rdquo;,&rdquo;content&rdquo;:&rdquo;扑街&rdquo;,&rdquo;username&rdquo;:&rdquo;caicaizi&rdquo;,&rdquo;head_img&rdquo;:&rdquo;<a href="http://www.michellelee.top/tmp/upload/20180105/dsfadfafadfa.jpg&quot;,&quot;msg_time&quot;:235433453,&quot;myself&quot;:true">http://www.michellelee.top/tmp/upload/20180105/dsfadfafadfa.jpg&rdquo;,&rdquo;msg_time&rdquo;:235433453,&rdquo;myself&rdquo;:true</a>}&rsquo;;</p>
+<ul>
+<li>备注：</li>
+</ul>
+<pre><code class="json">type                                    #&quot;LOGIN&quot;: 上线;&quot;LOGOUT&quot;:下线;&quot;SEND_ALL&quot;:群发(默认);&quot;SEND_ALL&quot;: 私聊(用不上)
+room_id                                 #可用直播源ID代替
+content                                 #消息内容
+user                                    #json格式：username用户名,head_img用户头像
+uuid                                    #用户当前连接的唯一身份标识
+send_to_one                             #收消息用户当前连接的唯一身份标识
+msg_time                                #消息时间
+myself                                  #是否本人（收到消息）
+token                                   #令牌    （发送消息,那条获取在线人数的看不见的消息不用传）
+</code></pre>
+
+<h2 id="27"><strong>27、视频详情</strong></h2>
+<p><code>api/v1/competitionvideo/:id</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/competitionvideo/1 代表获取id为1的视频详情</p>
+<p><pre><code class="json">id                                #订单ID（必要，加在uri中）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">id                                #视频ID
+title                             #标题
+summary                           #简介
+competition_id                    #赛事ID
+main_img_url                      #封面路径
+browse_num                        #打开数量
+type                              #类型
+publish_time                      #发布时间
+file
+
+    cate                            #文件分类
+    name                            #视频链接
+    original                        #文件原名
+    size                            #文件大小
+</code></pre>
+
+<h2 id="28"><strong>28、直播详情</strong></h2>
+<p><code>api/v1/competitionlive/:id</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/competitionlive/1 代表获取id为1的直播详情</p>
+<p><pre><code class="json">id                                #直播ID（必要，加在uri中）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">id                                #直播ID
+title                             #标题
+summary                           #简介
+competition_id                    #赛事ID
+main_img_url                      #封面路径
+browse_num                        #打开数量
+play_rtmp                         #rtmp格式播放链接
+play_flv                          #flv格式播放链接
+play_m3u8                         #m3u8格式播放链接
+publish_time                      #发布时间
+type                              #类型 3  直播
+live_status                       #当前直播状态
+</code></pre>
+
+<h2 id="29"><strong>29、获取会员参与过的所有球队列表</strong></h2>
+<p><code>api/v1/team/by_user</code><br />
+- 请求方法：GET<br />
+- 请求参数：无</p>
+<ul>
+<li>返回参数</li>
+</ul>
+<pre><code class="json">id                                  #球队ID
+name                                #球队名称
+logo                                #球队LOGO
+</code></pre>
+
+<h2 id="30id"><strong>30、根据球队ID获取球队参与过的赛事列表</strong></h2>
+<p><code>api/v1/team/:id/competitions</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/team/1/competitions 代表获取球队id为1的赛事列表</p>
+<p><pre><code class="json">id                                #球队ID（必要，加在uri中）
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">id                                #赛事ID
+title                             #标题
+main_img_url                      #封面路径
+</code></pre>
+
+<h2 id="31js"><strong>31、获取微信js接口调用前的配置信息</strong></h2>
+<p><code>api/v1/wxconfig</code><br />
+- 请求方法：POST<br />
+- 请求参数：</p>
+<p><pre><code class="json">cur_url                                #调用接口的页面路径
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">appId                               #APPID
+nonceStr                            #随机字符串
+timestamp                           #时间戳
+url                                 #页面路径
+signature                           #签名
+rawString                           #原始字符串
+access_token                        #令牌
+</code></pre>
+
+<h2 id="32"><strong>32、搜索播放资源列表（直播与回放）</strong></h2>
+<p><code>api/v1/competition/play</code><br />
+- 请求方法：POST<br />
+- 请求参数：<br />
+- GET请求：uri+&rsquo;?page=1&amp;size=30&rsquo;<br />
+<pre><code class="json">page                                        #当前页码 默认1
+size                                        #每页显示条数 默认30
+</code></pre><br />
+- POST请求<br />
+<pre><code class="json">search                                      #搜索关键字 (必要)
+</code></pre><br />
+- 返回参数</p>
+<pre><code class="json">current_page                                  #当前页码数
+total                                         #总数
+data
+
+//直播
+    id                                        #视频ID
+    title                                     #视频标题
+    summary                                   #简介
+    main_img_url                              #封面照
+    competition_id                            #赛事ID
+    browse_num                                #观看次数
+    play_rtmp                                 #RTMP格式播放地址
+    play_flv                                  #FLV格式播放地址
+    play_m3u8                                 #M3U8格式播放地址
+    plug_flow                                 #推流地址
+    type                                      #类型 3  直播
+    live_status                               #当前直播状态
+
+//回放
+   id                                        #视频ID
+   title                                     #视频标题
+   summary                                   #简介
+   main_img_url                              #封面照
+   competition_id                            #赛事ID
+   browse_num                                #观看次数
+   type                                      #视频类型
+   publish_time                              #发布时间
+   file
+       cate                                  #文件类型
+       name                                  #资源路径
+       original                              #文件名
+       size
+</code></pre>
+
+<h2 id="33"><strong>33、获取页面配置项值</strong></h2>
+<p><code>api/v1/config/value</code><br />
+- 请求方法：POST<br />
+- 请求参数：<br />
+<pre><code class="json">code                                        #配置编码（必要,可以单个——字符格式&quot;&quot;，也可以是多个——数组格式[&quot;&quot;,&quot;&quot;……]）
+tags                                        #是否去除html标签（必要）&quot;1/0&quot;
+</code></pre></p>
+<ul>
+<li>返回参数<br />
+<pre><code class="json">value                                       #配置值
+或
+code                                        #配置编码
+value                                       #配置值
+</code></pre></li>
+</ul>
+<h2 id="34"><strong>34、聊天记录</strong></h2>
+<p><code>api/v1/guest/:id</code><br />
+- 请求方法：GET<br />
+- 请求参数：加在uri中，如api/v1/guest/1 代表获取直播id为1的聊天列表</p>
+<pre><code class="json">id                                #直播ID（必要，加在uri中）
+</code></pre>
+
+<pre><code class="json">type                                    #&quot;LOGIN&quot;: 上线;&quot;LOGOUT&quot;:下线;&quot;SEND_ALL&quot;:群发(默认);&quot;SEND_ONE&quot;: 私聊(用不上)
+room_id                                 #可用直播源ID代替
+content                                 #消息内容
+user                                    #json格式：username用户名,head_img用户头像
+msg_time                                #消息时间
+myself                                  #是否本人（收到消息）
+</code></pre>
+
+<h2 id="http"><strong>HTTP状态码</strong></h2>
+<pre><code>200                          请求成功
+201                          已创建
+202                          已经接受请求，但未处理完成
+204                          无内容
+205                          服务器处理成功
+301                          请求的资源已被永久的移动到新URI
+400                          错误请求
+401                          未授权
+403                          禁止
+404                          请求的资源（网页等）不存在
+500                          内部服务器错误
+</code></pre>
+
+<h2 id="_2"><strong>错误码</strong></h2>
+<pre><code>0               操作成功
+
+99999               参数错误
+
+10000               操作错误
+10001               权限不够
+10002               身份验证失败
+10003               Token已过期或无效Token
+10004               用户不存在或被禁用
+10005               订单与用户不匹配
+10006               手机号码已被其他人使用
+10007               验证码错误
+10008               授权失败
+10009               手机验证吗不存在
+10010               用户重复发送验证码
+10011               当前用户未绑定手机号码
+
+20000               业务不存在或已禁用
+20001               业务类别不存在
+
+30000               赛事不存在
+30001               球队信息不存在
+30002               会员信息不存在或已被禁用
+30003               当前会员未加入任何球队
+30004               赛事视频不存在
+30005               赛事直播不存在
+30006               当前球队未参与任何赛事
+30007               重复提交赛事报名
+30008               赛事报名不存在
+
+40000               指定图片不存在
+40001               保存图片失败
+40002               请求banner不存在
+40003               请求轮播图片不存在
+40004               请求配置不存在
+
+50000               微信服务器异常
+
+60000               订单不存在
+60001               订单已经支付过
+60002               订单不允许取消
+60003               订单不允许关闭
+60004               用户收货地址不存在，下单失败
+60005               还没付款或者你已经更新过订单
+60006               商品不存在，订单创建失败
+60007               没有权限更改订单状态
+
+70000               发送短信失败
+80000               阿里云服务器异常
+
+</code></pre></article></body></html>

@@ -1,0 +1,10 @@
+{extend name="template/recyclebin" /}
+{block name="script"}
+<script>
+    $(function () {
+        $("[name='s_id']").find("[value='{$Request.param.s_id}']").attr("selected", true);
+        $("[name='status']").find("[value='{$Request.param.status}']").attr("selected", true);
+        $("[name='istui']").find("[value='{$Request.param.istui}']").attr("selected", true);
+    })
+</script>
+{/block}

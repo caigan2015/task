@@ -1,0 +1,9 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.title|high_light=$Request.param.search}</td>
+<td>{$vo.cate_name}</td>
+<td>{$vo.valid_time}年</td>
+<td>{$vo.cost}</td>
+<td>{$vo.price}</td>
+<td>{$vo.status|get_status}</td>
+<td>{$vo.hot_name}</td>

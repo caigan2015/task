@@ -1,0 +1,72 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+        <div class="select-box" style="width:250px">
+            <select name="type" class="select">
+                <option value="1">投诉</option>
+                <option value="2">建议</option>
+                <option value="3">其它</option>
+            </select>
+        </div>
+        <div class="select-box" style="width:250px">
+            <select name="source" class="select">
+                <option value="1">公众号</option>
+                <option value="2">APP</option>
+                <option value="3">PC</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+    </form>
+    <div class="cl pd-5 bg-1 bk-gray">
+        <span class="l">
+        </span>
+        <span class="r pt-5 pr-5">
+            共有数据 ：<strong>{$count ?? '0'}</strong> 条
+        </span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg mt-20">
+        <thead>
+        <tr class="text-c">
+            <th width="25"><input type="checkbox"></th>
+            <th width="50">ID</th>
+            <th width="50">{:sort_by('类型','type')}</th>
+            <th width="80">用户</th>
+            <th width="100">标题</th>
+            <th width="150">内容</th>
+            <th width="">{:sort_by('来源','source')}</th>
+            <th width="">反馈时间</th>
+            <th width="70">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="list" id="vo" empty="没有反馈"}
+        <tr class="text-c">
+            <td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+            <td>{$vo.id}</td>
+            <td>{$vo.type_text}</td>
+            <td>{$vo.user.username}</td>
+            <td>{$vo.title}</td>
+            <td>{$vo.content}</td>
+            <td>{$vo.source_text}</td>
+            <td>{$vo.create_time}</td>
+            <td class="f-14">
+                {tp:menu menu='sedit' /}
+                {tp:menu menu='sdeleteforever' /}
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    <div class="page-bootstrap">{$page ?? ''}</div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    $(function () {
+        $("[name='type']").find("[value='{$Request.param.type}']").attr("selected", true);
+        $("[name='source']").find("[value='{$Request.param.source}']").attr("selected", true);
+    })
+</script>
+{/block}
+

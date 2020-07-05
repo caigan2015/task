@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script type="text/javascript" src="./h5/js/jquery-2.1.4.js"></script>-->
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h2>Holle world!</h2>
+DEVICE_ID <input type="text" name="device_id" value="45K5-HCD2-TAKV-Q">
+TOKEN <input type="text" name="token" value="42fede3cb82a12b54ee7c12b54983681">
+<!--DEVICE_ID <input type="text" name="device_id">-->
+<!--TOKEN <input type="text" name="token">-->
+FROM  <input type="text" name="from">
+<input type="hidden" name="auth">
+<input type="hidden" name="devCode" value="45K5-HCD2-TAKV-Q">
+<button class="logout" style="display: block">注销</button>
+<button class="request" style="display: block">请求更新</button>
+<script>
+    t = null;
+    ws = new WebSocket("ws://housekeeper.choinyan.top:8810");
+    ws.onopen = function () {
+        console.log("连接成功");
+    };
+    ws.onmessage = function (e) {
+        console.log("收到服务端的消息：" + e.data);
+        if (e.data == 'ping') {
+            ws.send('pong');
+            return;
+        }
+        precess(e.data);
+
+    };
+    ws.onclose = function (e) {
+
+        $('input[name=auth]').val('');
+        console.log("下线")
+    }
+    //    $.post('http://www.michellelee.top/api/v1/config/value',{code:['chart_code','play_time_days','copyright'],tags:0},function (res) {
+    //        console.log(res);
+    //    })
+
+    function prepare(type, data, client_id,action,msg) {
+        let new_data = {
+            pkgType:'message',
+            type: type,
+            info: {
+                action:action || 'command',
+                msg:msg || '操作成功',
+                data:data|| {}
+            },
+            sendTo: client_id
+        };
+        return JSON.stringify(new_data);
+    }
+
+    function precess(res) {
+        let devCode = $('input[name="devCode"]').val();
+        let device_id = $('input[name="device_id"]').val();
+        let token = $('input[name="token"]').val();
+        let auth = $('input[name="auth"]').val();
+        let result = JSON.parse(res);
+        if(result.from){
+            $('input[name="from"]').val(result.from);
+        }
+        if(result.pkgType == 'heartbeat'){
+            if(device_id && result.heartbeat.send == 'ping'){
+                let data = {pkgType:"heartbeat",heartbeat:{send:"pong",devCode:device_id}};
+                let send_data = JSON.stringify(data);
+                console.log('发送心跳包信息：' + send_data);
+                ws.send(send_data);
+            }
+
+        }else if (result.pkgType=='message') {
+            if (result.type == 'error') {
+                window.alert(result.info.msg);
+                return;
+            }
+
+            if (result.type == 'result') {
+
+                if (result.info.data.cert) {
+                    $('input[name="device_id"]').val(result.info.data.cert.devCode)
+                    $('input[name="token"]').val(result.info.data.cert.token)
+
+                    if (t) { window.clearInterval(t); }
+                }
+                if (result.info.data.auth) {
+                    $('input[name=auth]').val(result.info.data.auth)
+                }
+
+                window.alert(result.info.msg);
+            }
+        } else if (result.pkgType =='connecting') {
+            console.log(result.connecting.devCode)
+            console.log(devCode)
+            if(result.connecting.devCode == devCode){
+                if(auth){
+                    let data = prepare('result',{},result.from,'connecting','设备已登录')
+                    let send_data = JSON.stringify(data);
+                    console.log('发送登录状态信息：' + send_data);
+                    ws.send(send_data);
+                    return;
+                }
+
+                if (!device_id || !token) {
+                    let data = {pkgType:"register",
+                        register: {
+                            devCode: "10300101c004ac5037b5",
+                            devInfo: {
+                                arSize: 10,
+                                authMode: "\u0002",
+                                faceAlgo: "OPENCV-HBF",
+                                faceFormat: "",
+                                faceSize: 1000,
+                                failedAlert: true,
+                                failedColor: 0,
+                                language: "cn",
+                                lockFailed: false,
+                                lockNoTest: false,
+                                lockSuccess: true,
+                                lockTime: 5,
+                                lockTimezone: true,
+                                model: "SSS01",
+                                noTestAlert: false,
+                                noTestColor: 5384260,
+                                protocol: "",
+                                sleepTime: 5,
+                                soundVolume: 60,
+                                successAlert: true,
+                                successColor: 0,
+                                usedFaceSize: 1,
+                                version: "1.0.0"
+                            },
+                            serverTime: "2018-04-25",
+                        },
+                        sendTo: result.from
+                    };
+                    let send_data = JSON.stringify(data);
+                    t = window.setInterval(function () {
+                        console.log('发送注册信息：' + send_data);
+                        ws.send(send_data);
+                    },10000);
+                }else{
+
+                    let data = {pkgType:"login",login: {devCode: device_id, token: token, protocol: "v1.0.0"}, sendTo: result.from};
+                    let send_data = JSON.stringify(data);
+                    console.log('发送登录信息：' + send_data);
+                    ws.send(send_data);
+                }
+            }
+
+        }else if(result.pkgType == "command"){
+
+            if(result.command && result.command.cmd == 'users' && result.command.type == 'set'){
+                //初始化成功
+                let send_data_1 = prepare('result',{},result.from);
+                ws.send(send_data_1);
+                //发送请求
+                let send_data_2 = {pkgType:"request",request: {auth: auth, type: 'get', req: "users",data:result.command.data}, sendTo: result.from};
+                send_data_2 = JSON.stringify(send_data_2);
+                console.log('发送请求用户信息：' + send_data_2);
+                ws.send(send_data_2);
+
+            }else if(result.command && result.command.cmd == 'ars' && result.command.type == 'get'){
+                //发送请求
+                let data = {
+                    cmd: 'ars',
+                    ars:[
+                        {"checkType":"0","successInfo":"1","checkTime":"2018-05-28 17:40","photo":"test","userCode":"003"},
+                        {"checkType":"0","successInfo":"1","checkTime":"2018-06-28 17:40","photo":"test","userCode":"003"}
+                    ]
+                };
+                let send_data_3 = prepare('result',data,result.from);
+                console.log('发送更新用户信息：' + send_data_3);
+                ws.send(send_data_3);
+
+            }else{
+                //todo
+                //发送操作结果
+                let data = {};
+                data['cmd'] = result.command.cmd;
+                data[result.command.cmd] = result.command.data;
+                let send_data_3 = prepare('result',data,result.from);
+                console.log('发送更新用户信息：' + send_data_3);
+                ws.send(send_data_3);
+            }
+
+        }else if(result.pkgType == "request"){
+
+            let auth = $('input[name=auth]').val();
+            if(result.request.req == 'users' &&　result.request.type == 'result' ){
+                //todo 操作成功
+
+                let data = {pkgType:"request",request: {auth: auth, type: 'set', req: "users",data:result.request.data}, sendTo: result.from};
+                let send_data = JSON.stringify(data);
+                console.log('发送请求用户信息：' + send_data);
+                ws.send(send_data);
+            }
+        }else if(result.pkgType == "broadcast" ){
+            let data = result.broadcast.data;
+            let send_data = prepare('result',data,result.from,result.pkgType);
+            console.log('发送广播处理回复：' + send_data);
+            ws.send(send_data);
+        }
+
+    }
+
+
+    $('.logout').on('click', function (e) {
+        let device_id = $('input[name="device_id"]').val();
+        let auth = $('input[name="auth"]').val();
+        if (device_id && auth) {
+            let data = {pkgType:"logout",logout: {devCode: device_id, auth: auth}};
+            let send_data = JSON.stringify(data);
+            console.log('发送信息：' + send_data);
+            ws.send(send_data);
+        }
+    })
+    $('.request').on('click', function (e) {
+        let auth = $('input[name="auth"]').val();
+        let from = $('input[name="from"]').val();
+        let data = {pkgType:"request",request: {type:'set', auth: auth,req:'users',data:{users:{"userName":"test","faceCount":1,"photo":"/9j/4AAQSkZJRgABAQEC+gL6AAD/KBQB//Z","card":"test","isMatching":1,"userCode":"test"}}},sendTo:from};
+//        let data = {pkgType:"request",request: {type:'get', auth: auth,req:'searchUser',data:{userCode:{"userCode":"001"}}},sendTo:from};
+        let send_data = JSON.stringify(data);
+        console.log('发送信息：' + send_data);
+        ws.send(send_data);
+    })
+
+</script>
+</body>
+</html>

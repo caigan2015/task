@@ -1,0 +1,48 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    {include file="form" /}
+    <div class="cl pd-5 bg-1 bk-gray">
+        <span class="l">
+            {tp:menu menu="add,forbid,resume,delete,recyclebin,saveorder" /}
+        </span>
+        <span class="r pt-5 pr-5">
+            共有数据 ：<strong>{$count ?? '0'}</strong> 条
+        </span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg mt-20">
+        <thead>
+        <tr class="text-c">
+            {include file="th" /}
+            <th width="150">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="list" id="vo" empty="没有赛事"}
+        <tr class="text-c">
+            {include file="td" /}
+            <td class="f-14">
+                <a class="label label-success radius" data-title="影音" _href="{:\\think\\Url::build('CompetitionVideo/index',['competition_id'=>$vo['id']])}" onclick="Hui_admin_tab(this)" href="javascript:;" data-nav=" 基础数据 <span class=&quot;c-gray en&quot;>&amp;gt;</span> 赛事管理 <span class=&quot;c-gray en&quot;>&amp;gt;</span> {$vo.title}-影音">影音</a>
+                <a class="label label-success radius" data-title="直播" _href="{:\\think\\Url::build('CompetitionLive/index',['competition_id'=>$vo['id']])}" onclick="Hui_admin_tab(this)" href="javascript:;" data-nav=" 基础数据 <span class=&quot;c-gray en&quot;>&amp;gt;</span> 赛事 <span class=&quot;c-gray en&quot;>&amp;gt;</span> {$vo.title}-直播">直播</a>
+                <a title="选择球队" href="javascript:;" onclick="layer_open('选择球队','{:\\think\\Url::build(\'Competition/team\',[\'competition_id\'=>$vo[\'id\']])}')" class="label label-success radius" >选择球队</a>
+                {$vo.status|show_status=$vo.id}
+                {tp:menu menu='sedit' /}
+                {tp:menu menu='sdelete' /}
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    <div class="page-bootstrap">{$page ?? ''}</div>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/My97DatePicker/WdatePicker.js"></script>
+<script>
+    $(function () {
+        $("[name='type']").find("[value='{$Request.param.type}']").attr("selected", true);
+        $("[name='is_hot']").find("[value='{$Request.param.is_hot}']").attr("selected", true);
+    })
+</script>
+{/block}
+

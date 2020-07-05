@@ -1,0 +1,75 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$vo.id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">订单编号：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.order_no ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">应付金额：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.total_price ?? ''} 元
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">用户账户：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo ? $vo.user.username : ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">订单标题：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.name ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">支付单号：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.transaction_id ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">实付金额：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.pay_amount ?? ''} 元
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">支付方式：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.pay_way ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">支付时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.pay_time ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>订单状态：</label>
+            <div class="formControls col-xs-6 col-sm-6 skin-minimal">
+                {$vo.status_text ?? ''}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">手机号码：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                {$vo.phone ?? ''}
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">备注：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea class="textarea" placeholder="" disabled>{$vo.remark ?? ''}</textarea>
+            </div>
+        </div>
+    </form>
+</div>
+{/block}

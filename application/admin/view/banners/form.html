@@ -1,0 +1,10 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <input type="text" class="input-text" style="width:250px" placeholder="名称" name="search" value="{$Request.param.search}" >
+    <div class="select-box" style="width:250px">
+        <select name="type" class="select">
+            <option value="1">移动端</option>
+            <option value="2">PC端</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>

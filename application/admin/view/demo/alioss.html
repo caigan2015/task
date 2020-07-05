@@ -1,0 +1,66 @@
+{extend name="template/base" /}
+{block name="content"}
+<div class="page-container">
+    <iframe name="upload" style="display: none"></iframe>
+    <!--<form class="form form-horizontal" id="form" method="post" target="upload" enctype="multipart/form-data" action="{:\\think\\Url::build($Request.action)}">-->
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3"><span class="c-red">*</span>文件：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="file" class="input-text" id="fileupload" multiple="true" placeholder="图片" name="file" datatype="*" nullmsg="请选择上传文件"  data-url="{:\\think\\Url::build('upload/alioss')}?XDEBUG_SESSION_START=12438">
+                <input type="hidden" id="callbackId0" value="{$Request.param.id}">
+                <input type="hidden" id="callbackId1" value="{$Request.param.image_id}">
+                <input type="hidden" id="callbackId2" value="{$Request.param.from}">
+            </div>
+            <div class="col-xs-3 col-sm-3"></div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+                <button type="button" class="btn btn-default radius ml-20" onClick="layer_close();">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    <!--</form>-->
+</div>
+{/block}
+{block name="script"}
+<script src="__LIB__/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="__LIB__/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+<script src="__LIB__/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+<script>
+        //
+        $('#fileupload').fileupload({
+            dataType: 'json',
+            start: function () {
+                layer_msg = layer.msg('正在上传中…', {time: 100000000});
+            },
+            progressall: function (e, data) {
+                $('.layui-layer-msg .layui-layer-content').html('已上传' + (data.loaded / data.total * 100).toFixed(2) + '%');
+            },
+            done: function (e, data) {
+                console.log(e);
+                console.log(data);
+                layer.close(layer_msg);
+//                callback(callbackId,data.result.data);
+            }
+        });
+
+
+        /**
+         * 数据回调
+         * @param ids
+         * @param value
+         */
+        function callback(ids,value) {
+            if (window.parent.frames.length == 0){
+                layer.alert('请在弹层中打开此页');
+            } else {
+                document.getElementById(ids[0]).value = value.name;
+                document.getElementById(ids[1]).value = value.file_id;
+                document.getElementById(ids[2]).value = value.from;
+
+                layer_close();
+            }
+        }
+</script>
+{/block}
