@@ -36,9 +36,6 @@ class Token
                 'token' => $token
             ]
         ]);
-//        return [
-//            'token' => $token
-//        ];
     }
 
     /**
@@ -59,9 +56,6 @@ class Token
                 'token' => $token
             ]
         ]);
-//        return [
-//            'token' => $token
-//        ];
     }
 
     public function verifyToken($token='')
@@ -80,21 +74,5 @@ class Token
 //        return [
 //            'isValid' => $valid
 //        ];
-    }
-
-    public function getWxConfig()
-    {
-        (new WxConfigGet())->goCheck();
-        $cur_url = Request::instance()->param('cur_url','','urldecode');
-        $app_id = config('wx.app_id');
-        $app_secret = config('wx.app_secret');
-        $wxConfig = (new \WxApi($app_id,$app_secret))->getSignPackage($cur_url);
-        if(!$wxConfig){
-            throw new Exception('获取微信配置参数失败');
-        }
-        return new SuccessReturn([
-            'info'=>$wxConfig
-        ]);
-//        return $wxConfig;
     }
 }

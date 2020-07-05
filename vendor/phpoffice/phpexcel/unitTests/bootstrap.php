@@ -13,7 +13,7 @@ chdir(dirname(__FILE__));
 setlocale(LC_ALL, 'en_US.utf8');
 
 // PHP 5.3 Compat
-date_default_timezone_set('Europe/London');
+date_default_timezone_set('Asia/Tokyo');
 
 // Define path to application directory
 defined('APPLICATION_PATH')

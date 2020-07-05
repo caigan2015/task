@@ -39,4 +39,5 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+    'default_offer_image' => '/static/index/image/default_offer_image.png'
 ];

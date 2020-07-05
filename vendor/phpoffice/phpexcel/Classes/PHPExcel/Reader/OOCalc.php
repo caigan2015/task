@@ -334,7 +334,7 @@ class PHPExcel_Reader_OOCalc extends PHPExcel_Reader_Abstract implements PHPExce
 			throw new PHPExcel_Reader_Exception("Could not open " . $pFilename . " for reading! File does not exist.");
 		}
 
-		$timezoneObj = new DateTimeZone('Europe/London');
+		$timezoneObj = new DateTimeZone('Asia/Tokyo');
 		$GMT = new DateTimeZone('UTC');
 
         $zipClass = PHPExcel_Settings::getZipClass();

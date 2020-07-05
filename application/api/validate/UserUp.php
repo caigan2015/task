@@ -39,10 +39,8 @@ class UserUp extends BaseValidate
 
 
     protected $scene = [
-        'update' => ['username'=>'length:2,25', 'nickname'=>'length:2,25','rank_type'=>'isPositiveInteger', 'house_id'=>'isPositiveInteger','ID_card_no'=>'length:18|unique:user|checkIDCardNo','head_img'=> 'is_base64'],
-        'change' => ['mobile'=>'require|isMobile', 'code','newmobile', 'newcode'],
+        'profile' => ['username'=>'length:2,25', 'realname'=>'length:2,25', 'bank_name'=>'require', 'bank_branch'=>'require', 'bank_account'=>'require'],
         'password' => ['password', 'oldpassword', 'repassword'],
-        'forget' => ['password','repassword', 'code', 'mobile'=>'require|isMobile'],
         'login'    => ['e_mail', 'password'],
         'register'    => ['username', 'e_mail', 'password'],
     ];

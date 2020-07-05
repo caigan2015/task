@@ -28,7 +28,7 @@
 /** Error reporting */
 error_reporting(E_ALL);
 
-date_default_timezone_set('Europe/London');
+date_default_timezone_set('Asia/Tokyo');
 
 /** PHPExcel_IOFactory */
 require_once dirname(__FILE__) . '/../Classes/PHPExcel/IOFactory.php';

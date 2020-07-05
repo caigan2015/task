@@ -12,21 +12,25 @@
 use think\Route;
 
 
-//Login
-Route::post('api/:version/user/register', 'api/:version.Token/getToken');
-Route::post('api/:version/user/login', 'api/:version.Token/getAppToken');
-Route::post('api/:version/token/verify', 'api/:version.Token/verifyToken');
-
 //User
-Route::post('api/:version/user/register', 'api/:version.Identify/register');
-Route::post('api/:version/user/login', 'api/:version.Identify/login');
+Route::post('api/:version/user/register', 'api/:version.User/register');
+Route::post('api/:version/user/login', 'api/:version.User/login');
 Route::get('api/:version/user/logout', 'api/:version.User/logout');
-Route::post('api/:version/user/save', 'api/:version.User/updateUser');
-//Member
-Route::get('api/:version/member/info', 'api/:version.Member/getMember');
+Route::post('api/:version/user/password', 'api/:version.User/resetPassword');
+Route::post('api/:version/user/profile', 'api/:version.User/updateProfile');
 
-//Identify
-Route::post('api/:version/identify/code', 'api/:version.Identify/getCode');
+//offer
+Route::post('api/:version/offer/all', 'api/:version.Offer/getOffers');
+Route::post('api/:version/offer/:id', 'api/:version.Offer/getDetail',[], ['id'=>'\d+']);
+Route::post('api/:version/myoffer/save', 'api/:version.Offer/saveOffer');
+Route::post('api/:version/myoffer/all', 'api/:version.Offer/getMyOffers');
+Route::post('api/:version/myoffer/:id', 'api/:version.Offer/getMyOfferDetail',[], ['id'=>'\d+']);
+Route::post('api/:version/myoffer/cancel', 'api/:version.Offer/cancel');
+
+
+
+
+
 
 //Business
 Route::get('api/:version/business/joinus', 'api/:version.Business/getMembership');
@@ -36,12 +40,6 @@ Route::post('api/:version/order/cancel', 'api/:version.Order/orderCancel');
 Route::post('api/:version/order/close', 'api/:version.Order/orderClose');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail',[], ['id'=>'\d+']);
 Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
-
-//Pay
-Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');
-Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');//微信回调接口不能加?参数1=值1&……
-Route::post('api/:version/wxconfig', 'api/:version.Token/getWxConfig');//微信回调接口不能加?参数1=值1&……
-Route::post('api/:version/pay/re_notify', 'api/:version.Pay/redirectNotify');
 
 //MeepoPS
 Route::get('socket/meepops', 'socket/MeepoPS/start');//人机聊天
@@ -62,26 +60,6 @@ Route::post('api/:version/competition/live', 'api/:version.Competition/getCompet
 Route::post('api/:version/competition/play_notify', 'api/:version.Competition/playNotify');
 Route::get('api/:version/competition/online/:id', 'api/:version.Competition/liveOnlineUserNum',[], ['id'=>'\d+']);
 
-//Team
-Route::get('api/:version/team/by_user', 'api/:version.Team/getSummaryByUid',[], ['id'=>'\d+']);
-
-//video
-Route::get('api/:version/competitionvideo/:id', 'api/:version.competitionVideo/getCompetitionVideo',[], ['id'=>'\d+']);
-//live
-Route::get('api/:version/competitionlive/:id', 'api/:version.competitionLive/getCompetitionLive',[], ['id'=>'\d+']);
-Route::get('api/:version/guest/:id', 'api/:version.competitionLive/getGuestsByLiveId',[], ['id'=>'\d+']);
-//search
-Route::post('api/:version/competition/play', 'api/:version.Competition/getPlaysBySearch');
-
-//Banner
-Route::get('api/:version/banner/:id', 'api/:version.Banner/getBanner',[], ['id'=>'\d+']);
-Route::post('api/:version/banner/by_position', 'api/:version.Banner/getBannersByPosition');
-
-//Config
-Route::post('api/:version/config/value', 'api/:version.Config/getValueByCode');
-
-//Test
-Route::get('api/:version/test', 'api/:version.Test/index');
 
 //Index
 

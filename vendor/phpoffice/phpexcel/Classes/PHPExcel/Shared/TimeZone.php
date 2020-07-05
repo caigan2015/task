@@ -47,7 +47,7 @@ class PHPExcel_Shared_TimeZone
 	/**
 	 * Validate a Timezone name
 	 *
-	 * @param	 string		$timezone			Time zone (e.g. 'Europe/London')
+	 * @param	 string		$timezone			Time zone (e.g. 'Asia/Tokyo')
 	 * @return	 boolean						Success or failure
 	 */
 	public static function _validateTimeZone($timezone) {
@@ -60,7 +60,7 @@ class PHPExcel_Shared_TimeZone
 	/**
 	 * Set the Default Timezone used for date/time conversions
 	 *
-	 * @param	 string		$timezone			Time zone (e.g. 'Europe/London')
+	 * @param	 string		$timezone			Time zone (e.g. 'Asia/Tokyo')
 	 * @return	 boolean						Success or failure
 	 */
 	public static function setTimeZone($timezone) {
@@ -75,7 +75,7 @@ class PHPExcel_Shared_TimeZone
 	/**
 	 * Return the Default Timezone used for date/time conversions
 	 *
-	 * @return	 string		Timezone (e.g. 'Europe/London')
+	 * @return	 string		Timezone (e.g. 'Asia/Tokyo')
 	 */
 	public static function getTimeZone() {
 		return self::$_timezone;

@@ -234,7 +234,7 @@ class PHPExcel_Reader_Gnumeric extends PHPExcel_Reader_Abstract implements PHPEx
 			throw new PHPExcel_Reader_Exception("Could not open " . $pFilename . " for reading! File does not exist.");
 		}
 
-		$timezoneObj = new DateTimeZone('Europe/London');
+		$timezoneObj = new DateTimeZone('Asia/Tokyo');
 		$GMT = new DateTimeZone('UTC');
 
 		$gFileData = $this->_gzfileGetContents($pFilename);

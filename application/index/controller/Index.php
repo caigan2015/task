@@ -2,6 +2,9 @@
 
 namespace app\index\controller;
 
+use app\common\model\User;
+use function Qiniu\base64_urlSafeDecode;
+use function Qiniu\base64_urlSafeEncode;
 use think\Controller;
 
 class Index extends Controller
@@ -19,6 +22,16 @@ class Index extends Controller
 
     public function login()
     {
+
+        $uid = $this->request->get('code');
+        if($uid){
+            $user = (new User)->find(base64_urlSafeDecode($uid));
+            if(!$user){
+                return $this->view->fetch('error');
+            }
+            $user->status = 1;
+            $user->save();
+        }
         return "login";
     }
 

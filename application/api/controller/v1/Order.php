@@ -28,9 +28,6 @@ use think\Request;
 class Order extends BaseController
 {
     protected $beforeActionList = [
-        'checkExclusiveScope' => ['only' => 'placeOrder,orderCommit,orderCancel,orderClose'],
-        'checkPrimaryScope' => ['only' => 'getDetail,getSummaryByUser'],
-//        'checkSuperScope' => ['only' => 'delivery,getSummary']
     ];
 
     /**

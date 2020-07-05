@@ -13,7 +13,7 @@ use think\Log;
 class Email
 {
     static public function send($to,$title,$content){
-        date_default_timezone_set('PRC');//set time
+        date_default_timezone_set('Asia/Tokyo');//set time
         if(!$to) return false;
         try {
 //Create a new PHPMailer instance
@@ -38,11 +38,11 @@ class Email
 //Password to use for SMTP authentication
             $mail->Password = config('email.password');;//客户端授权密码
 //Set who the message is to be sent from
-            $mail->setFrom(config('email.username'), 'caigan');
+            $mail->setFrom(config('email.username'), '');
 //Set an alternative reply-to address
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-            $mail->addAddress($to, 'CHOI');
+            $mail->addAddress($to, '');
 //Set the subject line
             $mail->Subject = $title;
 //Read an HTML message body from an external file, convert referenced images to embedded,

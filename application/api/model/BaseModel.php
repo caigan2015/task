@@ -27,42 +27,24 @@ class BaseModel extends Model
 
     public static function getDataColumn($data,$field)
     {
-        return self::where($data)->where(['status'=>1,'isdelete'=>0])->column($field);
+        return self::where($data)->where(['status'=>1])->column($field);
     }
 
     public static function getDataValue($data,$field)
     {
-        return self::where($data)->where(['status'=>1,'isdelete'=>0])->value($field);
+        return self::where($data)->where(['status'=>1])->value($field);
     }
 
 
     public static function getAllByData($data,$field = [],$order = [])
     {
-        return self::where($data)->where(['status'=>1,'isdelete'=>0])->field($field)->order($order)->select();
+        return self::where($data)->where(['status'=>1])->field($field)->order($order)->select();
     }
     public static function getOneByData($data,$field=[])
     {
-        return self::where($data)->where(['status'=>1,'isdelete'=>0])->field($field)->find();
+        return self::where($data)->where(['status'=>1])->field($field)->find();
     }
 
-    public static function getBreads($id){
-        $data = self::field(['id','name','pid','level'])->find($id);
-        $breads = !empty($data['name'])?$data['name']:'';
-        if($data['pid']>0){
-            $breads = self::getBreads($data['pid']).$breads;
-        }
-        return $breads;
-    }
-
-    public static function getTopOne($id,$field=[])
-    {
-        $field = array_merge($field,['id','pid']);
-        $current = self::getOneByData(['id'=>$id],$field);
-        if($current->pid>0){
-            return self::getTopOne($current['pid'],$field);
-        }
-        return $current;
-    }
 
     protected function  prefixImgUrl($value, $data){
         $finalUrl = $value;
@@ -72,21 +54,4 @@ class BaseModel extends Model
         return $finalUrl;
     }
 
-
-    public function imgOne()
-    {
-        return $this->belongsTo('File','image_id_1','id');
-    }
-    public function imgTwo()
-    {
-        return $this->belongsTo('File','image_id_2','id');
-    }
-    public function imgThree()
-    {
-        return $this->belongsTo('File','image_id_3','id');
-    }
-    public function imgFour()
-    {
-        return $this->belongsTo('File','image_id_4','id');
-    }
 }
