@@ -27,39 +27,31 @@ Route::post('api/:version/myoffer/all', 'api/:version.Offer/getMyOffers');
 Route::post('api/:version/myoffer/:id', 'api/:version.Offer/getMyOfferDetail',[], ['id'=>'\d+']);
 Route::post('api/:version/myoffer/cancel', 'api/:version.Offer/cancel');
 
-
-
-
-
-
-//Business
-Route::get('api/:version/business/joinus', 'api/:version.Business/getMembership');
 //Order
 Route::post('api/:version/order/commit', 'api/:version.Order/orderCommit');
 Route::post('api/:version/order/cancel', 'api/:version.Order/orderCancel');
 Route::post('api/:version/order/close', 'api/:version.Order/orderClose');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail',[], ['id'=>'\d+']);
-Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
+Route::get('api/:version/order/byuser', 'api/:version.Order/getSummaryByUser');
+Route::post('api/:version/order/quote', 'api/:version.Order/priceCommit');//見積もり
+Route::post('api/:version/order/confirm', 'api/:version.Order/priceConfirm');//確認見積もり
+Route::post('api/:version/order/taskdone', 'api/:version.Order/taskDone');//確認見積もり
 
-//MeepoPS
-Route::get('socket/meepops', 'socket/MeepoPS/start');//人机聊天
-Route::get('socket/trident', 'socket/Trident/start');//人人聊天
+//Chatting
+Route::post('api/:version/chatting/send', 'api/:version.Chatting/sendMessage');
+Route::post('api/:version/chatting/byorder', 'api/:version.Chatting/getChattingByOrderId');
+
+////MeepoPS
+//Route::get('socket/meepops', 'socket/MeepoPS/start');//人机聊天
+//Route::get('socket/trident', 'socket/Trident/start');//人人聊天
 
 //Feeds
 Route::post('api/:version/feeds', 'api/:version.Feeds/createFeeds');
 
-//Competition
-Route::get('api/:version/competition/by_member', 'api/:version.Competition/getSummaryForMember');
-Route::get('api/:version/team/:id/competitions', 'api/:version.Competition/getSummaryByTeamId',[], ['id'=>'\d+']);
-Route::get('api/:version/competition/:id', 'api/:version.Competition/getDetail',[], ['id'=>'\d+']);
-Route::get('api/:version/competition/begins', 'api/:version.Competition/getAboutToBegins');
-Route::post('api/:version/competition/apply/commit', 'api/:version.Competition/createApply');
-Route::post('api/:version/competition/apply/cancel', 'api/:version.Competition/cancelApply');
-Route::post('api/:version/competition/video', 'api/:version.Competition/getCompetitionVideos');
-Route::post('api/:version/competition/live', 'api/:version.Competition/getCompetitionLives');
-Route::post('api/:version/competition/play_notify', 'api/:version.Competition/playNotify');
-Route::get('api/:version/competition/online/:id', 'api/:version.Competition/liveOnlineUserNum',[], ['id'=>'\d+']);
-
+//Category
+Route::get('api/:version/categories', 'api/:version.Category/getAllCategory');
+//Config
+Route::get('api/:version/config', 'api/:version.Config/getValueByCode');
 
 //Index
 

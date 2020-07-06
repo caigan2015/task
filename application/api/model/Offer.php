@@ -24,4 +24,8 @@ class Offer extends BaseModel
         return self::where($data)->where(['status' => 1])->field($field)->find();
     }
 
+    public function getDescriptionAttr($value)
+    {
+        return html_entity_decode($value);
+    }
 }

@@ -10,7 +10,7 @@ use think\Log;
 use think\Request;
 
 /**
- * Banner资源
+ * Category资源
  */
 class Trident
 {

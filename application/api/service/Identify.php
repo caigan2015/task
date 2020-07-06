@@ -4,7 +4,6 @@ namespace app\api\service;
 use app\api\model\User as UserModel;
 use app\lib\exception\IdentifyException;
 use app\lib\exception\ImageException;
-use app\lib\exception\SuccessMessage;
 use app\lib\exception\UserException;
 use think\Request;
 

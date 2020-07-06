@@ -1,17 +1,10 @@
 <?php
 namespace app\api\service;
 
-use app\api\model\File;
-use app\api\model\Quarter;
 use app\api\service\Token as TokenService;
 use app\api\model\Offer as OfferModel;
-use app\api\model\User;
-use app\api\model\User as UserModel;
-use app\lib\exception\IdentifyException;
 use app\lib\exception\ImageException;
 use app\lib\exception\OfferException;
-use app\lib\exception\SuccessMessage;
-use app\lib\exception\UserException;
 use think\Exception;
 use think\Request;
 
@@ -26,7 +19,7 @@ class Offer
         $data = Request::instance()->post();
         $data['user_id'] = $uid;
         !empty($data['image'])?($data['image'] = self::saveImage($data['image'])):'';
-
+        $data['description'] = htmlentities($data['description']);
         $res = OfferModel::create($data,true);
         if(!$res){
             throw new OfferException([
@@ -46,6 +39,7 @@ class Offer
         $offer = self::checkOffer(['id' => $data['id']]);
         $data['user_id'] = $uid;
         !empty($data['image'])?($data['image'] = self::saveImage($data['image'])):'';
+        $data['description'] = htmlentities($data['description']);
 
         $res = $offer->save($data);
         if(!$res){
@@ -81,7 +75,7 @@ class Offer
             return $head_img;
         }
 
-        $fileDir = "./tmp/uploads/".date('YmdHis');
+        $fileDir = "./tmp/uploads/offer/".date('YmdHis');
         if(!file_exists($fileDir)){
             mkdir($fileDir,0777,true);
         }

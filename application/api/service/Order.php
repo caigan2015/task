@@ -1,326 +1,100 @@
 <?php
-/**
- * Created by 七月.
- * Author: 七月
- * 微信公号：小楼昨夜又秋风
- * 知乎ID: 七月在夏天
- * Date: 2017/2/23
- * Time: 1:48
- */
+
 
 namespace app\api\service;
 
-
 use app\api\model\Order as OrderModel;
-use app\api\model\OrderProduct;
-use app\api\model\Product;
-use app\api\model\UserAddress;
+use app\api\service\Offer as OfferService;
 use app\lib\enum\OrderStatusEnum;
 use app\lib\exception\OrderException;
-use app\lib\exception\UserException;
-use think\Db;
-use think\Exception;
 
-/**
- * 订单类
- * 订单做了以下简化：
- * 创建订单时会检测库存量，但并不会预扣除库存量，因为这需要队列支持
- * 未支付的订单再次支付时可能会出现库存不足的情况
- * 所以，项目采用3次检测
- * 1. 创建订单时检测库存
- * 2. 支付前检测库存
- * 3. 支付成功后检测库存
- */
 class Order
 {
-    protected $oProducts;
-    protected $products;
-    protected $uid;
-
-    function __construct()
+    public static function checkOrder($id)
     {
-    }
-
-    /**
-     * @param int $uid 用户id
-     * @param array $oProducts 订单商品列表
-     * @return array 订单商品状态
-     * @throws Exception
-     */
-    public function place($uid, $oProducts)
-    {
-        $this->oProducts = $oProducts;
-        $this->products = $this->getProductsByOrder($oProducts);//获取商品信息
-        $this->uid = $uid;
-        $status = $this->getOrderStatus();
-        if (!$status['pass']) {
-            $status['order_id'] = -1;
-            return $status;
-        }
-
-        $orderSnap = $this->snapOrder();
-        $status = self::createOrderByTrans($orderSnap);
-        $status['pass'] = true;
-        return $status;
-    }
-
-    /**
-     * @param string $orderNo 订单号
-     * @return array 订单商品状态
-     * @throws Exception
-     */
-    public function checkOrderStock($orderID)
-    {
-        //        if (!$orderNo)
-        //        {
-        //            throw new Exception('没有找到订单号');
-        //        }
-
-        // 一定要从订单商品表中直接查询
-        // 不能从商品表中查询订单商品
-        // 这将导致被删除的商品无法查询出订单商品来
-        $oProducts = OrderProduct::where('order_id', '=', $orderID)
-            ->select();
-        $this->products = $this->getProductsByOrder($oProducts);
-        $this->oProducts = $oProducts;
-        $status = $this->getOrderStatus();
-        return $status;
-    }
-
-    public function delivery($orderID, $jumpPage = '')
-    {
-        $order = OrderModel::where('id', '=', $orderID)
-            ->find();
+        $user_id = Token::getCurrentUid();
+        $order = OrderModel::get(['id' => $id]);
         if (!$order) {
             throw new OrderException();
         }
-        if ($order->status != OrderStatusEnum::PAID) {
+        OfferService::checkOffer(['id' => $order->offer_id]);
+        if ($order->user_id != $user_id) {
             throw new OrderException([
-                'msg' => '还没付款或者你已经更新过订单了，不要再刷了',
-                'error_code' => 60005,
+                'msg' => '对不起！你没有权限更改订单状态',
+                'error_code' => 60007,
                 'code' => 403
             ]);
         }
-        $order->status = OrderStatusEnum::DELIVERED;
-        $order->save();
-//            ->update(['status' => OrderStatusEnum::DELIVERED]);
-        $message = new DeliveryMessage();
-        return $message->sendDeliveryMessage($order, $jumpPage);
-    }
 
-    private function getOrderStatus()
-    {
-        $status = [
-            'pass' => true,
-            'orderPrice' => 0,
-            'pStatusArray' => []
-        ];
-        foreach ($this->oProducts as $oProduct) {
-            $pStatus = $this->getProductStatus($oProduct['product_id'], $oProduct['count'], $this->products);
-            if (!$pStatus['haveStock']) {
-                $status['pass'] = false;
-            }
-            $status['orderPrice'] += $pStatus['totalPrice'];
-            array_push($status['pStatusArray'], $pStatus);
-        }
-        return $status;
-    }
-
-    /**
-     * 查某一种商品库存
-     * @param $oPID
-     * @param $oCount
-     * @param $products
-     * @return array
-     * @throws OrderException
-     */
-    private function getProductStatus($oPID, $oCount, $products)
-    {
-        $pIndex = -1;
-        $pStatus = [
-            'id' => null,
-            'haveStock' => false,
-            'count' => 0,
-            'name' => '',
-            'totalPrice' => 0
-        ];
-
-        for ($i = 0; $i < count($products); $i++) {
-            if ($oPID == $products[$i]['id']) {
-                $pIndex = $i;
-            }
-        }
-
-        if ($pIndex == -1) {
-            // 客户端传递的productid有可能根本不存在
-            throw new OrderException(
-                [
-                    'msg' => 'id为' . $oPID . '的商品不存在，订单创建失败' ,
-                    'error' => 60006
-                ]);
-        } else {
-            $product = $products[$pIndex];
-            $pStatus['id'] = $product['id'];
-            $pStatus['name'] = $product['name'];
-            $pStatus['count'] = $oCount;
-            $pStatus['totalPrice'] = $product['price'] * $oCount;
-
-            if ($product['stock'] - $oCount >= 0) {
-                $pStatus['haveStock'] = true;
-            }
-        }
-        return $pStatus;
-    }
-
-
-    // 根据订单查找真实商品
-    private function getProductsByOrder($oProducts)
-    {
-        $oPIDs = [];
-        foreach ($oProducts as $item) {
-            array_push($oPIDs, $item['product_id']);
-        }
-        // 为了避免循环查询数据库
-        $products = Product::all($oPIDs)
-            ->visible(['id', 'price', 'stock', 'name', 'main_img_url'])
-            ->toArray();
-        return $products;
-    }
-
-    /**获取收货地址
-     * @return array
-     * @throws UserException
-     */
-    private function getUserAddress()
-    {
-        $userAddress = UserAddress::where('user_id', '=', $this->uid)
-            ->find();
-        if (!$userAddress) {
-            throw new UserException(
-                [
-                    'msg' => '用户收货地址不存在，下单失败',
-                    'error_code' => 60004,
-                ]);
-        }
-        return $userAddress->toArray();
-    }
-
-    // 创建订单时没有预扣除库存量，简化处理
-    // 如果预扣除了库存量需要队列支持，且需要使用锁机制
-    private function createOrderByTrans($snap)
-    {
-        try {
-            $orderNo = $this->makeOrderNo();
-            $order = new OrderModel();
-            $order->user_id = $this->uid;
-            $order->order_no = $orderNo;
-            $order->total_price = $snap['orderPrice'];
-            $order->total_count = $snap['totalCount'];
-            $order->snap_img = $snap['snapImg'];
-            $order->snap_name = $snap['snapName'];
-            $order->snap_address = $snap['snapAddress'];
-            $order->snap_items = json_encode($snap['pStatus']);
-            $order->save();
-
-            $orderID = $order->id;
-            $create_time = $order->create_time;
-
-            foreach ($this->oProducts as &$p) {
-                $p['order_id'] = $orderID;
-            }
-            $orderProduct = new OrderProduct();
-            $orderProduct->saveAll($this->oProducts);
-            return [
-                'order_no' => $orderNo,
-                'order_id' => $orderID,
-                'create_time' => $create_time
-            ];
-        } catch (Exception $ex) {
-            throw $ex;
-        }
-    }
-
-    // 预检测并生成订单快照
-    private function snapOrder()
-    {
-        // status可以单独定义一个类
-        $snap = [
-            'orderPrice' => 0,
-            'totalCount' => 0,
-            'pStatus' => [],
-            'snapAddress' => json_encode($this->getUserAddress()),
-            'snapName' => $this->products[0]['name'],
-            'snapImg' => $this->products[0]['main_img_url'],
-        ];
-
-        if (count($this->products) > 1) {
-            $snap['snapName'] .= '等';
-        }
-
-
-        for ($i = 0; $i < count($this->products); $i++) {
-            $product = $this->products[$i];
-            $oProduct = $this->oProducts[$i];
-
-            $pStatus = $this->snapProduct($product, $oProduct['count']);
-            $snap['orderPrice'] += $pStatus['totalPrice'];
-            $snap['totalCount'] += $pStatus['count'];
-            array_push($snap['pStatus'], $pStatus);
-        }
-        return $snap;
-    }
-
-    // 单个商品库存检测
-    private function snapProduct($product, $oCount)
-    {
-        $pStatus = [
-            'id' => null,
-            'name' => null,
-            'main_img_url'=>null,
-            'count' => $oCount,
-            'totalPrice' => 0,
-            'price' => 0
-        ];
-
-        $pStatus['counts'] = $oCount;
-        // 以服务器价格为准，生成订单
-        $pStatus['totalPrice'] = $oCount * $product['price'];
-        $pStatus['name'] = $product['name'];
-        $pStatus['id'] = $product['id'];
-        $pStatus['main_img_url'] =$product['main_img_url'];
-        $pStatus['price'] = $product['price'];
-        return $pStatus;
-    }
-
-
-    public static function checkOrder($id)
-    {
-        $order = OrderModel::getOneByData(['id'=>$id]);
-        if (!$order)
-        {
-            throw new OrderException();
-        }
-        $user_id = Token::getCurrentUid();
-        if($order->user_id != $user_id){
-            throw new OrderException([
-                'msg' => '对不起！你没有权限更改订单状态',
-                'error_code' => 60007  ,
-                'code' =>403
-            ]);
-        }
-        
         return $order;
     }
 
-    public static function getOrderPeriod($yearMonth,$order_period)
+    /**
+     * @param $data
+     * @throws OrderException
+     */
+    public static function checkOrderQuote($data, $isConfirm = 0)
     {
-        $yearMonth = $yearMonth?:date('Y-m');
-        $endDate = $yearMonth.'-'.$order_period;
-        $endTime = strtotime($endDate);
-        $BeginTime = strtotime('-1 month',$endTime);
-        $BeginDate=date('Y年m月d日', $BeginTime);
-        $endDate = date('Y年m月d日',strtotime('-1 day',$endTime));
-        return $BeginDate.' ~ '.$endDate;
+        $user_id = Token::getCurrentUid();
+        $order = OrderModel::get(['id' => $data['id']]);
+        if (!$order) {
+            throw new OrderException();
+        }
+        $offer = OfferService::checkOffer(['id' => $order->offer_id]);
+        $offer_user_id = $offer->user_id;
+        if (!in_array($user_id, [$order->user_id, $offer_user_id])) {
+            throw new OrderException([
+                'code' => 400,
+                'msg' => '对不起！你没有报价权',
+                'error_code' => 60003
+            ]);
+        }
+        if ($order->status != OrderStatusEnum::WAIT_CONFIRM) {
+            throw new OrderException([
+                'code' => 400,
+                'msg' => '对不起！订单不允许报价',
+                'error_code' => 60003
+            ]);
+        }
+        if (!$isConfirm) {
+            $order->quote_type = $user_id == $offer_user_id ? 0 : 1;
+            $order->price = $data['price'];
+        } else {
+            if (!$order->price) {
+                throw new OrderException([
+                    'code' => 400,
+                    'msg' => '对不起！订单未报价',
+                    'error_code' => 60003
+                ]);
+            }
+            $order->status = OrderStatusEnum::WAIT_PAID;
+        }
+        return $order;
     }
-    
+
+    public static function checkOrderForChattingReturnUserType($id,$user_id)
+    {
+        $order = OrderModel::get(['id' => $id]);
+        if (!$order || $order->status == OrderStatusEnum::CLOSED) {
+            throw new OrderException();
+        }
+
+        $offer = OfferService::checkOffer(['id' => $order->offer_id]);
+        $offer_user_id = $offer->user_id;
+        if (!in_array($user_id, [$order->user_id, $offer_user_id])) {
+            throw new OrderException([
+                'code' => 400,
+                'msg' => '对不起！你无权聊天',
+                'error_code' => 60003
+            ]);
+        }
+
+        return ($user_id == $offer_user_id) ? 0 : 1;;
+    }
+
+    public static function makeOrderNo()
+    {
+        return 'TASK' . (new \DateTime)->format('YmdHisu');
+    }
+
 }

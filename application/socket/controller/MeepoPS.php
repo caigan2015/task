@@ -3,7 +3,7 @@ namespace app\socket\controller;
 use think\Log;
 
 /**
- * Banner资源
+ * Category资源
  */ 
 class MeepoPS
 {

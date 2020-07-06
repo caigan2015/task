@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by 七月.
- * Author: 七月
- * 微信公号：小楼昨夜又秋风
- * 知乎ID: 七月在夏天
- * Date: 2017/2/23
- * Time: 3:01
- */
 
 namespace app\api\validate;
 
@@ -22,7 +14,6 @@ class OfferNew extends BaseValidate
         'request_type' => 'require|number',
         'title' => 'require',
         'description' => 'require',
-        'status'=>'in:0,1',
         'id'=>'require|number'
     ];
 
@@ -30,6 +21,5 @@ class OfferNew extends BaseValidate
     protected $scene = [
         'create'=>['id','description','category','','request_type','title'],
         'save'=>['description','category','','request_type','title'],
-        'get'=>['status']
     ];
 }

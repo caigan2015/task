@@ -3,7 +3,7 @@ namespace app\common\model;
 
 use think\Model;
 
-class Banners extends Model
+class Categorys extends Model
 {
     // 指定表名,不含前缀
     protected $name = 'banners';

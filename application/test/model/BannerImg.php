@@ -4,7 +4,7 @@ namespace app\test\model;
 
 use think\Model;
 
-class BannerImg extends Model
+class CategoryImg extends Model
 {
     
 }

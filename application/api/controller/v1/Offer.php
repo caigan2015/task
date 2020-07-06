@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by 七月.
- * Author: 七月
- * 微信公号：小楼昨夜又秋风
- * 知乎ID: 七月在夏天
- * Date: 2017/2/23
- * Time: 2:56
- */
 
 namespace app\api\controller\v1;
 
@@ -59,7 +51,6 @@ class Offer extends BaseController
      */
     public function getOffers($page = 1,$size = 1)
     {
-        (new OfferNew())->goCheck([],'get');
         (new PagingParameter())->goCheck();
         $data = Request::instance()->post();
         $offers = OfferModel::getSummary($data,[],true, $page, $size);
@@ -104,6 +95,9 @@ class Offer extends BaseController
         $uid = TokenService::getCurrentUid();
         $data['user_id'] = $uid;
         $offers = OfferModel::getSummary($data,[],false);
+        if(!$offers){
+            throw new OfferException() ;
+        }
         return new SuccessReturn([
             'info'=>$offers
         ]);

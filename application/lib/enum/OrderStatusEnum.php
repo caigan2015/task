@@ -5,18 +5,18 @@ namespace app\lib\enum;
 
 class OrderStatusEnum
 {
-    // 已关闭
+    // 無効
     const CLOSED = -1;
-    // 待支付
-    const UNPAID = 0;
-    // 已支付
-    const PAID = 1;
-    // 已超时
-    const OVERTIME = 2;
-    // 退款中
-    const REFUNDING = 3;
-    // 已退款
-    const REFUNDED = 4;
-    // 已取消
+    // 両方確認待ち
+    const WAIT_CONFIRM = 0;
+    // 両方確認済み、待支付
+    const WAIT_PAID = 1;
+    // 運営方お金を確認
+    const CONFIRM_PAID = 2;
+    // タスク済みの確認
+    const TASK_DONE = 3;
+    // 全額支払い済み確認
+    const PAID_DONE = 4;
+    // キャンセル
     const CANCELED = 5;
 }

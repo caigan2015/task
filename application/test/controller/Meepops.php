@@ -4,7 +4,7 @@ namespace app\test\controller;
 use think\Controller;
 
 /**
- * Banner资源
+ * Category资源
  */ 
 class Meepops extends Controller
 {
