@@ -1,0 +1,58 @@
+<nav class="main-menu navbar navbar-expand-md">
+    <a class="navbar-brand justify-content-start" href="index.html">
+        <img src="assets/img/logo/logo-3.png" alt="logo"/>
+    </a>
+    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
+            data-target="#exCollapsingNavbar">
+        <div class="navbar-toggler-icon ">
+            <i class="fa fa-list-ul" style="font-size: 150%;color: #436372;"></i>
+        </div>
+    </button>
+    <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+        <ul class="nav navbar-nav mr-auto text-left first-navbar">
+            <!-- header-area start -->
+            <li class="nav-item pl-2">
+                <a class="nav-link ml-2" href="index.html"><i class="far fa-home mr-2"></i><span>ホーム</span></a>
+            </li>
+            <li class="nav-item pl-2">
+                <a class="nav-link ml-2" href="index.html"><i class="far fa-handshake mr-2"></i><span>タスク</span></a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto text-left">
+            <li class="dropdown nav-item pl-2">
+                <a class="nav-link dropdown-toggle ml-2" data-toggle="dropdown" role="button"
+                   id="dropdownMenuLinkList" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-list-alt mr-2"></i>
+                    <span>取引一覧</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkList">
+                    <li class="dropdown-item mb-1">
+                        <a href="myoffer_list.html">オファー管理</a></li>
+                    <li class="dropdown-item">
+                        <a href="myorder_list.html">ジョブ管理</a></li>
+                </ul>
+            </li>
+            <li class="dropdown nav-item pl-2 mb-2">
+                <a class="nav-link row login-item ml-2 " href="javascript:void 0;" data-toggle="modal"
+                   data-target="#login-modal"><i class="far fa-user"></i><span class="ml-2"></span>ログイン
+                </a>
+                <a class="nav-link dropdown-toggle ml-2 user-center-item" data-toggle="dropdown"
+                   href="javascript:void 0;" role="button" id="dropdownMenuLinkUser" aria-haspopup="true"
+                   aria-expanded="false" style="display: none">
+                    <span><i class="far fa-user mr-2"></i></span><span class="username-item">ユーザーセンター</span>
+                </a>
+                <ul class="dropdown-menu mb-2" aria-labelledby="dropdownMenuLinkUser">
+                    <li class="dropdown-item">
+                        <a class="mb-1" href="profile.html?tab=profile">プロファイル</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="" href="profile.html?tab=password">パスワード</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="user-logout" href="javascript:void (0)" onclick="logout()">ログアウト</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

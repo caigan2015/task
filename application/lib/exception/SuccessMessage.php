@@ -8,8 +8,8 @@ namespace app\lib\exception;
  */
 class SuccessMessage extends BaseException
 {
-    public $code = 201;
+    public $code = 200;
     public $msg = 'success';
-    public $errorCode = 0;
+    public $error_code = 0;
     public $info = [];
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace app\api\service;
 
 use app\api\model\User as UserModel;
@@ -16,26 +17,25 @@ class Identify
      */
     public static function saveHeadImg($head_img)
     {
-        if(file_exists('.'.$head_img)){
+        if (file_exists('.' . $head_img)) {
             return $head_img;
         }
-        
+
         $fileDir = "./tmp/uploads/head_image";
-        if(!file_exists($fileDir)){
-            mkdir($fileDir,0777,true);
+        if (!file_exists($fileDir)) {
+            mkdir($fileDir, 0777, true);
         }
-        $fileImg = $fileDir . '/' . md5(microtime(true)).'.jpg';
+        $fileImg = $fileDir . '/' . md5(microtime(true)) . '.jpg';
         //保存图片
-        if(!file_put_contents($fileImg, base64_decode($head_img))){
+        if (!file_put_contents($fileImg, base64_decode($head_img))) {
             throw new ImageException([
-                'msg' => '保存图片失败',
-                'error_code'=> 40001 ,
-                'code' =>  403
+                'msg' => '画像を保存できませんでした',
+                'error_code' => 40001,
             ]);
         }
         //缩略图
 //        $result = Image::open($fileImg)->thumb(100, 100)->save($pic);
-        return ltrim($fileImg,'.');
+        return ltrim($fileImg, '.');
     }
 
     /**
@@ -43,26 +43,26 @@ class Identify
      * @throws IdentifyException
      * @throws UserException
      */
-    public static function resetPassword(){
+    public static function resetPassword()
+    {
         $data = Request::instance()->post();
-        $uid = Token ::getCurrentUid();
-        $user = UserModel::getOneByData(['id'=>$uid],['password']);
-        if(!$user){
+        $uid = Token::getCurrentUid();
+        $user = UserModel::getOneByData(['id' => $uid], ['password']);
+        if (!$user) {
             throw new UserException();
         }
-        if($user['password'] != \IAuth::setPassword($data['oldpassword'])){
+        if ($user->password != \IAuth::setPassword($data['oldpassword'])) {
             throw new IdentifyException([
-                'msg'=>'原密码错误',
-                'error_code'=>10014
+                'msg' => '元のパスワードが間違っている',
+                'error_code' => 10010
             ]);
         }
         $pass = \IAuth::setPassword($data['password']);
-
-        $bool = $user->save(['password'=>$pass]);
-        if($bool===false){
+        $bool = $user->save(['password' => $pass]);
+        if ($bool === false) {
             throw new IdentifyException([
-                'msg'=>'密码修改失败',
-                'error_code'=>10013
+                'msg' => 'パスワードの変更に失敗しました',
+                'error_code' => 10011
             ]);
         }
         return true;
@@ -76,53 +76,69 @@ class Identify
      */
     public static function checkUser($uid)
     {
-        $user = UserModel::getOneByData(['id'=>$uid]);
-        if(!$user){
+        $user = UserModel::getOneByData(['id' => $uid]);
+        if (!$user) {
             throw new UserException();
         }
         return $user;
     }
 
+    /**
+     * @param $email
+     * @return null|static
+     * @throws IdentifyException
+     */
     public static function isRegistered($email)
     {
-        $user = UserModel::get(['e_mail'=>$email]);
-        if(!empty($user)){
-            if($user->status==0){
+        $user = UserModel::get(['e_mail' => $email]);
+        if (!empty($user)) {
+            if ($user->status == 0) {
                 throw new IdentifyException([
-                    'msg'=>'账号被禁用或删除，请与管理员联系。',
-                    'error_code'=>10007
+                    'msg' => 'アカウントが無効になっているか削除されています。管理者に連絡してください。',
+                    'error_code' => 10001
                 ]);
             }
 
+            if ($user->status == 2) {
+                throw new IdentifyException([
+                    'msg' => 'ユーザーが登録しました。メールボックスに移動して確認してください',
+                    'error_code' => 10002
+                ]);
+            }
             throw new IdentifyException([
-                'msg'=>'已注册用户',
-                'error_code'=>10007
+                'msg' => 'ユーザーはすでに登録されています',
+                'error_code' => 10003
             ]);
         }
-        
+
         return $user;
     }
-    
+
+    /**
+     * @param $uid
+     * @return bool
+     * @throws IdentifyException
+     */
     public static function updateUserInfo($uid)
     {
         $data = Request::instance()->post();
         $data = array_filter($data);
-        if(!$data){
+        if (!$data) {
             throw new IdentifyException([
-                'msg'=>'未发现用户更新信息',
-                'error_code'=>10017
+                'msg' => 'ユーザー更新情報が見つかりません',
+                'error_code' => 10012
             ]);
         }
 
-        if(!empty($data['head_img'])){
+        if (!empty($data['head_img'])) {
             $head_img = self::saveHeadImg($data['head_img']);
             $data['head_img'] = $head_img;
         }
-        $result = UserModel::update($data,['id'=>$uid]);
-        if($result===false){
+        $result = UserModel::update($data, ['id' => $uid]);
+        if ($result === false) {
             throw new IdentifyException([
-                'msg'=>'更新用户信息失败',
-                'error_code'=>10018
+                'msg' => 'ユーザー情報を更新できませんでした',
+                'error_code' => 10013
             ]);
         }
         return true;

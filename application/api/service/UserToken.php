@@ -9,14 +9,8 @@ use app\lib\exception\SuccessMessage;
 use app\lib\exception\TokenException;
 use app\lib\exception\UserException;
 use phpmailer\Email;
-use function Qiniu\base64_urlSafeEncode;
 use think\Request;
 
-/**
- * 微信登录
- * 如果担心频繁被恶意调用，请限制ip
- * 以及访问频率
- */
 class UserToken
 {
 
@@ -29,7 +23,6 @@ class UserToken
         return md5($randChar . $timestamp . $tokenSalt);
     }
 
-
     // 写入缓存
     private function saveToCache($Result)
     {
@@ -40,8 +33,8 @@ class UserToken
 
         if (!$result){
             throw new TokenException([
-                'msg' => '服务器缓存异常',
-                'errorCode' => 50000
+                'msg' => 'サーバーキャッシュ例外',
+                'error_code' => 50000
             ]);
         }
         return $key;
@@ -54,81 +47,110 @@ class UserToken
         return $cachedValue;
     }
 
-    // 创建新用户
+    /**
+     * 创建新用户
+     *
+     */
     private function createUser($data)
     {
         $user = UserModel::create($data,true);
         if(!$user){
             throw new IdentifyException([
-                'msg'=>'提交注册信息失败!',
-                'error_code' => 10008
+                'msg'=>'登録に失敗しました!',
+                'error_code' => 10004
             ]);
         }
         return $user;
     }
 
-    private function saveUser($uid)
+    /**
+     * @param $uid
+     * @return UserModel
+     */
+    private function saveUser($user)
     {
         $now = date('Y-m-d H:i:s');
-        $where['id'] = $uid;
-        $update['login_time'] = $now;
-        $update['update_time'] = $now;
-        $user = new UserModel();
-        $user->save($update,$where);
+        $user -> login_time = $now;
+        $user->update_time = $now;
+        $user->save();
         return $user;
     }
 
+    /**
+     * @return SuccessMessage
+     * @throws IdentifyException
+     */
     public function appRegister()
     {
-        $request = Request::instance();
-        $data = $request->post();
+        $data = Request::instance()->post();
         IdentifyService::isRegistered($data['e_mail']);
-        $data['password'] = \IAuth::setPassword($data['password']);
+        $password = $data['password'];
+        $data['password'] = \IAuth::setPassword($password);
         $data['login_time'] = date('Y-m-d H:i:s');
         $user = $this->createUser($data);
-        //TODO 邮件
-        $url = url('/user/verify?code=' . base64_urlSafeEncode($user->id));
-//        Email::send($data['e_mail'],$url);
+        $url = config('app.base_url') . url('/user/verify?code=' . base64_urlSafeEncode($user->id));
+        $content = <<<EOF
+            <h3>お客様：</h3>
+            <div style="text-indent: 30px">
+            <p>恭喜您，您的账号的已经申请成功！</p><p>欢迎加入ASK！</p>
+            <p>您的用户名为：<span style="color:red;font-weight:700">{$data['username']}</span></p>
+            <p>您的密码为：<span style="color:red;font-weight:700">{$password}</span></p>
+            <p>请点击链接 {$url} 进行验证,您可以通过改收件箱邮箱地址进行登录！</p>
+            <p>该邮件是系统自动发送，请勿回复！</p>
+            </div>
+EOF;
+        $result = Email::send($data['e_mail'],'ASK登録',$content);
+        if(!$result){
+            throw new IdentifyException([
+                'msg' => '確認メールを送信できませんでした',
+                'error_code' => 10005
+            ]);
+        }
         return new SuccessMessage();
 
     }
 
+    /**
+     * @return array
+     * @throws UserException
+     */
     public function appLogin()
     {
         $request = Request::instance();
         $data = $request->post();
-        $user = UserModel::get(['e_mail'=>$data['e_mail']]);
+        $user = UserModel::get(['e_mail|username'=>$data['e_mail']]);
         if(!$user){
             throw new UserException([
-                'msg'=>'用户不存在',
-                'error_code'=>10004
+                'msg'=>'ユーザーは存在しません',
+                'error_code'=>10006
             ]);
         }
 
         if($user->status == 2){
             throw new UserException([
-                'msg'=>'请前往邮箱确认',
-                'error_code'=>10004
+                'msg'=>'ユーザーが登録しました。メールボックスに移動して確認してください',
+                'error_code'=>10007
             ]);
         }
 
         if($user->status == 0){
             throw new UserException([
-                'msg'=>'用户禁用',
-                'error_code'=>10004
+                'msg'=>'ユーザーは無効です',
+                'error_code'=>10008
             ]);
         }
         if($user->password != \IAuth::setPassword($data['password'])){
             throw new UserException([
-                'msg'=>'用户密码不正确',
-                'error_code'=>10004
+                'msg'=>'ユーザーパスワードが正しくありません',
+                'error_code'=>10009
             ]);
         }
         $uid = $user->id;
-        $this->saveUser($uid);
         $cachedValue = $this->prepareCachedValue([], $uid);
         $token = $this->saveToCache($cachedValue);
-        return $token;
+        $user->token = $token;
+        $user = $this->saveUser($user);
+        return ['token' => $token,'user_info' => $user->visible(['id','username','head_img'])];
     }
 
 }

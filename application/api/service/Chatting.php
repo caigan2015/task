@@ -5,7 +5,6 @@ use app\api\service\Order as OrderService;
 use app\api\model\Chatting as ChattingModel;
 use app\lib\exception\ImageException;
 use app\lib\exception\SuccessMessage;
-use think\Exception;
 
 class Chatting
 {
@@ -18,11 +17,7 @@ class Chatting
         $data['user_type'] = $user_type;
         $data['content'] = htmlentities($data['content']);
 //        !empty($data['file'])?($data['file'] = self::saveFile($data['file'])):'';
-        $result = ChattingModel::create($data);
-        if(!$result){
-            throw new Exception('创建聊天记录失败');
-        }
-
+        ChattingModel::create($data);
         return new SuccessMessage();
     }
 
@@ -44,9 +39,8 @@ class Chatting
         //保存图片
         if(!file_put_contents($fileImg, base64_decode($head_img))){
             throw new ImageException([
-                'msg' => '保存文件失败',
+                'msg' => '画像を保存できませんでした',
                 'error_code'=> 40001 ,
-                'code' =>  403
             ]);
         }
         //缩略图

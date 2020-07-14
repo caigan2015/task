@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.container
+{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.profile-nav{
+    border-top-left-radius: 0 !important;
+border-top-right-radius: 0 !important;
+}
+@media screen and (min-width:768px)
+{
+    .card.shadow-md
+    {
+        box-shadow: 0 5px 20px rgba(85,85,85,.1);
+        background: #d2dbdd;
+        min-height: 41.5rem;
+    }
+}
+

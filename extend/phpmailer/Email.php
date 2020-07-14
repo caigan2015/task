@@ -1,7 +1,6 @@
 <?php
 namespace phpmailer;
 
-use Think\Exception;
 use think\Log;
 /**
  * Created by PhpStorm.
@@ -63,6 +62,7 @@ class Email
             }
         }catch (PHPMailerException $e){
             Log::error('邮件发送错误：'.$e->errorMessage());
+            return false;
         }
     }
 }

@@ -7,6 +7,6 @@ class PriceCommit extends BaseValidate
 {
     protected $rule = [
         'id' => 'require|number',
-        'price' => 'require|number',
+        'price' => 'require|number|min:0',
     ];
 }

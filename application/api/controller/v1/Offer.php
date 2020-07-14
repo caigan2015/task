@@ -6,9 +6,11 @@ use app\api\controller\BaseController;
 use app\api\model\Offer as OfferModel;
 use app\api\service\Offer as OfferService;
 use app\api\service\Token as TokenService;
+use app\api\model\Order as OrderModel;
 use app\api\validate\IDMustBePositiveInt;
 use app\api\validate\PagingParameter;
 use app\api\validate\OfferNew;
+use app\lib\enum\OrderStatusEnum;
 use app\lib\exception\OfferException;
 use app\lib\exception\SuccessMessage;
 use app\lib\exception\SuccessReturn;
@@ -25,8 +27,7 @@ class Offer extends BaseController
      */
     public function createOffer()
     {
-        (new OfferNew())->goCheck([],'create');
-
+        (new OfferNew())->goCheck([], 'create');
         OfferService::create();
 
         return new SuccessMessage();
@@ -37,8 +38,7 @@ class Offer extends BaseController
      */
     public function saveOffer()
     {
-        (new OfferNew())->goCheck([],'save');
-
+        (new OfferNew())->goCheck([], 'save');
         OfferService::save();
 
         return new SuccessMessage();
@@ -49,20 +49,28 @@ class Offer extends BaseController
      * @param int $size
      * @return SuccessReturn
      */
-    public function getOffers($page = 1,$size = 1)
+    public function getOffers($page = 1, $size = 20)
     {
         (new PagingParameter())->goCheck();
+        (new OfferNew())->goCheck([], 'get');
         $data = Request::instance()->post();
-        $offers = OfferModel::getSummary($data,[],true, $page, $size);
-        if($offers->isEmpty()){
+        //条件検索　todo
+//        $order_offer_ids = OrderModel ::getDataColumn('status BETWEEN ' . OrderStatusEnum::WAIT_PAID .' AND '. OrderStatusEnum::PAID_DONE,'offer_id');
+//        $data['offer_id'] = ['NOT IN',$order_offer_ids];
+        $offers = OfferModel::getSummary($data, [], true, $page, $size);
+        if ($offers->isEmpty()) {
             $offers = [
                 'current_page' => $offers->currentPage(),
                 'total' => $offers->total(),
                 'data' => []
             ];
         }
+        foreach ($offers as $offer) {
+            $offer-> append(['request_type_text'])->hidden(['category_id', 'description', 'update_time', 'request_type', 'remark', 'image', 'status']);
+        }
+
         return new SuccessReturn([
-            'info'=>$offers
+            'info' => $offers,
         ]);
     }
 
@@ -74,13 +82,12 @@ class Offer extends BaseController
     {
         (new IDMustBePositiveInt())->goCheck();
         $id = Request::instance()->param('id');
-        $offer = OfferModel::getDetail(['id'=>$id]);
-        if(!$offer){
-            throw new OfferException() ;
+        $offer = OfferModel::getDetail(['id' => $id]);
+        if (!$offer) {
+            throw new OfferException();
         }
-
         return new SuccessReturn([
-            'info'=>$offer
+            'info' => $offer->append(['request_type_text'])->hidden(['category_id', 'update_time', 'request_type', 'status'])
         ]);
     }
 
@@ -89,17 +96,18 @@ class Offer extends BaseController
      */
     public function getMyOffers()
     {
-        (new OfferNew())->goCheck([],'get');
+        (new OfferNew())->goCheck([], 'get');
         (new PagingParameter())->goCheck();
         $data = Request::instance()->post();
         $uid = TokenService::getCurrentUid();
         $data['user_id'] = $uid;
-        $offers = OfferModel::getSummary($data,[],false);
-        if(!$offers){
-            throw new OfferException() ;
+        //条件検索
+        $offers = OfferModel::getSummary($data, [], false);
+        if ($offers->isEmpty()) {
+            throw new OfferException();
         }
         return new SuccessReturn([
-            'info'=>$offers
+            'info' => $offers->append(['request_type_text'])->hidden(['category_id', 'description', 'update_time', 'request_type', 'remark', 'image', 'status'])
         ]);
     }
 
@@ -112,12 +120,12 @@ class Offer extends BaseController
         (new IDMustBePositiveInt())->goCheck();
         $id = Request::instance()->param('id');
         $uid = TokenService::getCurrentUid();
-        $offer = OfferModel::getDetail(['id'=>$id,'user_id'=>$uid]);
-        if(!$offer){
-            throw new OfferException() ;
+        $offer = OfferModel::getDetail(['id' => $id, 'user_id' => $uid]);
+        if (!$offer) {
+            throw new OfferException();
         }
         return new SuccessReturn([
-            'info'=>$offer
+            'info' => $offer->append(['request_type_text'])->hidden(['category_id', 'update_time', 'request_type', 'status'])
         ]);
     }
 
@@ -130,12 +138,13 @@ class Offer extends BaseController
         (new IDMustBePositiveInt())->goCheck();
         $id = Request::instance()->param('id');
         $uid = TokenService::getCurrentUid();
-        OfferService::checkOffer(['id'=>$id,'user_id'=>$uid]);
-        $result = OfferModel::update(['status'=>0],['id'=>$id]);
-        if($result===false){
+        $offer = OfferService::checkOffer(['id' => $id, 'user_id' => $uid]);
+        $offer->status = 0;
+        $result = $offer->save();
+        if ($result === false) {
             throw new OfferException([
-                'msg'=>'失败',
-                'error'=>30011
+                'msg' => 'キャンセルできませんでした',
+                'error' => 30003
             ]);
         }
         return new SuccessMessage();

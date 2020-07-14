@@ -10,16 +10,18 @@ class OfferNew extends BaseValidate
     // 获取post参数时过滤掉user_id
     // 所有数据库和user关联的外键统一使用user_id，而不要使用uid
     protected $rule = [
-        'category|报修内容' => 'number',
-        'request_type' => 'require|number',
-        'title' => 'require',
-        'description' => 'require',
+        'category_id' => 'require|number',
+        'request_type' => 'require|in:1,2',
+        'title' => 'require|max:255',
+        'description' => 'require|max:1000',
+        'image'=>'is_base64',
         'id'=>'require|number'
     ];
 
 
     protected $scene = [
-        'create'=>['id','description','category','','request_type','title'],
-        'save'=>['description','category','','request_type','title'],
+        'create'=>['description','category_id','request_type','title','image'],
+        'save'=>['id','description','category_id','request_type','title','image'],
+        'get'=>['category_id'=>'number','request_type'=>'in:1,2'],
     ];
 }

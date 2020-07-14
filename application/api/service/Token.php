@@ -112,8 +112,8 @@ class Token
             $result = Cache::rm($token);
             if (!$result) {
                 throw new TokenException([
-                    'msg' => '删除令牌失败',
-                    'error_code' => 10016
+                    'msg' => 'トークンを削除できませんでした',
+                    'error_code' => 10014
                 ]);
             }
         }

@@ -5,6 +5,7 @@ namespace app\api\controller\v1;
 use app\api\controller\BaseController;
 use app\api\model\Offer as OfferModel;
 use app\api\model\Order as OrderModel;
+use app\api\model\Chatting as ChattingModel;
 use app\api\model\User;
 use app\api\model\User as UserModel;
 use app\api\service\Order as OrderService;
@@ -12,17 +13,14 @@ use app\api\service\Token;
 use app\api\validate\IDMustBePositiveInt;
 use app\api\validate\OrderCommit;
 use app\api\validate\OrderGet;
-use app\api\validate\OrderPlace;
 use app\api\validate\PagingParameter;
 use app\api\validate\PriceCommit;
 use app\lib\enum\OrderStatusEnum;
-use app\lib\exception\BusinessException;
 use app\lib\exception\OfferException;
 use app\lib\exception\OrderException;
 use app\lib\exception\SuccessMessage;
 use app\lib\exception\SuccessReturn;
-use app\lib\exception\UserException;
-use think\Controller;
+use phpmailer\Email;
 use think\Exception;
 use think\Request;
 
@@ -38,27 +36,24 @@ class Order extends BaseController
         (new OrderCommit())->goCheck();
         $data = input('post.');
         $uid = Token::getCurrentUid();
-        $user = UserModel::getNormalOneById($uid);
-        if(!$user){
-            throw new UserException();
-        }
-        //是否绑定手机
-        $offer = OfferModel::getOneByData(['id' =>$data['offer_id']]);
-        if(!$offer){
+        //
+        $offer = OfferModel::getOneByData(['id' => $data['offer_id']]);
+        if (!$offer) {
             throw new OfferException();
         }
-
+        //
+        OrderService::checkOrderCommit($data['offer_id'], $uid);
         $save['order_no'] = OrderService::makeOrderNo();
         $save['offer_id'] = $offer->id;
         $save['user_id'] = $uid;
         $save['snap_items'] = json_encode($offer->toArray());
         $order = OrderModel::create($save);
-        if(!$order){
-            throw new Exception('创建订单失败');
-        }
-
+//        $order->user = $user->visible(['id','username','head_img']);
+//        $order->offer = $offer->append(['request_type_text'])->hidden(['category_id', 'update_time', 'request_type', 'status']);
+        $mail = UserModel::getDataValue(['id'=>$offer->user_id],'e_mail');
+        Email::send($mail,$offer->title,'SOMEBODY APPLY.');
         return new SuccessReturn([
-            'info'=>$order->hidden(['snap_items'])
+            'info' => ['order_id' => $order->id]
         ]);
     }
 
@@ -72,24 +67,29 @@ class Order extends BaseController
     public function orderCancel()
     {
         (new IDMustBePositiveInt())->goCheck();
-
-        $id = Request::instance()->post('id');
-        $order = OrderService::checkOrder($id);
-
-        if($order->status >= OrderStatusEnum::CONFIRM_PAID){
+        $id = Request::instance()->param('id');
+        $order = OrderService::checkOrder($id,1);
+        $mail = $order->mail;
+        $title = $order->title;
+        unset($order->mail);
+        unset($order->title);
+        if ($order->status == OrderStatusEnum::CANCELED) {
+            return new SuccessMessage();
+        }
+        if ($order->status >= OrderStatusEnum::CONFIRM_PAID) {
             throw new OrderException([
                 'code' => 400,
-                'msg' => '对不起！订单不允许取消',
+                'msg' => 'ごめんなさい！ 注文は進行中です。キャンセルはできません',
                 'error_code' => 60002
             ]);
         }
-        $res = OrderModel::update(['status'=>OrderStatusEnum::CANCELED],['id'=>$id]);
-        if(!$res){
-            throw new Exception('取消订单失败');
-        }
+        $order->status = OrderStatusEnum::CANCELED;
+        $order->save();
+        Email::send($mail,$title,'ORDERCANCEL.');
         return new SuccessMessage();
-        
+
     }
+
     /**
      * 关闭订单
      * @param $id
@@ -100,34 +100,38 @@ class Order extends BaseController
     public function orderClose()
     {
         (new IDMustBePositiveInt())->goCheck();
-
-        $id = Request::instance()->post('id');
-        $order = OrderService::checkOrder($id);
-        if($order->status != OrderStatusEnum::CANCELED){
+        $id = Request::instance()->param('id');
+        $order = OrderService::checkOrder($id,0);
+        if ($order->status == OrderStatusEnum::CLOSED) {
+            return new SuccessMessage();
+        }
+        if ($order->status != OrderStatusEnum::CANCELED) {
             throw new OrderException([
-                'code' => 400 ,
-                'msg' => '对不起！订单不允许关闭',
+                'msg' => 'ごめんなさい！ 注文は進行中です、閉鎖は許可されていません',
                 'error_code' => 60003
             ]);
         }
         $order->status = OrderStatusEnum::CLOSED;
-        $res = $order->save();
-        if(!$res){
-            throw new Exception('关闭订单失败');
-        }
+        $order->save();
         return new SuccessMessage();
 
     }
 
+    /**
+     * @return SuccessMessage
+     * @throws Exception
+     */
     public function priceCommit()
     {
         (new PriceCommit())->goCheck();
         $data = Request::instance()->post();
         $order = OrderService::checkOrderQuote($data);
-        $res = $order->save();
-        if(!$res){
-            throw new Exception('pirce commit fail');
-        }
+        $mail = $order->mail;
+        $title = $order->title;
+        unset($order->mail);
+        unset($order->title);
+        $order->save();
+        Email::send($mail,$title,'priceCommit');
         return new SuccessMessage();
     }
 
@@ -140,11 +144,16 @@ class Order extends BaseController
         (new IDMustBePositiveInt())->goCheck();
 
         $data = Request::instance()->post();
-        $order = OrderService::checkOrderQuote($data,1);
+        $order = OrderService::checkOrderQuote($data, 1);
+        $mail = $order->mail;
+        $title = $order->title;
+        unset($order->mail);
+        unset($order->title);
         $res = $order->save();
-        if(!$res){
+        if (!$res) {
             throw new Exception('confirm fail');
         }
+        Email::send($mail,$title,'priceConfirm');
         return new SuccessMessage();
     }
 
@@ -153,19 +162,23 @@ class Order extends BaseController
         (new IDMustBePositiveInt())->goCheck();
 
         $id = Request::instance()->post('id');
-        $order = OrderService::checkOrder($id);
-        if($order->status != OrderStatusEnum::CONFIRM_PAID){
+        $order = OrderService::checkOrder($id, 0);
+        $mail = $order->mail;
+        $title = $order->title;
+        unset($order->mail);
+        unset($order->title);
+        if ($order->status != OrderStatusEnum::CONFIRM_PAID) {
             throw new OrderException([
-                'code' => 400 ,
-                'msg' => '对不起！金額を確認しません',
-                'error_code' => 60003
+                'msg' => 'ごめんなさい！ 金額確認しません',
+                'error_code' => 60008
             ]);
         }
         $order->status = OrderStatusEnum::TASK_DONE;
         $res = $order->save();
-        if(!$res){
+        if (!$res) {
             throw new Exception('task done fail');
         }
+        Email::send($mail,$title,'task done.');
         return new SuccessMessage();
     }
 
@@ -178,18 +191,15 @@ class Order extends BaseController
     {
         (new IDMustBePositiveInt())->goCheck();
         $uid = Token::getCurrentUid();
-        $order = OrderModel::getDetail(['id'=>$id,'user_id'=>$uid]);
-        if (!$order)
-        {
-            throw new OrderException([
-                'msg'=>'订单不存在或订单与用户住址信息不符'
-            ]);
+        $order = OrderModel::getDetail(['id' => $id, 'user_id' => $uid]);
+        if (!$order) {
+            throw new OrderException();
         }
 
-        $order->append(['pay_way_text']);
-
+        $order->offer->append(['request_type_text'])->hidden(['category_id', 'update_time', 'request_type', 'order_no', 'status']);
+        $order->messages = ChattingModel::getSummary(['order_id' => $id], ['user_id', 'user_type', 'content', 'file', 'create_time']);
         return new SuccessReturn([
-            'info'=>$order
+            'info' => $order->append(['status_text'])->hidden(['order_no'])
         ]);
     }
 
@@ -198,24 +208,39 @@ class Order extends BaseController
      * @param int $size
      * @return SuccessReturn
      */
-    public function getSummaryByUser($page = 1, $size = 1)
+    public function getSummaryByUser($page = 1, $size = 20)
     {
         (new PagingParameter())->goCheck();
+        (new OrderGet())->goCheck();
         $uid = Token::getCurrentUid();
-        $pagingOrders = OrderModel::getSummaryByData(['user_id'=>$uid],[],true, $page, $size);
-        if ($pagingOrders->isEmpty())
-        {
+        $my_offer_ids = OfferModel::getDataColumn(['user_id' => $uid], 'id');
+        //todo 検索
+        $data = $this->request->post();
+        $query = 'user_id = ' . $uid . ' OR offer_id IN (' . implode(',', $my_offer_ids) . ')';
+        $pagingOrders = OrderModel::getSummaryByData($data, $query, [], true, $page, $size);
+        if ($pagingOrders->isEmpty()) {
             $pagingOrders = [
                 'current_page' => $pagingOrders->currentPage(),
                 'total' => $pagingOrders->total(),
                 'data' => []
             ];
-        }else{
-            $pagingOrders->append(['pay_way_text']);
+        } else {
+            foreach ($pagingOrders as $pagingOrder) {
+                if ($pagingOrder->user_id != $uid) {
+                    $pagingOrder->user_msg = $pagingOrder->offer->user;
+                    $pagingOrder->user_role = 'Worker';
+                } else {
+                    $pagingOrder->user_msg = $pagingOrder->user;
+                    $pagingOrder->user_role = 'Client';
+                }
+                $pagingOrder->title = $pagingOrder->offer->title;
+                $pagingOrder->category = $pagingOrder->offer->category->name;
+                $pagingOrder->hidden(['order_no', 'price', 'quote_type', 'remark', 'user', 'offer', 'status'])->append(['status_text']);
+            }
         }
-        
+
         return new SuccessReturn([
-            'info'=>$pagingOrders
+            'info' => $pagingOrders
         ]);
     }
 

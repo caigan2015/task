@@ -10,7 +10,7 @@ class BaseException extends Exception
 {
     public $code = 200;
     public $msg = 'invalid parameters';
-    public $errorCode = 99999;
+    public $error_code = 99999;
     public $info = [];
 
 //    public $shouldToClient = true;

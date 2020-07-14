@@ -1,16 +1,568 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="en">
 <head>
-    <title>主页</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<link href="css/weui.min.css" rel="stylesheet"><link href="css/jquery-weui.min.css" rel="stylesheet"><link href="css/style.css?v=91" rel="stylesheet"></head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.ico"/>
+    <!-- All CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="assets/css/swiper.min.css" />-->
+    <!--<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css" />-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <title>TASK_ホームページ</title>
+</head>
+<body class="home-page-3">
+<!-- header-area start -->
+<p class="error-msg-show text-center bg-danger position-relative my-0"></p>
+<header class="header-area header-style-3" id="header">
 
-<body>
-    <div id="page-index">
-    </div><script type="text/javascript" src="js/jquery-2.1.4.js"></script><script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script><script type="text/javascript" src="js/vendor.bundle.js"></script><script type="text/javascript" src="js/index.bundle.js"></script></body></html>
+</header>
+<!-- header-area end -->
+<!-- offer-area start -->
+<div class="container position-relative mt-lg-3 mt-sm-1">
+    <div class="text-left">
+        <div class="card py-lg-3 mb-3 px-lg-3">
+            <div class="relative m-2">
+                <div class="d-flex flex-row justify-content-start p-2 font-weight-bold">
+                    <a class="" href="#">ALL
+                        <small class="">( 2 )</small>
+                    </a>
+                    <a class="mx-lg-5 mx-3" href="#">ASK
+                        <small class="">( 1 )</small>
+                    </a>
+                    <a class="" href="#">TAKE
+                        <small class="">( 1 )</small>
+                    </a>
+                </div>
+                <div class="my-2 d-flex flex-row justify-content-between">
+                    <div>
+                        <button class="btn btn-light" data-toggle="modal" data-target="#filter-modal">
+                            <i class="far fa-filter text-gray"></i>
+                            <span class="text-gray font-weight-bold text-large d-none d-lg-inline">フィルタ</span>
+                        </button>
+                        <button class="btn btn-light" onclick="location.reload()">
+                            <i class="far fa-sync text-gray"></i>
+                            <span class="text-gray font-weight-bold text-large d-none d-lg-inline">Refeash</span>
+                        </button>
+                    </div>
+
+                    <a class="btn btn-primary task-add-item" href="javascript:void (0)"><i class="far fa-plus"></i><span
+                            class="d-none d-lg-inline ml-2">创建任务</span></a>
+                </div>
+                <div class="container-content mx-sm-1">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr class="text-c">
+                            <th width="15%" class="text-nowrap">種類</th>
+                            <th width="10%" class="text-nowrap">分類</th>
+                            <th width="20%" class="text-nowrap">アナウンサー</th>
+                            <th width="40%" class="text-nowrap">タイトル</th>
+                            <th width="15%" class="text-nowrap">数量</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class=""><span class=" ">Ask</span></td>
+                            <td class=""><span class=" ">help</span></td>
+                            <td class="row justify-content-start ml-2">
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">choi</div>
+                                <span class="my-auto mx-lg-2 m-1">choi</span>
+                            </td>
+                            <td class="text-black font-weight-bold">
+                                <div class="offer-title text-nowrap overflow-hidden">
+
+                                    Purchase Ooler King Size SystemPurchase Ooler King Size SystemPurchase Ooler
+                                </div>
+                                <div class="text-small text-gray offer-title">
+                                    keyword
+                                </div>
+                            </td>
+                            <td>
+                                <span>Jobs:</span>
+                                <span class="text-black font-weight-bold mr-2">9</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <button class="btn btn-bubble btn-primary">
+                                    load more
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog m-auto" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Nav tabs -->
+                <p id="result" class="text-center m-0 bg-pink" style="display: none"></p>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation">
+                        <a class="active" href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="login">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                        </span>
+                            </div>
+                            <input type="text" name="e_mail" class="form-control e_mail-login" placeholder="e_mail"
+                                   aria-label="e_mail"/></div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                        </span>
+                            </div>
+                            <input type="password" class="form-control password-login" placeholder="password"
+                                   aria-label="Password"/>
+                        </div>
+                        <!--<p class="forget-password">-->
+                        <!--<a href="">Forget Password?</a></p>-->
+                        <button type="button" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="register">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="fa fa-envelope"></i>
+                        </span>
+                            </div>
+                            <input type="text" name="e_mail" class="form-control e_mail-register" placeholder="e_mail"
+                                   aria-label="e_mail"/></div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                        </span>
+                            </div>
+                            <input type="text" name="username" class="form-control username-register"
+                                   placeholder="username" aria-label="username"/></div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                        </span>
+                            </div>
+                            <input type="password" name="password" class="form-control password-register"
+                                   placeholder="password" aria-label="Password"/>
+                        </div>
+                        <button type="button" class="btn btn-success btn-lg btn-block register-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+<!-- /.modal -->
+<div id="filter-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="display: block;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <i class="far fa-filter text-gray"></i>
+            </div>
+            <div class="modal-body">
+                <div class="font-weight-bold text-dark-gray mb-2">分類</div>
+                <ul class="overflow-auto">
+                    <li>
+                        <input name="category" type="checkbox" id="category1" value="1" checked="checked"/>
+                        <label for="category1">This is the second checkbox, which is checked</label></li>
+                    <li>
+                        <input name="category" type="checkbox" id="category2" value="2" checked="checked"/>
+                        <label for="category2">This is the second checkbox, which is checked</label></li>
+                    <li>
+                        <input name="category" type="checkbox" id="category3" value="3" checked="checked"/>
+                        <label for="category3">This is the second checkbox, which is checked</label></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mr-2">保存</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<div id="details" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document"
+         style="max-width: 800px;max-height: calc(100vh - 100px);height: 100%">
+        <div class="modal-content" style="height: 100%">
+            <div class="modal-body overflow-auto">
+                <div class="d-flex flex-column align-items-start">
+                    <div class="row pt-3">
+                        <div class="col-lg-4">
+                            <img alt="" class="img-offer" src="assets/img/blog/blog-2.jpg">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-row justify-content-start mt-2">
+                                <span class="text-request font-weight-bold text-capitalize text-white text-take mr-2 my-auto">take</span>
+                                <span class="text-primary font-weight-bold fs-20">タイトルタイトルタイトルタイトル</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="m-1">
+                                    <span class="font-weight-bold text-nowrap mr-1">分類：</span><span class="">代理購入</span>
+                                </div>
+                                <div>
+                                    <span class="font-weight-bold text-nowrap mr-1">ジョブ数：</span><span class="">20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!---->
+                    <div class="my-3">
+                        <div class="d-flex flex-column justify-content-start">
+                            <div class="d-flex flex-row align-items-start justify-content-start mb-3">
+                                <div class="font-weight-bold text-nowrap">ユーザー：</div>
+                                <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img mr-2">choi
+                                </div>
+                                <div class="font-weight-bold mr-2 my-auto">choi</div>
+                            </div>
+                            <div class="d-flex flex-row align-items-start justify-content-start">
+                                <div class="font-weight-bold text-nowrap">ひとこと：</div>
+                                <div>に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <!---->
+                    <div class="my-3">
+                        <div class="font-weight-bold mb-1">内容</div>
+                        <div style="min-height: 50px">
+                            <p class="text-des">１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。
+                                １万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分のVACUSをエスクローしていただいた方に、アマゾンギフト券１万円分のギフト券番号をお渡しします。１万円分
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button class="btn btn-primary mr-3" type="submit">申込む</button>
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">閉じる</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<footer class="footer-area footer-style-3" id="footer">
+
+</footer>
+<div id="scrollUp">
+    <i class="far fa-angle-double-up"></i>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<!--<script src="assets/js/metisMenu.min.js"></script>-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="assets/js/imagesloaded.pkgd.min.js"></script>-->
+<!--<script src="assets/js/isotope.pkgd.min.js"></script>-->
+<!--<script src="assets/js/jquery.appear.js"></script>-->
+<!--<script src="assets/js/odometer.min.js"></script>-->
+<script type="text/javascript" src="assets/js/model/base.js"></script>
+<script type="text/javascript" src="assets/js/model/index.js"></script>
+<script type="text/javascript">
+    /*-------------------------------------------
+     Sticky Header
+     --------------------------------------------- */
+    var win = $(window);
+    var sticky_id = $(".header-area");
+    win.on('scroll', function () {
+        var scroll = win.scrollTop();
+        if (scroll < 245) {
+            sticky_id.removeClass("sticky-header");
+        } else {
+            sticky_id.addClass("sticky-header");
+        }
+    });
+
+    /*------------------------------------
+     Overlay Close
+     --------------------------------------*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() !== 0) {
+            $('#scrollUp').fadeIn();
+        } else {
+            $('#scrollUp').fadeOut();
+        }
+    });
+
+    $('#scrollUp').on('click', function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+
+    $("tbody tr").click(function () {
+        //change src width params 
+        $('#details').modal('show')
+    });
+
+</script>
+</body>
+
+</html>

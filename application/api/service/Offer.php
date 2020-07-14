@@ -5,7 +5,6 @@ use app\api\service\Token as TokenService;
 use app\api\model\Offer as OfferModel;
 use app\lib\exception\ImageException;
 use app\lib\exception\OfferException;
-use think\Exception;
 use think\Request;
 
 class Offer
@@ -18,13 +17,13 @@ class Offer
         $uid = TokenService::getCurrentUid();
         $data = Request::instance()->post();
         $data['user_id'] = $uid;
-        !empty($data['image'])?($data['image'] = self::saveImage($data['image'])):'';
+        $data['image'] = !empty($data['image']) ? self::saveImage($data['image']):config('app.default_offer_image');
         $data['description'] = htmlentities($data['description']);
         $res = OfferModel::create($data,true);
         if(!$res){
             throw new OfferException([
-                'msg'=>'失败',
-                'error_code'=>10000
+                'msg'=>'オファーを作成できませんでした',
+                'error_code'=>30001
             ]);
         }
     }
@@ -40,12 +39,11 @@ class Offer
         $data['user_id'] = $uid;
         !empty($data['image'])?($data['image'] = self::saveImage($data['image'])):'';
         $data['description'] = htmlentities($data['description']);
-
         $res = $offer->save($data);
         if(!$res){
             throw new OfferException([
-                'msg'=>'失败',
-                'error_code'=>10000
+                'msg'=>'クーポンを保存できませんでした',
+                'error_code'=>30002
             ]);
         }
     }
@@ -83,9 +81,8 @@ class Offer
         //保存图片
         if(!file_put_contents($fileImg, base64_decode($head_img))){
             throw new ImageException([
-                'msg' => '保存图片失败',
+                'msg' => '画像を保存できませんでした',
                 'error_code'=> 40001 ,
-                'code' =>  403
             ]);
         }
         //缩略图

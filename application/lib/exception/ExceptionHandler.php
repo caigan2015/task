@@ -20,7 +20,7 @@ class ExceptionHandler extends Handle
 {
     private $code;
     private $msg;
-    private $errorCode;
+    private $error_code;
     private $info;
 
     public function render(Exception $e)
@@ -33,7 +33,7 @@ class ExceptionHandler extends Handle
 
             $this->code = $e->code;
             $this->msg = $e->msg;
-            $this->errorCode = $e->errorCode;
+            $this->error_code = $e->error_code;
             $this->info = $e->info;
         }
         else{
@@ -46,7 +46,7 @@ class ExceptionHandler extends Handle
 
             $this->code = 500;
             $this->msg = 'sorry，we make a mistake. (^o^)Y';
-            $this->errorCode = 999;
+            $this->error_code = 999;
             $this->info = [];
             $this->recordErrorLog($e);
         }
@@ -54,7 +54,7 @@ class ExceptionHandler extends Handle
         $request = Request::instance();
         $result = [
             'msg'  => $this->msg,
-            'error_code' => $this->errorCode,
+            'error_code' => $this->error_code,
             'info'  => $this->info,
             'request_url' => $request = $request->url()
         ];

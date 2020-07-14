@@ -7,8 +7,8 @@
  */
 
 return [
-    'host' => 'smtp.163.com',
-    'port' => '25',
-    'username' => 'caigan2008@163.com',
-    'password' => 'caigan2016',
+    'host' => 'smtp13.gmoserver.jp',
+    'port' => '587',
+    'username' => 'askinfo@x-service.co.jp',
+    'password' => '#eCvZ3To',
 ];

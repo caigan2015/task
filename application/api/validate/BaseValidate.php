@@ -2,12 +2,7 @@
 
 namespace app\api\validate;
 
-use app\api\model\UserVers;
-use app\api\service\Token;
-use app\lib\enum\ScopeEnum;
-use app\lib\exception\ForbiddenException;
 use app\lib\exception\ParameterException;
-use app\lib\exception\TokenException;
 use think\Request;
 use think\Validate;
 
@@ -53,7 +48,7 @@ class BaseValidate extends Validate
         if (array_key_exists('user_id', $arrays) || array_key_exists('userid', $arrays) || array_key_exists('uid', $arrays)) {
             // 不允许包含user_id或者uid，防止恶意覆盖user_id外键
             throw new ParameterException([
-                'msg' => '参数中包含有非法的参数名user_id、userid或者uid'
+                'msg' => 'パラメータに無効なパラメータ名が含まれています:user_id、useridまたはuid'
             ]);
         }
         $newArray = [];
@@ -68,23 +63,9 @@ class BaseValidate extends Validate
         if (is_numeric($value) && is_int($value + 0) && ($value + 0) > 0) {
             return true;
         }
-        return $field . '必须是正整数';
+        return $field . '正の整数でなければなりません';
     }
 
-
-    //没有使用TP的正则验证，集中在一处方便以后修改
-    //不推荐使用正则，因为复用性太差
-    //手机号的验证规则
-    protected function isMobile($value)
-    {
-        $rule = '^1(3|4|5|7|8)[0-9]\d{8}$^';
-        $result = preg_match($rule, $value);
-        if ($result) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     protected function is_base64($str)
     {
@@ -95,57 +76,5 @@ class BaseValidate extends Validate
         }
     }
 
-    protected function checkCode($value, $rule='', $data='', $field='')
-    {
-        return $this->verifyCode($data['mobile'],$value);
-    }
-
-    protected function verifyCode($phone,$code)
-    {
-        $Vers = UserVers::getByPhone($phone,['code','create_time'],true);
-        if($Vers['code'] != $code ) {
-            return '验证码错误';
-        }
-        if($Vers->getData('create_time')< (time()-config('app.code_limit_time')*60)){
-            return '验证码超时';
-        }
-        return true;
-    }
-
-
-    protected function checkIDCardNo($value,$rule='', $data='', $field='')
-    {
-        $preg_card='/^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/';
-        if(preg_match($preg_card,$value)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-//    // 令牌合法并不代表操作也合法
-//    // 需要验证一致性
-//    protected function isUserConsistency($value, $rule, $data, $field)
-//    {
-//        $identities = getCurrentIdentity(['uid', 'power']);
-//        extract($identities);
-//
-//        // 如果当前令牌是管理员令牌，则允许令牌UID和操作UID不同
-//        if ($power == ScopeEnum::Super) {
-//            return true;
-//        }
-//        else {
-//            if ($value == $uid) {
-//                return true;
-//            }
-//            else {
-//                throw new TokenException([
-//                                             'msg' => '你怎么可以用自己的令牌操作别人的数据？',
-//                                             'code' => 403,
-//                                             'errorCode' => '10003'
-//                                         ]);
-//            }
-//        }
-//   }
 
 }

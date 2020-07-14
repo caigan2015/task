@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.container
+{
+    position: relative;
+    margin-top: 1rem;
+}
+.avatar{
+    width: 35px;
+}
+
+.btn-category{
+    border-color: #666;
+    width: 150px!important;
+    border-radius: 5rem;
+}
+.btn-rq:hover,.btn-rq:focus{
+    outline: 0;
+    box-shadow: none;
+    color: red;
+    text-decoration: none;
+}
+.require-item{
+    display: none;
+}

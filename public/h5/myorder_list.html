@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.ico"/>
+    <!-- All CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="assets/css/swiper.min.css" />-->
+    <!--<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css" />-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/order_list.css"/>
+    <title>TASK-マイジョブ</title>
+</head>
+
+<body class="home-page-3">
+<!-- header-area start -->
+<header class="header-area header-style-3" id="header">
+    <!--<nav class="main-menu navbar navbar-expand-md">-->
+        <!--<a class="navbar-brand justify-content-start" href="index.html">-->
+            <!--<img src="assets/img/logo/logo-3.png" alt="logo"/>-->
+        <!--</a>-->
+        <!--<button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"-->
+                <!--data-target="#exCollapsingNavbar">-->
+            <!--<div class="navbar-toggler-icon ">-->
+                <!--<i class="fa fa-list-ul" style="font-size: 150%;color: #436372;"></i>-->
+            <!--</div>-->
+        <!--</button>-->
+        <!--<div class="collapse navbar-collapse" id="exCollapsingNavbar">-->
+            <!--<ul class="nav navbar-nav mr-auto text-left first-navbar">-->
+                <!--&lt;!&ndash; header-area start &ndash;&gt;-->
+                <!--<li class="nav-item pl-2">-->
+                    <!--<a class="nav-link ml-2" href="index.html"><i class="far fa-home mr-2"></i><span>ホーム</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item pl-2">-->
+
+                    <!--<a class="nav-link ml-2" href="index.html"><i class="far fa-tasks mr-2"></i><span>タスク</span></a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav ml-auto text-left">-->
+                <!--<li class="dropdown nav-item pl-2">-->
+                    <!--<a class="nav-link dropdown-toggle ml-2" data-toggle="dropdown" role="button"-->
+                       <!--id="dropdownMenuLinkList" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<i class="far fa-list-alt mr-2"></i>-->
+                        <!--<span>取引一覧</span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkList">-->
+                        <!--<li class="dropdown-item mb-1">-->
+                            <!--<a href="myoffer_list.html">オファー管理</a></li>-->
+                        <!--<li class="dropdown-item">-->
+                            <!--<a href="myorder_list.html">ジョブ管理</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown nav-item pl-2">-->
+                    <!--&lt;!&ndash;<a class="nav-link" href="javascript:void 0;" data-toggle="modal"&ndash;&gt;-->
+                    <!--&lt;!&ndash;data-target="#login-modal">ログイン&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--<a class="nav-link dropdown-toggle ml-2" data-toggle="dropdown" href="javascript:void 0;"-->
+                       <!--role="button"-->
+                       <!--id="dropdownMenuLinkUser" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span><i class="far fa-user mr-2"></i></span><span>ユーザーセンター</span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkUser">-->
+                        <!--<li class="dropdown-item">-->
+                            <!--<a class="mb-1" href="profile.html?tab=profile">プロファイル</a>-->
+                        <!--</li>-->
+                        <!--<li class="dropdown-item">-->
+                            <!--<a class="" href="profile.html?tab=password">パスワード</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</nav>-->
+</header>
+<!-- header-area end -->
+<!-- main start -->
+<div class="container position-relative mt-lg-3 mt-sm-1">
+    <div class="text-left">
+        <div class="card py-lg-3 mb-3 px-lg-3">
+            <div class="relative m-2">
+                <div class="font-weight-bold">
+                    <a class="btn btn-primary btn-tab-name btn-link pl-0 pr-3" href="myoffer_list.html"><span
+                            class="font-weight-bold text-gray text-smaller">オファー管理</span></a>
+                    <a class="btn btn-primary btn-tab-name btn-link fs-20 pl-0 pl-md-3 pr-3 my-offer-btn"
+                       href="myorder_list.html"><span class="font-weight-bold text-black ">ジョブ一覧</span></a>
+                </div>
+                <div class="my-2 p-2  d-flex flex-row justify-content-between font-weight-bold">
+                    <div>
+                        <a class="" href="#">ALL
+                            <small class="">( 2 )</small>
+                        </a>
+                        <a class="mx-lg-5 mx-3" href="#">ASK
+                            <small class="">( 1 )</small>
+                        </a>
+                        <a class="mr-3" href="#">TAKE
+                            <small class="">( 1 )</small>
+                        </a>
+                        <a class="btn btn-light" data-toggle="modal" data-target="#filter-modal">
+                            <i class="far fa-filter text-gray"></i>
+                            <span class="text-gray font-weight-bold text-large d-none d-lg-inline">フィルタ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-content mx-sm-1">
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr class="text-c">
+                            <th width="30%" class="text-nowrap">タスク</th>
+                            <th width="10%" class="text-nowrap">状態</th>
+                            <th width="15%" class="text-nowrap">分類</th>
+                            <th width="15%" class="text-nowrap">役割</th>
+                            <th width="20%" class="text-nowrap">開始時間</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        <tr class="text-c">
+                            <td class="d-flex flex-column justify-content-start"
+                                title="ng Size SystemPurchase Ooler King Size SystemPur">
+                                <p>Purchase Ooler King Size SystemPurchase</p>
+                                <div class="ml-1 row">
+                                    <div class="overflow-hidden rounded-circle p-1 bg-blue text-nowrap head_img ">
+                                        choi
+                                    </div>
+                                    <span class="my-auto mx-lg-2 m-1">choi</span>
+                                </div>
+                            </td>
+                            <td class=""><span class=" ">doing</span></td>
+                            <td class="">
+                                help
+                            </td>
+                            <td class="">
+                                Worker
+                            </td>
+                            <td>
+                                <span class="">2020-02-02</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="filter-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="display: block;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <i class="far fa-filter text-gray"></i>
+            </div>
+            <div class="modal-body">
+                <div class="font-weight-bold text-dark-gray mb-2">分類</div>
+                <ul class="overflow-auto">
+                    <li>
+                        <input name="category" type="checkbox" id="category1" value="1" checked="checked"/>
+                        <label for="category1">This is the second checkbox, which is checked</label></li>
+                    <li>
+                        <input name="category" type="checkbox" id="category2" value="2" checked="checked"/>
+                        <label for="category2">This is the second checkbox, which is checked</label></li>
+                    <li>
+                        <input name="category" type="checkbox" id="category3" value="3" checked="checked"/>
+                        <label for="category3">This is the second checkbox, which is checked</label></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mr-2">保存</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<footer class="footer-area footer-style-3" id="footer">
+    <!--<div class="">-->
+        <!--<div class="container">-->
+            <!--<div class="row pt-4">-->
+                <!--<div class="col-xl-3 col-lg-3 col-md-4">-->
+                    <!--<div class="footer-widget about-widget">-->
+                        <!--<div class="about-logo">-->
+                            <!--<a href="index.html">-->
+                                <!--<img src="assets/img/logo/logo-3.png" alt="logo"/></a>-->
+                        <!--</div>-->
+                        <!--<ul>-->
+                            <!--<li>ADDRESS: 4772 Wines Lane Houston, TX 77032</li>-->
+                            <!--<li>Telephone: +832-347-5843</li>-->
+                            <!--<li>Email: contact@Glee.com</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xl-2 col-lg-2 col-md-4">-->
+                    <!--<div class="footer-widget links-widgets">-->
+                        <!--<h4 class="widget-title">Services</h4>-->
+                        <!--<ul>-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Contact Us</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">My account</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Customer Service</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Term &amp; Condition</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">FAQs</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xl-2 col-lg-2 col-md-4">-->
+                    <!--<div class="footer-widget links-widgets">-->
+                        <!--<h4 class="widget-title">Account</h4>-->
+                        <!--<ul>-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Facebook</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Twitter</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Instagram</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Dribbble</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Google Plus</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xl-5 col-lg-5 col-md-8">-->
+                    <!--<div class="footer-widget newsletter-widget">-->
+                        <!--<h4 class="widget-title">Newsletter</h4>-->
+                        <!--<p>Signup to be the first to hear-->
+                            <!--<br/>about exclusive deals.</p>-->
+                        <!--<form action="#">-->
+                            <!--<div class="input-wrap">-->
+                                <!--<input type="text" placeholder="Email"/>-->
+                                <!--<button>Subscribe</button>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</footer>
+<div id="scrollUp">
+    <i class="far fa-angle-double-up"></i>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<!--<script src="assets/js/metisMenu.min.js"></script>-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="assets/js/imagesloaded.pkgd.min.js"></script>-->
+<!--<script src="assets/js/isotope.pkgd.min.js"></script>-->
+<!--<script src="assets/js/jquery.appear.js"></script>-->
+<!--<script src="assets/js/odometer.min.js"></script>-->
+<script type="text/javascript" src="assets/js/model/base.js"></script>
+<script type="text/javascript">
+
+    /*-------------------------------------------
+     Sticky Header
+     --------------------------------------------- */
+
+    var win = $(window);
+    var sticky_id = $(".header-area");
+    win.on('scroll', function () {
+        var scroll = win.scrollTop();
+        if (scroll < 245) {
+            sticky_id.removeClass("sticky-header");
+        } else {
+            sticky_id.addClass("sticky-header");
+        }
+    });
+
+
+    /*------------------------------------
+     Overlay Close
+     --------------------------------------*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() !== 0) {
+            $('#scrollUp').fadeIn();
+        } else {
+            $('#scrollUp').fadeOut();
+        }
+    });
+
+    $('#scrollUp').on('click', function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+
+    $("tbody tr").click(function () {
+        //change src width params
+        location.href = 'requote.html';
+    })
+</script>
+</body>
+
+</html>

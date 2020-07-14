@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.container
+{
+    position: relative;
+    margin-top: 1rem;
+}
+
+table tbody tr td .head_img{
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+
+table tbody tr td .offer-title {
+    white-space:normal!important;
+}
+table{
+    min-width: 700px;
+}
+
+.container-content{
+    overflow-x: auto;
+}
+
+.btn-tab-name {
+    border: none;
+
+    background-color: transparent!important;
+}

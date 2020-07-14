@@ -10,8 +10,4 @@ class ChattingNew extends BaseValidate
         'file' => 'is_base64',
     ];
 
-    protected $scene = [
-        'create'=>['order_id','content','file'],
-        'get'=>['order_id']
-    ];
 }

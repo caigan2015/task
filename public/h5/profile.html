@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.ico"/>
+    <!-- All CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="assets/css/swiper.min.css" />-->
+    <!--<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css" />-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/profile.css"/>
+    <title>TASK-プロフィル</title></head>
+
+<body class="home-page-3">
+<!-- header-area start -->
+<header class="header-area header-style-3" id="header">
+    <!--<nav class="main-menu navbar navbar-expand-md">-->
+        <!--<a class="navbar-brand justify-content-start" href="index.html">-->
+            <!--<img src="assets/img/logo/logo-3.png" alt="logo"/>-->
+        <!--</a>-->
+        <!--<button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"-->
+                <!--data-target="#exCollapsingNavbar">-->
+            <!--<div class="navbar-toggler-icon ">-->
+                <!--<i class="fa fa-list-ul" style="font-size: 150%;color: #436372;"></i>-->
+            <!--</div>-->
+        <!--</button>-->
+        <!--<div class="collapse navbar-collapse" id="exCollapsingNavbar">-->
+            <!--<ul class="nav navbar-nav mr-auto text-left first-navbar">-->
+                <!--&lt;!&ndash; header-area start &ndash;&gt;-->
+                <!--<li class="nav-item pl-2">-->
+                    <!--<a class="nav-link ml-2" href="index.html"><i class="far fa-home mr-2"></i><span>ホーム</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item pl-2">-->
+
+                    <!--<a class="nav-link ml-2" href="index.html"><i class="far fa-tasks mr-2"></i><span>タスク</span></a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav ml-auto text-left">-->
+                <!--<li class="dropdown nav-item pl-2">-->
+                    <!--<a class="nav-link dropdown-toggle ml-2" data-toggle="dropdown" role="button"-->
+                       <!--id="dropdownMenuLinkList" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<i class="far fa-list-alt mr-2"></i>-->
+                        <!--<span>取引一覧</span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkList">-->
+                        <!--<li class="dropdown-item mb-1">-->
+                            <!--<a href="myoffer_list.html">オファー管理</a></li>-->
+                        <!--<li class="dropdown-item">-->
+                            <!--<a href="myorder_list.html">ジョブ管理</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown nav-item pl-2">-->
+                    <!--&lt;!&ndash;<a class="nav-link" href="javascript:void 0;" data-toggle="modal"&ndash;&gt;-->
+                    <!--&lt;!&ndash;data-target="#login-modal">ログイン&ndash;&gt;-->
+                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--<a class="nav-link dropdown-toggle ml-2" data-toggle="dropdown" href="javascript:void 0;"-->
+                       <!--role="button"-->
+                       <!--id="dropdownMenuLinkUser" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span><i class="far fa-user mr-2"></i></span><span>ユーザーセンター</span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkUser">-->
+                        <!--<li class="dropdown-item">-->
+                            <!--<a class="mb-1" href="profile.html?tab=profile">プロファイル</a>-->
+                        <!--</li>-->
+                        <!--<li class="dropdown-item">-->
+                            <!--<a class="" href="profile.html?tab=password">パスワード</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</nav>-->
+</header>
+<!-- header-area end -->
+<!-- main start -->
+<main>
+    <!-- offer-area start -->
+    <div class="container">
+        <div class="no-gutters main-card py-4 px-2 card d-flex flex-row justify-content-start">
+            <div class="col-lg-3 d-none d-lg-block card mb-0 shadow-md">
+                <div class="p-3">
+                    <img alt="" class="mr-2" src="./assets/img/bazaar/following.svg">
+                    <span class="mt-2 font-weight-bold">yuguoyong</span>
+                </div>
+                <hr class="my-0">
+                <ul class="navbar-nav nav nav-tabs" id="myTab">
+                    <li class="active nav-item" data-toggle="tab">
+                        <a class="nav-link pl-3 profile-nav profile-tab" href="#profile">
+                            <img alt="" class="" src="./assets/img/bazaar/navbar-profile.svg">
+                            プロファイル
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tab">
+                        <a class="profile-nav nav-link pl-3 password-tab" href="#password">
+                            <img alt="" class="mr-2" src="./assets/img/bazaar/change_pass.svg">パスワード変更
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 px-lg-5 px-3">
+                <div id="myTabContent" class="contents tab-content">
+                    <div class="contents-container tab-pane active" id="profile">
+                        <!-- サンプル ここから -->
+                        <form action="#" method="POST">
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark"><i class="far fa-envelope mr-2"></i>メール:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="e_mail" class="form-control" placeholder="" readonly>
+                                </div>
+                            </div>
+
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark"><i class="far fa-address-card mr-2"></i>ユーザーネーム:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="username" class="form-control" placeholder="例：さくら">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">必須</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">口座名義:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="realname" class="form-control" placeholder="例：金子（カネコ）">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">必須</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">銀行名:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="bank_name" class="form-control" placeholder="例：みずほ">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">必須</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">支店名（コード）:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="bank_branch" class="form-control"
+                                           placeholder="例：神田支店（７１１）">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">必須</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">口座番号:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="bank_account" class="form-control" placeholder="例：１２３４５６">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">必須</div>
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <div class="d-flex flex-row-reverse col-sm-8">
+                                    <button type="submit" class="btn btn-primary">更新</button>
+                                    <button type="submit" class="btn btn-secondary mr-3">リセット</button>
+                                </div>
+                            </div>
+
+                        </form>
+                        <!-- サンプル ここまで -->
+                    </div>
+                    <div class="contents-container tab-pane" id="password">
+                        <form action="#" method="POST">
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">現在のパスワード</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control form-control-simple" type="password"
+                                           placeholder="現在のパスワードを入力してください">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">この項目は必須です</div>
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">新しいパスワード</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control form-control-simple" type="password"
+                                           placeholder="新しいパスワードを入力してください">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">この項目は必須です</div>
+                                    <div class="text-right text-danger text-small pt-1" hidden="">8文字以上</div>
+                                    <div class="text-right text-danger text-small pt-1" hidden="">
+                                        3つ以上の条件を満たす必要があります。（条件は以下の4つ）: 小文字のアルファベット, 大文字のアルファベット (A-Z), 数字 (0-9), 特殊文字
+                                        (例: !@#$%^&amp;amp;*)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <label class="col-sm-4 col-form-label text-dark">新しいパスワード確認</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control form-control-simple" type="password"
+                                           placeholder="もう一度入力してください">
+                                    <div class="text-right text-danger text-small pt-1" hidden="">この項目は必須です</div>
+                                    <div class="text-right text-danger text-small pt-1" hidden="">パスワード（確認)が一致していません。
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="form-group py-1">
+                                <div class="d-flex flex-row-reverse col-sm-8">
+                                    <button type="submit" class="btn btn-primary">変更する</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- main end -->
+
+<!--<div id="login-modal" class="modal fade" tabindex="-1" role="dialog">-->
+    <!--<div class="modal-dialog" role="document">-->
+        <!--<div class="modal-content">-->
+
+            <!--<div class="modal-body">-->
+                <!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+                <!--<ul class="nav nav-tabs" role="tablist">-->
+                    <!--<li role="presentation"><a class="active" href="#login" aria-controls="login" role="tab"-->
+                                               <!--data-toggle="tab">Login</a></li>-->
+                    <!--<li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+
+                <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+                <!--<div class="tab-content">-->
+                    <!--<div role="tabpanel" class="tab-pane active" id="login">-->
+                        <!--<div class="input-group mb-3">-->
+                            <!--<div class="input-group-prepend">-->
+	  <!--<span class="input-group-text">-->
+		  <!--<i class="fa fa-user"></i>-->
+	  <!--</span>-->
+                            <!--</div>-->
+                            <!--<input type="text" class="form-control" placeholder="Username" aria-label="Username">-->
+                        <!--</div>-->
+                        <!--<div class="input-group mb-3">-->
+                            <!--<div class="input-group-prepend">-->
+	  <!--<span class="input-group-text">-->
+		  <!--<i class="fa fa-lock"></i>-->
+	  <!--</span>-->
+                            <!--</div>-->
+                            <!--<input type="password" class="form-control" placeholder="password" aria-label="Password">-->
+                        <!--</div>-->
+                        <!--<p class="forget-password"><a href="">Forget Password?</a></p>-->
+                        <!--<button type="button" class="btn btn-primary btn-lg btn-block">Login</button>-->
+                    <!--</div>-->
+                    <!--<div role="tabpanel" class="tab-pane" id="register">-->
+                        <!--<div class="input-group mb-3">-->
+                            <!--<div class="input-group-prepend">-->
+	  <!--<span class="input-group-text">-->
+		  <!--<i class="fa fa-envelope"></i>-->
+	  <!--</span>-->
+                            <!--</div>-->
+                            <!--<input type="text" class="form-control" placeholder="Username" aria-label="Username">-->
+                        <!--</div>-->
+                        <!--<div class="input-group mb-3">-->
+                            <!--<div class="input-group-prepend">-->
+	  <!--<span class="input-group-text">-->
+		  <!--<i class="fa fa-user"></i>-->
+	  <!--</span>-->
+                            <!--</div>-->
+                            <!--<input type="text" class="form-control" placeholder="Username" aria-label="Username">-->
+                        <!--</div>-->
+                        <!--<div class="input-group mb-3">-->
+                            <!--<div class="input-group-prepend">-->
+	  <!--<span class="input-group-text">-->
+		  <!--<i class="fa fa-lock"></i>-->
+	  <!--</span>-->
+                            <!--</div>-->
+                            <!--<input type="password" class="form-control" placeholder="password" aria-label="Password">-->
+                        <!--</div>-->
+                        <!--<button type="button" class="btn btn-success btn-lg btn-block">Register</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.modal &ndash;&gt;-->
+
+<footer class="footer-area footer-style-3" id="footer">
+    <!--<div class="">-->
+        <!--<div class="container">-->
+            <!--<div class="row pt-4">-->
+                <!--<div class="col-xl-3 col-lg-3 col-md-4">-->
+                    <!--<div class="footer-widget about-widget">-->
+                        <!--<div class="about-logo">-->
+                            <!--<a href="index.html">-->
+                                <!--<img src="assets/img/logo/logo-3.png" alt="logo"/></a>-->
+                        <!--</div>-->
+                        <!--<ul>-->
+                            <!--<li>ADDRESS: 4772 Wines Lane Houston, TX 77032</li>-->
+                            <!--<li>Telephone: +832-347-5843</li>-->
+                            <!--<li>Email: contact@Glee.com</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xl-2 col-lg-2 col-md-4">-->
+                    <!--<div class="footer-widget links-widgets">-->
+                        <!--<h4 class="widget-title">Services</h4>-->
+                        <!--<ul>-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Contact Us</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">My account</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Customer Service</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Term &amp; Condition</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">FAQs</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xl-2 col-lg-2 col-md-4">-->
+                    <!--<div class="footer-widget links-widgets">-->
+                        <!--<h4 class="widget-title">Account</h4>-->
+                        <!--<ul>-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Facebook</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Twitter</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Instagram</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Dribbble</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#">Google Plus</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-xl-5 col-lg-5 col-md-8">-->
+                    <!--<div class="footer-widget newsletter-widget">-->
+                        <!--<h4 class="widget-title">Newsletter</h4>-->
+                        <!--<p>Signup to be the first to hear-->
+                            <!--<br/>about exclusive deals.</p>-->
+                        <!--<form action="#">-->
+                            <!--<div class="input-wrap">-->
+                                <!--<input type="text" placeholder="Email"/>-->
+                                <!--<button>Subscribe</button>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<!--<script src="assets/js/metisMenu.min.js"></script>-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="assets/js/imagesloaded.pkgd.min.js"></script>-->
+<!--<script src="assets/js/isotope.pkgd.min.js"></script>-->
+<!--<script src="assets/js/jquery.appear.js"></script>-->
+<!--<script src="assets/js/odometer.min.js"></script>-->
+<script type="text/javascript" src="assets/js/model/base.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#myTab a').mouseover(function (e) {
+            e.preventDefault();//阻止a链接的跳转行为
+            $(this).tab('show');//显示当前选中的链接及关联的content
+        })
+        if(getQueryVariable('tab') == 'profile'){
+            $('.profile-tab').tab('show');
+            console.log('profile')
+        }else{
+            $('.password-tab').tab('show');
+        }
+    });
+
+</script>
+</body>
+</html>
+

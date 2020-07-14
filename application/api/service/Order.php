@@ -1,31 +1,52 @@
 <?php
 
-
 namespace app\api\service;
 
 use app\api\model\Order as OrderModel;
+use app\api\model\User as UserModel;
 use app\api\service\Offer as OfferService;
 use app\lib\enum\OrderStatusEnum;
 use app\lib\exception\OrderException;
 
 class Order
 {
-    public static function checkOrder($id)
+    public static function checkOrderCommit($offer_id, $user_id)
+    {
+        $order = OrderModel::getOneByData(['offer_id' => $offer_id, 'user_id' => $user_id, 'status' => ['neq', 5]]);
+        if ($order) {
+            throw new OrderException(
+                [
+                    'msg' => 'ごめんなさい！ 注文はすでに進行中です',
+                    'error_code' => 60010,
+                ]
+            );
+        }
+    }
+
+    /**
+     * @param $id
+     * @param $isCommon
+     * @return null|static
+     * @throws OrderException
+     */
+    public static function checkOrder($id, $isCommon)
     {
         $user_id = Token::getCurrentUid();
         $order = OrderModel::get(['id' => $id]);
         if (!$order) {
             throw new OrderException();
         }
-        OfferService::checkOffer(['id' => $order->offer_id]);
-        if ($order->user_id != $user_id) {
+        $offer = OfferService::checkOffer(['id' => $order->offer_id]);
+
+        if ((!$isCommon && $order->user_id != $user_id) || ($isCommon && !in_array($user_id, [$order->user_id, $offer->user_id]))) {
             throw new OrderException([
-                'msg' => '对不起！你没有权限更改订单状态',
-                'error_code' => 60007,
-                'code' => 403
+                'msg' => 'ごめんなさい！ 注文ステータスを変更する権限がありません',
+                'error_code' => 60001,
             ]);
         }
-
+        $mail = UserModel::getDataValue(['id' => ($order->user_id != $user_id ? $user_id : $offer->user_id)], 'e_mail');
+        $order->mail = $mail;
+        $order->title = $offer->title;
         return $order;
     }
 
@@ -44,16 +65,14 @@ class Order
         $offer_user_id = $offer->user_id;
         if (!in_array($user_id, [$order->user_id, $offer_user_id])) {
             throw new OrderException([
-                'code' => 400,
-                'msg' => '对不起！你没有报价权',
-                'error_code' => 60003
+                'msg' => 'ごめんなさい！ 見積もりの権利はありません',
+                'error_code' => 60004
             ]);
         }
         if ($order->status != OrderStatusEnum::WAIT_CONFIRM) {
             throw new OrderException([
-                'code' => 400,
-                'msg' => '对不起！订单不允许报价',
-                'error_code' => 60003
+                'msg' => 'ごめんなさい！ 注文は見積もりを許可していません',
+                'error_code' => 60005
             ]);
         }
         if (!$isConfirm) {
@@ -62,17 +81,19 @@ class Order
         } else {
             if (!$order->price) {
                 throw new OrderException([
-                    'code' => 400,
-                    'msg' => '对不起！订单未报价',
-                    'error_code' => 60003
+                    'msg' => 'ごめんなさい！ 見積りなし',
+                    'error_code' => 60006
                 ]);
             }
             $order->status = OrderStatusEnum::WAIT_PAID;
         }
+        $mail = UserModel::getDataValue(['id' => ($order->user_id != $user_id ? $user_id : $offer->user_id)], 'e_mail');
+        $order->mail = $mail;
+        $order->title = $offer->title;
         return $order;
     }
 
-    public static function checkOrderForChattingReturnUserType($id,$user_id)
+    public static function checkOrderForChattingReturnUserType($id, $user_id)
     {
         $order = OrderModel::get(['id' => $id]);
         if (!$order || $order->status == OrderStatusEnum::CLOSED) {
@@ -83,9 +104,8 @@ class Order
         $offer_user_id = $offer->user_id;
         if (!in_array($user_id, [$order->user_id, $offer_user_id])) {
             throw new OrderException([
-                'code' => 400,
-                'msg' => '对不起！你无权聊天',
-                'error_code' => 60003
+                'msg' => 'ごめんなさい！ チャットする権利がありません',
+                'error_code' => 60007
             ]);
         }
 

@@ -7,7 +7,7 @@ class Offer extends BaseModel
 
     public static function getSummary($data, $field = [], $paginate = true, $page = 1, $size = 30)
     {
-        $query = self::where($data)->where(['status' => 1])->order(['create_time' => 'desc'])->field($field);
+        $query = self::where($data)->where(['status' => 1])->order(['create_time' => 'desc'])->with(['category','user'])->field($field);
         if (!$paginate) {
             return $query->select();
         } else {
@@ -21,11 +21,27 @@ class Offer extends BaseModel
 
     public static function getDetail($data, $field = [])
     {
-        return self::where($data)->where(['status' => 1])->field($field)->find();
+        return self::where($data)->where(['status' => 1])->with(['category','user'])->field($field)->find();
     }
 
     public function getDescriptionAttr($value)
     {
         return html_entity_decode($value);
+    }
+
+    public function getRequestTypeTextAttr($value,$data)
+    {
+        $request_type = config('app.request_type');
+        return !empty($request_type[$data['request_type']]) ? $request_type[$data['request_type']] : '';
+    }
+
+    public function category()
+    {
+        return $this->belongsTo('Category','category_id','id');
+    }
+
+    protected function getImageAttr($val)
+    {
+        return $this->prefixImgUrl($val);
     }
 }

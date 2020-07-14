@@ -14,32 +14,21 @@ return [
     'validate_path' => 'common',
     'base_url' => 'http://www.task.jp',
     'password_key' => 'jiandong',
-    //赛事类型
-    'race_type' =>[
-        1=>'版权私有',
-        2=>'公共资源',
+    //
+    'user_type' =>[
+        0=>'Worker',
+        1=>'Client',
     ],
-    'banners_position'=>[
-        1 => '球员中心',
-        2 => '赛事中心',
-        3 => '资讯中心',
+    'request_type' =>[
+        1=>'ASK',
+        2=>'TASK',
     ],
-    'video_type' =>[
-        1 => '回放',
-        2 => '集锦',
-        3 => '直播',
-    ],
-    'file_cate' =>[
-        1 => '图片',
-        2 => '视频',
-        3 => '其它',
-    ],
-    //可报名的赛事距离开始的天数
-//    'play_time_days'=> 30,
+    //
 
+    'default_offer_image' => '',
     'ossbrowser_downpath' => 'Docs/oss-browser-win32-x64.zip',
     
-    'instanceName' => '建东直播聊天室',
+    'instanceName' => '',
     'socket_address' => 'websocket://0.0.0.0:20120',
     'token_expire_in' => 7200,
     

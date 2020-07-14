@@ -19,19 +19,25 @@ class Index extends Controller
         return "taskInfo";
     }
 
-
-    public function login()
+    public function verify()
     {
-
-        $uid = $this->request->get('code');
-        if($uid){
-            $user = (new User)->find(base64_urlSafeDecode($uid));
+        $code = $this->request->get('code');
+        if($code){
+            $pos = strrpos($code,config('url_html_suffix'));
+            $uid = base64_urlSafeDecode(($pos===false) ? $code : substr($code,0,($pos-1)));
+            $user = (new User)->find($uid);
             if(!$user){
                 return $this->view->fetch('error');
             }
             $user->status = 1;
             $user->save();
+            return $this->login();
         }
+        return $this->view->fetch('error');
+    }
+
+    public function login()
+    {
         return "login";
     }
 

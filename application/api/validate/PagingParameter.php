@@ -12,7 +12,7 @@ class PagingParameter extends BaseValidate
     ];
 
     protected $message = [
-        'page' => '分页参数必须是正整数',
-        'size' => '分页参数必须是正整数'
+        'page' => 'ページングパラメータは正の整数でなければなりません',
+        'size' => 'ページングパラメータは正の整数でなければなりません'
     ];
 }

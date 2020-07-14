@@ -6,6 +6,6 @@ namespace app\lib\exception;
 class OrderException extends BaseException
 {
     public $code = 200;
-    public $msg = '订单不存在，请检查订单ID';
-    public $errorCode = 60000;
+    public $msg = '注文は存在しません。注文IDを確認してください';
+    public $error_code = 60000;
 }

@@ -15,6 +15,6 @@ namespace app\lib\exception;
 class ParameterException extends BaseException
 {
     public $code = 200;
-    public $errorCode = 99999;
+    public $error_code = 99999;
     public $msg = "invalid parameters";
 }

@@ -13,8 +13,9 @@ class Config extends BaseController
     public function getValueByCode()
     {
         (new ConfigGet())->goCheck();
-        $code = $_POST['code'];
-        $tags = $_POST['tags'];
+        $data = $this->request->post();
+        $code = $data['code'];
+        $tags = $data['tags'];
 
         $value = ConfigModel::getColumns(['code'=>is_array($code) ? ['IN',$code] : $code],$tags);
 

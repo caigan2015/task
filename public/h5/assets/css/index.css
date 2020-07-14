@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.container
+{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.head_img{
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+
+table tbody tr td .offer-title {
+    white-space:normal!important;
+}
+table{
+    min-width: 700px;
+}
+
+.container-content{
+    overflow-x: auto;
+}
+@media (min-width: 768px){
+    .first-navbar {
+        /*margin-left: 9.5rem !important;*/
+    }
+}

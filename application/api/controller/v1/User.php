@@ -27,7 +27,6 @@ class User extends BaseController
     public function register()
     {
         (new UserUp())->goCheck([], 'register');
-
         (new UserToken())->appRegister();
         return new SuccessMessage();
 
@@ -41,9 +40,7 @@ class User extends BaseController
         (new UserUp())->goCheck([], 'login');
         $userToken = (new UserToken())->appLogin();
         return new SuccessReturn([
-            'info' => [
-                'token' => $userToken
-            ]
+            'info' => $userToken
         ]);
     }
 
@@ -54,7 +51,6 @@ class User extends BaseController
     {
         (new UserUp())->goCheck([], 'password');
         (new IdentifyService())->resetPassword();
-
         return new SuccessMessage();
 
     }
@@ -67,7 +63,7 @@ class User extends BaseController
         $uid = TokenService::getCurrentUid();
         $user = IdentifyService::checkUser($uid);
         return new SuccessReturn([
-            'info' => $user
+            'info' => $user->visible(['id','username','e_mail','head_img'])
         ]);
     }
 
@@ -88,7 +84,7 @@ class User extends BaseController
      */
     public function logout()
     {
-        UserToken::removeToken();
+        TokenService::removeToken();
         return new SuccessMessage();
     }
 
