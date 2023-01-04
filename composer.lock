@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e874cfba8eeb72119694f403263bcf9c",
+    "content-hash": "c25e7c65d23baac1761ef0e042bcb12e",
     "packages": [
         {
             "name": "aliyunapi/guzzle-subscriber",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/aliyunapi/guzzle-subscriber/765cef3877493c4a34c55f35d2f56cc2e13f9e5f.zip",
+                "url": "https://api.github.com/repos/aliyunapi/guzzle-subscriber/zipball/765cef3877493c4a34c55f35d2f56cc2e13f9e5f",
                 "reference": "765cef3877493c4a34c55f35d2f56cc2e13f9e5f",
                 "shasum": ""
             },
@@ -60,7 +60,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/aliyunapi/php-aliyun-open-api-live/cdd7850afd375358d17d689d400fd1341222fe75.zip",
+                "url": "https://api.github.com/repos/aliyunapi/php-aliyun-open-api-live/zipball/cdd7850afd375358d17d689d400fd1341222fe75",
                 "reference": "cdd7850afd375358d17d689d400fd1341222fe75",
                 "shasum": ""
             },
@@ -105,7 +105,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/e69f57916678458642ac9d2fd341ae78a56996c8.zip",
+                "url": "https://api.github.com/repos/aliyun/aliyun-oss-php-sdk/zipball/e69f57916678458642ac9d2fd341ae78a56996c8",
                 "reference": "e69f57916678458642ac9d2fd341ae78a56996c8",
                 "shasum": ""
             },
@@ -146,7 +146,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/f4db5a78a5ea468d4831de7f0bf9d9415e348699.zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
                 "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
                 "shasum": ""
             },
@@ -211,7 +211,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/promises/a59da6cf61d80060647ff4d3eb2c03a2bc694646.zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
                 "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
                 "shasum": ""
             },
@@ -228,12 +228,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -262,7 +262,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/psr7/f5b8a8512e2b58b0071a7280e39f14f72e05d87c.zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
                 "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
                 "shasum": ""
             },
@@ -283,12 +283,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -327,7 +327,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/PHPOffice/PHPExcel/372c7cbb695a6f6f1e62649381aeaa37e7e70b32.zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
                 "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
                 "shasum": ""
             },
@@ -385,7 +385,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/php-fig/http-message/f6561bf28d520154e4b0ec72be95418abe6d9363.zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
@@ -435,7 +435,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/qiniu/php-sdk/79290fd9cb5d72cc2feef779008b3aaeeac49eb9.zip",
+                "url": "https://api.github.com/repos/qiniu/php-sdk/zipball/79290fd9cb5d72cc2feef779008b3aaeeac49eb9",
                 "reference": "79290fd9cb5d72cc2feef779008b3aaeeac49eb9",
                 "shasum": ""
             },
@@ -448,12 +448,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Qiniu\\": "src/Qiniu"
-                },
                 "files": [
                     "src/Qiniu/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Qiniu\\": "src/Qiniu"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -486,7 +486,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/swiftmailer/swiftmailer/7ffc1ea296ed14bf8260b6ef11b80208dbadba91.zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7ffc1ea296ed14bf8260b6ef11b80208dbadba91",
                 "reference": "7ffc1ea296ed14bf8260b6ef11b80208dbadba91",
                 "shasum": ""
             },
@@ -528,20 +528,21 @@
                 "mail",
                 "mailer"
             ],
+            "abandoned": "symfony/mailer",
             "time": "2018-01-23T07:37:21+00:00"
         },
         {
             "name": "topthink/framework",
-            "version": "v5.0.12",
+            "version": "v5.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/framework.git",
-                "reference": "0fb51680e8d62495d27f17a0e6cf889b763a6d3c"
+                "reference": "643c58ed1bd22a2823ce5e95b3b68a5075f9087c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/top-think/framework/0fb51680e8d62495d27f17a0e6cf889b763a6d3c.zip",
-                "reference": "0fb51680e8d62495d27f17a0e6cf889b763a6d3c",
+                "url": "https://api.github.com/repos/top-think/framework/zipball/643c58ed1bd22a2823ce5e95b3b68a5075f9087c",
+                "reference": "643c58ed1bd22a2823ce5e95b3b68a5075f9087c",
                 "shasum": ""
             },
             "require": {
@@ -579,7 +580,7 @@
                 "orm",
                 "thinkphp"
             ],
-            "time": "2017-11-06T01:19:03+00:00"
+            "time": "2022-10-25T14:59:38+00:00"
         },
         {
             "name": "topthink/think-captcha",
@@ -591,18 +592,18 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/top-think/think-captcha/0c55455df26a1626a60d0dc35d2d89002b741d44.zip",
+                "url": "https://api.github.com/repos/top-think/think-captcha/zipball/0c55455df26a1626a60d0dc35d2d89002b741d44",
                 "reference": "0c55455df26a1626a60d0dc35d2d89002b741d44",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "think\\captcha\\": "src/"
-                },
                 "files": [
                     "src/helper.php"
-                ]
+                ],
+                "psr-4": {
+                    "think\\captcha\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -627,7 +628,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/top-think/think-image/8586cf47f117481c6d415b20f7dedf62e79d5512.zip",
+                "url": "https://api.github.com/repos/top-think/think-image/zipball/8586cf47f117481c6d415b20f7dedf62e79d5512",
                 "reference": "8586cf47f117481c6d415b20f7dedf62e79d5512",
                 "shasum": ""
             },
@@ -659,23 +660,23 @@
         },
         {
             "name": "topthink/think-installer",
-            "version": "v1.0.12",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-installer.git",
-                "reference": "1be326e68f63de4e95977ed50f46ae75f017556d"
+                "reference": "eae1740ac264a55c06134b6685dfb9f837d004d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/top-think/think-installer/1be326e68f63de4e95977ed50f46ae75f017556d.zip",
-                "reference": "1be326e68f63de4e95977ed50f46ae75f017556d",
+                "url": "https://api.github.com/repos/top-think/think-installer/zipball/eae1740ac264a55c06134b6685dfb9f837d004d1",
+                "reference": "eae1740ac264a55c06134b6685dfb9f837d004d1",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0||^2.0"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev"
+                "composer/composer": "^1.0||^2.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -696,7 +697,7 @@
                     "email": "448901948@qq.com"
                 }
             ],
-            "time": "2017-05-27T06:58:09+00:00"
+            "time": "2021-03-25T08:34:02+00:00"
         },
         {
             "name": "topthink/think-worker",
@@ -708,7 +709,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/top-think/think-worker/b609ff5e38dbb7194aab027d2b2c6b31a7ed1bd1.zip",
+                "url": "https://api.github.com/repos/top-think/think-worker/zipball/b609ff5e38dbb7194aab027d2b2c6b31a7ed1bd1",
                 "reference": "b609ff5e38dbb7194aab027d2b2c6b31a7ed1bd1",
                 "shasum": ""
             },
@@ -717,10 +718,10 @@
             },
             "type": "library",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "think\\worker\\": "src"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -745,7 +746,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/walkor/Workerman/f6e129079e5f5398bffc218024f2dd95678fc564.zip",
+                "url": "https://api.github.com/repos/walkor/Workerman/zipball/f6e129079e5f5398bffc218024f2dd95678fc564",
                 "reference": "f6e129079e5f5398bffc218024f2dd95678fc564",
                 "shasum": ""
             },
@@ -791,7 +792,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/yuan1994/tp-mailer/7fe9b64d69be67a325a2708368b99edf44d17981.zip",
+                "url": "https://api.github.com/repos/yuan1994/tp-mailer/zipball/7fe9b64d69be67a325a2708368b99edf44d17981",
                 "reference": "7fe9b64d69be67a325a2708368b99edf44d17981",
                 "shasum": ""
             },
@@ -841,5 +842,6 @@
     "platform": {
         "php": ">=5.4.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
